@@ -55,6 +55,8 @@ CMakeFiles/project_2.dir/Interpreter_Classes.cpp.o
  /Users/roliasong/Desktop/cs236/Interpreter/Interpreter_Classes.cpp
  /Users/roliasong/Desktop/cs236/Interpreter/Interpreter_Classes.h
  /Users/roliasong/Desktop/cs236/Interpreter/Lexer.h
+ /Users/roliasong/Desktop/cs236/Interpreter/Parameter.h
+ /Users/roliasong/Desktop/cs236/Interpreter/Predicate.h
  /Users/roliasong/Desktop/cs236/Interpreter/Token.h
 CMakeFiles/project_2.dir/LeftParenAutomaton.cpp.o
  /Users/roliasong/Desktop/cs236/Interpreter/Automaton.h

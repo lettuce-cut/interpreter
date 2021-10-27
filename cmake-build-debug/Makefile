@@ -249,6 +249,30 @@ CommentAutomaton.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/CommentAutomaton.cpp.s
 .PHONY : CommentAutomaton.cpp.s
 
+Database.o: Database.cpp.o
+.PHONY : Database.o
+
+# target to build an object file
+Database.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/Database.cpp.o
+.PHONY : Database.cpp.o
+
+Database.i: Database.cpp.i
+.PHONY : Database.i
+
+# target to preprocess a source file
+Database.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/Database.cpp.i
+.PHONY : Database.cpp.i
+
+Database.s: Database.cpp.s
+.PHONY : Database.s
+
+# target to generate assembly for a file
+Database.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/Database.cpp.s
+.PHONY : Database.cpp.s
+
 DatalogProgram.o: DatalogProgram.cpp.o
 .PHONY : DatalogProgram.o
 
@@ -320,6 +344,30 @@ FactsAutomaton.s: FactsAutomaton.cpp.s
 FactsAutomaton.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/FactsAutomaton.cpp.s
 .PHONY : FactsAutomaton.cpp.s
+
+Header.o: Header.cpp.o
+.PHONY : Header.o
+
+# target to build an object file
+Header.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/Header.cpp.o
+.PHONY : Header.cpp.o
+
+Header.i: Header.cpp.i
+.PHONY : Header.i
+
+# target to preprocess a source file
+Header.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/Header.cpp.i
+.PHONY : Header.cpp.i
+
+Header.s: Header.cpp.s
+.PHONY : Header.s
+
+# target to generate assembly for a file
+Header.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/Header.cpp.s
+.PHONY : Header.cpp.s
 
 ID.o: ID.cpp.o
 .PHONY : ID.o
@@ -585,6 +633,30 @@ QueriesAutomaton.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/QueriesAutomaton.cpp.s
 .PHONY : QueriesAutomaton.cpp.s
 
+Relations.o: Relations.cpp.o
+.PHONY : Relations.o
+
+# target to build an object file
+Relations.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/Relations.cpp.o
+.PHONY : Relations.cpp.o
+
+Relations.i: Relations.cpp.i
+.PHONY : Relations.i
+
+# target to preprocess a source file
+Relations.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/Relations.cpp.i
+.PHONY : Relations.cpp.i
+
+Relations.s: Relations.cpp.s
+.PHONY : Relations.s
+
+# target to generate assembly for a file
+Relations.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/Relations.cpp.s
+.PHONY : Relations.cpp.s
+
 RightParenAutomaton.o: RightParenAutomaton.cpp.o
 .PHONY : RightParenAutomaton.o
 
@@ -729,6 +801,30 @@ Token.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/Token.cpp.s
 .PHONY : Token.cpp.s
 
+Tuples.o: Tuples.cpp.o
+.PHONY : Tuples.o
+
+# target to build an object file
+Tuples.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/Tuples.cpp.o
+.PHONY : Tuples.cpp.o
+
+Tuples.i: Tuples.cpp.i
+.PHONY : Tuples.i
+
+# target to preprocess a source file
+Tuples.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/Tuples.cpp.i
+.PHONY : Tuples.cpp.i
+
+Tuples.s: Tuples.cpp.s
+.PHONY : Tuples.s
+
+# target to generate assembly for a file
+Tuples.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/Tuples.cpp.s
+.PHONY : Tuples.cpp.s
+
 UndefinedAutomaton.o: UndefinedAutomaton.cpp.o
 .PHONY : UndefinedAutomaton.o
 
@@ -801,6 +897,9 @@ help:
 	@echo "... CommentAutomaton.o"
 	@echo "... CommentAutomaton.i"
 	@echo "... CommentAutomaton.s"
+	@echo "... Database.o"
+	@echo "... Database.i"
+	@echo "... Database.s"
 	@echo "... DatalogProgram.o"
 	@echo "... DatalogProgram.i"
 	@echo "... DatalogProgram.s"
@@ -810,6 +909,9 @@ help:
 	@echo "... FactsAutomaton.o"
 	@echo "... FactsAutomaton.i"
 	@echo "... FactsAutomaton.s"
+	@echo "... Header.o"
+	@echo "... Header.i"
+	@echo "... Header.s"
 	@echo "... ID.o"
 	@echo "... ID.i"
 	@echo "... ID.s"
@@ -843,6 +945,9 @@ help:
 	@echo "... QueriesAutomaton.o"
 	@echo "... QueriesAutomaton.i"
 	@echo "... QueriesAutomaton.s"
+	@echo "... Relations.o"
+	@echo "... Relations.i"
+	@echo "... Relations.s"
 	@echo "... RightParenAutomaton.o"
 	@echo "... RightParenAutomaton.i"
 	@echo "... RightParenAutomaton.s"
@@ -861,6 +966,9 @@ help:
 	@echo "... Token.o"
 	@echo "... Token.i"
 	@echo "... Token.s"
+	@echo "... Tuples.o"
+	@echo "... Tuples.i"
+	@echo "... Tuples.s"
 	@echo "... UndefinedAutomaton.o"
 	@echo "... UndefinedAutomaton.i"
 	@echo "... UndefinedAutomaton.s"

@@ -25,12 +25,32 @@ set
 -
 map
 -
+list
+-
+Predicate.h
+/Users/roliasong/Desktop/cs236/Interpreter/Predicate.h
 
 /Users/roliasong/Desktop/cs236/Interpreter/Lexer.h
 vector
 -
 Automaton.h
 /Users/roliasong/Desktop/cs236/Interpreter/Automaton.h
+Token.h
+/Users/roliasong/Desktop/cs236/Interpreter/Token.h
+
+/Users/roliasong/Desktop/cs236/Interpreter/Parameter.h
+vector
+-
+iostream
+-
+
+/Users/roliasong/Desktop/cs236/Interpreter/Predicate.h
+vector
+-
+iostream
+-
+Parameter.h
+/Users/roliasong/Desktop/cs236/Interpreter/Parameter.h
 Token.h
 /Users/roliasong/Desktop/cs236/Interpreter/Token.h
 

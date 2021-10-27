@@ -113,6 +113,12 @@
 		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/CommentAutomaton.h">
 			<Option target="project_2"/>
 		</Unit>
+		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/Database.cpp">
+			<Option target="project_2"/>
+		</Unit>
+		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/Database.h">
+			<Option target="project_2"/>
+		</Unit>
 		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/DatalogProgram.cpp">
 			<Option target="project_2"/>
 		</Unit>
@@ -129,6 +135,12 @@
 			<Option target="project_2"/>
 		</Unit>
 		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/FactsAutomaton.h">
+			<Option target="project_2"/>
+		</Unit>
+		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/Header.cpp">
+			<Option target="project_2"/>
+		</Unit>
+		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/Header.h">
 			<Option target="project_2"/>
 		</Unit>
 		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/ID.cpp">
@@ -197,6 +209,12 @@
 		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/QueriesAutomaton.h">
 			<Option target="project_2"/>
 		</Unit>
+		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/Relations.cpp">
+			<Option target="project_2"/>
+		</Unit>
+		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/Relations.h">
+			<Option target="project_2"/>
+		</Unit>
 		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/RightParenAutomaton.cpp">
 			<Option target="project_2"/>
 		</Unit>
@@ -231,6 +249,12 @@
 			<Option target="project_2"/>
 		</Unit>
 		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/Token.h">
+			<Option target="project_2"/>
+		</Unit>
+		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/Tuples.cpp">
+			<Option target="project_2"/>
+		</Unit>
+		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/Tuples.h">
 			<Option target="project_2"/>
 		</Unit>
 		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/UndefinedAutomaton.cpp">

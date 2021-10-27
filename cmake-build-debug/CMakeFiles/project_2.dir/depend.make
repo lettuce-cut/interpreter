@@ -55,6 +55,8 @@ CMakeFiles/project_2.dir/Interpreter_Classes.cpp.o: \
  ../Interpreter_Classes.cpp \
  ../Interpreter_Classes.h \
  ../Lexer.h \
+ ../Parameter.h \
+ ../Predicate.h \
  ../Token.h
 CMakeFiles/project_2.dir/LeftParenAutomaton.cpp.o: \
  ../Automaton.h \
