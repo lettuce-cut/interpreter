@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="project_2"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/roliasong/Desktop/cs236/Interpreter/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/roliasong/Desktop/cs236/Interpreter/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/roliasong/Desktop/cs236/Interpreter/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/roliasong/Desktop/cs236/Interpreter/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/roliasong/Desktop/cs236/Interpreter/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/roliasong/Desktop/cs236/Interpreter/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/roliasong/Desktop/cs236/Interpreter/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/roliasong/Desktop/cs236/Interpreter/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/roliasong/Desktop/cs236/Interpreter/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/roliasong/Desktop/cs236/Interpreter/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/roliasong/Desktop/cs236/Interpreter/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/roliasong/Desktop/cs236/Interpreter/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/roliasong/Desktop/cs236/Interpreter/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/roliasong/Desktop/cs236/Interpreter/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/roliasong/Desktop/cs236/Interpreter/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="project_2">
+				<Option output="/Users/roliasong/Desktop/cs236/Interpreter/cmake-build-debug/project_2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/roliasong/Desktop/cs236/Interpreter/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/roliasong/Desktop/cs236/Interpreter/."/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.5/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/roliasong/Desktop/cs236/Interpreter/cmake-build-debug/Makefile&quot;  VERBOSE=1 project_2"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/roliasong/Desktop/cs236/Interpreter/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/roliasong/Desktop/cs236/Interpreter/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/roliasong/Desktop/cs236/Interpreter/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="project_2/fast">
+				<Option output="/Users/roliasong/Desktop/cs236/Interpreter/cmake-build-debug/project_2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/roliasong/Desktop/cs236/Interpreter/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/roliasong/Desktop/cs236/Interpreter/."/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.5/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/roliasong/Desktop/cs236/Interpreter/cmake-build-debug/Makefile&quot;  VERBOSE=1 project_2/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/roliasong/Desktop/cs236/Interpreter/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/roliasong/Desktop/cs236/Interpreter/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/roliasong/Desktop/cs236/Interpreter/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/AddAutomaton.cpp">
+			<Option target="project_2"/>
+		</Unit>
+		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/AddAutomaton.h">
+			<Option target="project_2"/>
+		</Unit>
+		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/Automaton.h">
+			<Option target="project_2"/>
+		</Unit>
+		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/ColonAutomaton.cpp">
+			<Option target="project_2"/>
+		</Unit>
+		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/ColonAutomaton.h">
+			<Option target="project_2"/>
+		</Unit>
+		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/ColonDashAutomaton.cpp">
+			<Option target="project_2"/>
+		</Unit>
+		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/ColonDashAutomaton.h">
+			<Option target="project_2"/>
+		</Unit>
+		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/CommaAutomaton.cpp">
+			<Option target="project_2"/>
+		</Unit>
+		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/CommaAutomaton.h">
+			<Option target="project_2"/>
+		</Unit>
+		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/CommentAutomaton.cpp">
+			<Option target="project_2"/>
+		</Unit>
+		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/CommentAutomaton.h">
+			<Option target="project_2"/>
+		</Unit>
+		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/DatalogProgram.cpp">
+			<Option target="project_2"/>
+		</Unit>
+		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/DatalogProgram.h">
+			<Option target="project_2"/>
+		</Unit>
+		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/EOFAutomaton.cpp">
+			<Option target="project_2"/>
+		</Unit>
+		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/EOFAutomaton.h">
+			<Option target="project_2"/>
+		</Unit>
+		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/FactsAutomaton.cpp">
+			<Option target="project_2"/>
+		</Unit>
+		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/FactsAutomaton.h">
+			<Option target="project_2"/>
+		</Unit>
+		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/ID.cpp">
+			<Option target="project_2"/>
+		</Unit>
+		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/ID.h">
+			<Option target="project_2"/>
+		</Unit>
+		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/LeftParenAutomaton.cpp">
+			<Option target="project_2"/>
+		</Unit>
+		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/LeftParenAutomaton.h">
+			<Option target="project_2"/>
+		</Unit>
+		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/Lexer.cpp">
+			<Option target="project_2"/>
+		</Unit>
+		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/Lexer.h">
+			<Option target="project_2"/>
+		</Unit>
+		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/MultiComment.cpp">
+			<Option target="project_2"/>
+		</Unit>
+		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/MultiComment.h">
+			<Option target="project_2"/>
+		</Unit>
+		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/MultiplyAutomaton.cpp">
+			<Option target="project_2"/>
+		</Unit>
+		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/MultiplyAutomaton.h">
+			<Option target="project_2"/>
+		</Unit>
+		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/Parameter.cpp">
+			<Option target="project_2"/>
+		</Unit>
+		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/Parameter.h">
+			<Option target="project_2"/>
+		</Unit>
+		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/PeriodAutomaton.cpp">
+			<Option target="project_2"/>
+		</Unit>
+		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/PeriodAutomaton.h">
+			<Option target="project_2"/>
+		</Unit>
+		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/Predicate.cpp">
+			<Option target="project_2"/>
+		</Unit>
+		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/Predicate.h">
+			<Option target="project_2"/>
+		</Unit>
+		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/QmarkAutomaton.cpp">
+			<Option target="project_2"/>
+		</Unit>
+		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/QmarkAutomaton.h">
+			<Option target="project_2"/>
+		</Unit>
+		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/QueriesAutomaton.cpp">
+			<Option target="project_2"/>
+		</Unit>
+		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/QueriesAutomaton.h">
+			<Option target="project_2"/>
+		</Unit>
+		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/RightParenAutomaton.cpp">
+			<Option target="project_2"/>
+		</Unit>
+		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/RightParenAutomaton.h">
+			<Option target="project_2"/>
+		</Unit>
+		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/Rule.cpp">
+			<Option target="project_2"/>
+		</Unit>
+		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/Rule.h">
+			<Option target="project_2"/>
+		</Unit>
+		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/RulesAutomaton.cpp">
+			<Option target="project_2"/>
+		</Unit>
+		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/RulesAutomaton.h">
+			<Option target="project_2"/>
+		</Unit>
+		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/SchemesAutomaton.cpp">
+			<Option target="project_2"/>
+		</Unit>
+		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/SchemesAutomaton.h">
+			<Option target="project_2"/>
+		</Unit>
+		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/StringAutomaton.cpp">
+			<Option target="project_2"/>
+		</Unit>
+		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/StringAutomaton.h">
+			<Option target="project_2"/>
+		</Unit>
+		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/Token.cpp">
+			<Option target="project_2"/>
+		</Unit>
+		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/Token.h">
+			<Option target="project_2"/>
+		</Unit>
+		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/UndefinedAutomaton.cpp">
+			<Option target="project_2"/>
+		</Unit>
+		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/UndefinedAutomaton.h">
+			<Option target="project_2"/>
+		</Unit>
+		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/main.cpp">
+			<Option target="project_2"/>
+		</Unit>
+		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
