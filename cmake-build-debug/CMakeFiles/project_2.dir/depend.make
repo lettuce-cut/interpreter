@@ -50,6 +50,12 @@ CMakeFiles/project_2.dir/ID.cpp.o: \
  ../ID.cpp \
  ../ID.h \
  ../Token.h
+CMakeFiles/project_2.dir/Interpreter_Classes.cpp.o: \
+ ../Automaton.h \
+ ../Interpreter_Classes.cpp \
+ ../Interpreter_Classes.h \
+ ../Lexer.h \
+ ../Token.h
 CMakeFiles/project_2.dir/LeftParenAutomaton.cpp.o: \
  ../Automaton.h \
  ../LeftParenAutomaton.cpp \
