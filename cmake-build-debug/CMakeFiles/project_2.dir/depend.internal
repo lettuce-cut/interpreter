@@ -26,6 +26,16 @@ CMakeFiles/project_2.dir/CommentAutomaton.cpp.o
  /Users/roliasong/Desktop/cs236/Interpreter/CommentAutomaton.cpp
  /Users/roliasong/Desktop/cs236/Interpreter/CommentAutomaton.h
  /Users/roliasong/Desktop/cs236/Interpreter/Token.h
+CMakeFiles/project_2.dir/Database.cpp.o
+ /Users/roliasong/Desktop/cs236/Interpreter/Database.cpp
+ /Users/roliasong/Desktop/cs236/Interpreter/Database.h
+ /Users/roliasong/Desktop/cs236/Interpreter/Header.h
+ /Users/roliasong/Desktop/cs236/Interpreter/Parameter.h
+ /Users/roliasong/Desktop/cs236/Interpreter/Predicate.h
+ /Users/roliasong/Desktop/cs236/Interpreter/Relation.h
+ /Users/roliasong/Desktop/cs236/Interpreter/Rule.h
+ /Users/roliasong/Desktop/cs236/Interpreter/Token.h
+ /Users/roliasong/Desktop/cs236/Interpreter/Tuple.h
 CMakeFiles/project_2.dir/DatalogProgram.cpp.o
  /Users/roliasong/Desktop/cs236/Interpreter/Automaton.h
  /Users/roliasong/Desktop/cs236/Interpreter/DatalogProgram.cpp
@@ -45,19 +55,25 @@ CMakeFiles/project_2.dir/FactsAutomaton.cpp.o
  /Users/roliasong/Desktop/cs236/Interpreter/FactsAutomaton.cpp
  /Users/roliasong/Desktop/cs236/Interpreter/FactsAutomaton.h
  /Users/roliasong/Desktop/cs236/Interpreter/Token.h
+CMakeFiles/project_2.dir/Header.cpp.o
+ /Users/roliasong/Desktop/cs236/Interpreter/Header.cpp
 CMakeFiles/project_2.dir/ID.cpp.o
  /Users/roliasong/Desktop/cs236/Interpreter/Automaton.h
  /Users/roliasong/Desktop/cs236/Interpreter/ID.cpp
  /Users/roliasong/Desktop/cs236/Interpreter/ID.h
  /Users/roliasong/Desktop/cs236/Interpreter/Token.h
-CMakeFiles/project_2.dir/Interpreter_Classes.cpp.o
+CMakeFiles/project_2.dir/Interpreter.cpp.o
  /Users/roliasong/Desktop/cs236/Interpreter/Automaton.h
- /Users/roliasong/Desktop/cs236/Interpreter/Interpreter_Classes.cpp
- /Users/roliasong/Desktop/cs236/Interpreter/Interpreter_Classes.h
+ /Users/roliasong/Desktop/cs236/Interpreter/Header.h
+ /Users/roliasong/Desktop/cs236/Interpreter/Interpreter.cpp
+ /Users/roliasong/Desktop/cs236/Interpreter/Interpreter.h
  /Users/roliasong/Desktop/cs236/Interpreter/Lexer.h
  /Users/roliasong/Desktop/cs236/Interpreter/Parameter.h
  /Users/roliasong/Desktop/cs236/Interpreter/Predicate.h
+ /Users/roliasong/Desktop/cs236/Interpreter/Relation.h
+ /Users/roliasong/Desktop/cs236/Interpreter/Rule.h
  /Users/roliasong/Desktop/cs236/Interpreter/Token.h
+ /Users/roliasong/Desktop/cs236/Interpreter/Tuple.h
 CMakeFiles/project_2.dir/LeftParenAutomaton.cpp.o
  /Users/roliasong/Desktop/cs236/Interpreter/Automaton.h
  /Users/roliasong/Desktop/cs236/Interpreter/LeftParenAutomaton.cpp
@@ -101,6 +117,11 @@ CMakeFiles/project_2.dir/QueriesAutomaton.cpp.o
  /Users/roliasong/Desktop/cs236/Interpreter/QueriesAutomaton.cpp
  /Users/roliasong/Desktop/cs236/Interpreter/QueriesAutomaton.h
  /Users/roliasong/Desktop/cs236/Interpreter/Token.h
+CMakeFiles/project_2.dir/Relation.cpp.o
+ /Users/roliasong/Desktop/cs236/Interpreter/Header.h
+ /Users/roliasong/Desktop/cs236/Interpreter/Relation.cpp
+ /Users/roliasong/Desktop/cs236/Interpreter/Relation.h
+ /Users/roliasong/Desktop/cs236/Interpreter/Tuple.h
 CMakeFiles/project_2.dir/RightParenAutomaton.cpp.o
  /Users/roliasong/Desktop/cs236/Interpreter/Automaton.h
  /Users/roliasong/Desktop/cs236/Interpreter/RightParenAutomaton.cpp
@@ -130,6 +151,9 @@ CMakeFiles/project_2.dir/StringAutomaton.cpp.o
 CMakeFiles/project_2.dir/Token.cpp.o
  /Users/roliasong/Desktop/cs236/Interpreter/Token.cpp
  /Users/roliasong/Desktop/cs236/Interpreter/Token.h
+CMakeFiles/project_2.dir/Tuple.cpp.o
+ /Users/roliasong/Desktop/cs236/Interpreter/Tuple.cpp
+ /Users/roliasong/Desktop/cs236/Interpreter/Tuple.h
 CMakeFiles/project_2.dir/UndefinedAutomaton.cpp.o
  /Users/roliasong/Desktop/cs236/Interpreter/Automaton.h
  /Users/roliasong/Desktop/cs236/Interpreter/Token.h
@@ -138,9 +162,13 @@ CMakeFiles/project_2.dir/UndefinedAutomaton.cpp.o
 CMakeFiles/project_2.dir/main.cpp.o
  /Users/roliasong/Desktop/cs236/Interpreter/Automaton.h
  /Users/roliasong/Desktop/cs236/Interpreter/DatalogProgram.h
+ /Users/roliasong/Desktop/cs236/Interpreter/Header.h
+ /Users/roliasong/Desktop/cs236/Interpreter/Interpreter.h
  /Users/roliasong/Desktop/cs236/Interpreter/Lexer.h
  /Users/roliasong/Desktop/cs236/Interpreter/Parameter.h
  /Users/roliasong/Desktop/cs236/Interpreter/Predicate.h
+ /Users/roliasong/Desktop/cs236/Interpreter/Relation.h
  /Users/roliasong/Desktop/cs236/Interpreter/Rule.h
  /Users/roliasong/Desktop/cs236/Interpreter/Token.h
+ /Users/roliasong/Desktop/cs236/Interpreter/Tuple.h
  /Users/roliasong/Desktop/cs236/Interpreter/main.cpp

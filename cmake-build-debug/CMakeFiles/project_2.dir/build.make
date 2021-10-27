@@ -404,44 +404,44 @@ CMakeFiles/project_2.dir/Parameter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_2.dir/Parameter.cpp.s"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/roliasong/Desktop/cs236/Interpreter/Parameter.cpp -o CMakeFiles/project_2.dir/Parameter.cpp.s
 
-CMakeFiles/project_2.dir/Interpreter_Classes.cpp.o: CMakeFiles/project_2.dir/flags.make
-CMakeFiles/project_2.dir/Interpreter_Classes.cpp.o: ../Interpreter_Classes.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/roliasong/Desktop/cs236/Interpreter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/project_2.dir/Interpreter_Classes.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_2.dir/Interpreter_Classes.cpp.o -c /Users/roliasong/Desktop/cs236/Interpreter/Interpreter_Classes.cpp
+CMakeFiles/project_2.dir/Interpreter.cpp.o: CMakeFiles/project_2.dir/flags.make
+CMakeFiles/project_2.dir/Interpreter.cpp.o: ../Interpreter.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/roliasong/Desktop/cs236/Interpreter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/project_2.dir/Interpreter.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_2.dir/Interpreter.cpp.o -c /Users/roliasong/Desktop/cs236/Interpreter/Interpreter.cpp
 
-CMakeFiles/project_2.dir/Interpreter_Classes.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_2.dir/Interpreter_Classes.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/roliasong/Desktop/cs236/Interpreter/Interpreter_Classes.cpp > CMakeFiles/project_2.dir/Interpreter_Classes.cpp.i
+CMakeFiles/project_2.dir/Interpreter.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_2.dir/Interpreter.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/roliasong/Desktop/cs236/Interpreter/Interpreter.cpp > CMakeFiles/project_2.dir/Interpreter.cpp.i
 
-CMakeFiles/project_2.dir/Interpreter_Classes.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_2.dir/Interpreter_Classes.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/roliasong/Desktop/cs236/Interpreter/Interpreter_Classes.cpp -o CMakeFiles/project_2.dir/Interpreter_Classes.cpp.s
+CMakeFiles/project_2.dir/Interpreter.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_2.dir/Interpreter.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/roliasong/Desktop/cs236/Interpreter/Interpreter.cpp -o CMakeFiles/project_2.dir/Interpreter.cpp.s
 
-CMakeFiles/project_2.dir/Tuples.cpp.o: CMakeFiles/project_2.dir/flags.make
-CMakeFiles/project_2.dir/Tuples.cpp.o: ../Tuples.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/roliasong/Desktop/cs236/Interpreter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/project_2.dir/Tuples.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_2.dir/Tuples.cpp.o -c /Users/roliasong/Desktop/cs236/Interpreter/Tuples.cpp
+CMakeFiles/project_2.dir/Tuple.cpp.o: CMakeFiles/project_2.dir/flags.make
+CMakeFiles/project_2.dir/Tuple.cpp.o: ../Tuple.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/roliasong/Desktop/cs236/Interpreter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/project_2.dir/Tuple.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_2.dir/Tuple.cpp.o -c /Users/roliasong/Desktop/cs236/Interpreter/Tuple.cpp
 
-CMakeFiles/project_2.dir/Tuples.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_2.dir/Tuples.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/roliasong/Desktop/cs236/Interpreter/Tuples.cpp > CMakeFiles/project_2.dir/Tuples.cpp.i
+CMakeFiles/project_2.dir/Tuple.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_2.dir/Tuple.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/roliasong/Desktop/cs236/Interpreter/Tuple.cpp > CMakeFiles/project_2.dir/Tuple.cpp.i
 
-CMakeFiles/project_2.dir/Tuples.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_2.dir/Tuples.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/roliasong/Desktop/cs236/Interpreter/Tuples.cpp -o CMakeFiles/project_2.dir/Tuples.cpp.s
+CMakeFiles/project_2.dir/Tuple.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_2.dir/Tuple.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/roliasong/Desktop/cs236/Interpreter/Tuple.cpp -o CMakeFiles/project_2.dir/Tuple.cpp.s
 
-CMakeFiles/project_2.dir/Relations.cpp.o: CMakeFiles/project_2.dir/flags.make
-CMakeFiles/project_2.dir/Relations.cpp.o: ../Relations.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/roliasong/Desktop/cs236/Interpreter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/project_2.dir/Relations.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_2.dir/Relations.cpp.o -c /Users/roliasong/Desktop/cs236/Interpreter/Relations.cpp
+CMakeFiles/project_2.dir/Relation.cpp.o: CMakeFiles/project_2.dir/flags.make
+CMakeFiles/project_2.dir/Relation.cpp.o: ../Relation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/roliasong/Desktop/cs236/Interpreter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/project_2.dir/Relation.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_2.dir/Relation.cpp.o -c /Users/roliasong/Desktop/cs236/Interpreter/Relation.cpp
 
-CMakeFiles/project_2.dir/Relations.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_2.dir/Relations.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/roliasong/Desktop/cs236/Interpreter/Relations.cpp > CMakeFiles/project_2.dir/Relations.cpp.i
+CMakeFiles/project_2.dir/Relation.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_2.dir/Relation.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/roliasong/Desktop/cs236/Interpreter/Relation.cpp > CMakeFiles/project_2.dir/Relation.cpp.i
 
-CMakeFiles/project_2.dir/Relations.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_2.dir/Relations.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/roliasong/Desktop/cs236/Interpreter/Relations.cpp -o CMakeFiles/project_2.dir/Relations.cpp.s
+CMakeFiles/project_2.dir/Relation.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_2.dir/Relation.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/roliasong/Desktop/cs236/Interpreter/Relation.cpp -o CMakeFiles/project_2.dir/Relation.cpp.s
 
 CMakeFiles/project_2.dir/Header.cpp.o: CMakeFiles/project_2.dir/flags.make
 CMakeFiles/project_2.dir/Header.cpp.o: ../Header.cpp
@@ -497,9 +497,9 @@ project_2_OBJECTS = \
 "CMakeFiles/project_2.dir/Rule.cpp.o" \
 "CMakeFiles/project_2.dir/Predicate.cpp.o" \
 "CMakeFiles/project_2.dir/Parameter.cpp.o" \
-"CMakeFiles/project_2.dir/Interpreter_Classes.cpp.o" \
-"CMakeFiles/project_2.dir/Tuples.cpp.o" \
-"CMakeFiles/project_2.dir/Relations.cpp.o" \
+"CMakeFiles/project_2.dir/Interpreter.cpp.o" \
+"CMakeFiles/project_2.dir/Tuple.cpp.o" \
+"CMakeFiles/project_2.dir/Relation.cpp.o" \
 "CMakeFiles/project_2.dir/Header.cpp.o" \
 "CMakeFiles/project_2.dir/Database.cpp.o"
 
@@ -532,9 +532,9 @@ project_2: CMakeFiles/project_2.dir/DatalogProgram.cpp.o
 project_2: CMakeFiles/project_2.dir/Rule.cpp.o
 project_2: CMakeFiles/project_2.dir/Predicate.cpp.o
 project_2: CMakeFiles/project_2.dir/Parameter.cpp.o
-project_2: CMakeFiles/project_2.dir/Interpreter_Classes.cpp.o
-project_2: CMakeFiles/project_2.dir/Tuples.cpp.o
-project_2: CMakeFiles/project_2.dir/Relations.cpp.o
+project_2: CMakeFiles/project_2.dir/Interpreter.cpp.o
+project_2: CMakeFiles/project_2.dir/Tuple.cpp.o
+project_2: CMakeFiles/project_2.dir/Relation.cpp.o
 project_2: CMakeFiles/project_2.dir/Header.cpp.o
 project_2: CMakeFiles/project_2.dir/Database.cpp.o
 project_2: CMakeFiles/project_2.dir/build.make

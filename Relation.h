@@ -18,6 +18,8 @@ public:
     Relation SelectTwo(int index, int indexTwo);
     Relation Project(std::list<int> forProject);
     Relation Rename(std::list<std::string> forRename);
+    void addTuple(Tuple toAdd);
+    void toString(std::set<Tuple> toPrint);
 };
 
 #endif //PROJECT_2_RELATION_H

@@ -149,10 +149,10 @@
 		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/ID.h">
 			<Option target="project_2"/>
 		</Unit>
-		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/Interpreter_Classes.cpp">
+		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/Interpreter.cpp">
 			<Option target="project_2"/>
 		</Unit>
-		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/Interpreter_Classes.h">
+		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/Interpreter.h">
 			<Option target="project_2"/>
 		</Unit>
 		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/LeftParenAutomaton.cpp">
@@ -209,10 +209,10 @@
 		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/QueriesAutomaton.h">
 			<Option target="project_2"/>
 		</Unit>
-		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/Relations.cpp">
+		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/Relation.cpp">
 			<Option target="project_2"/>
 		</Unit>
-		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/Relations.h">
+		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/Relation.h">
 			<Option target="project_2"/>
 		</Unit>
 		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/RightParenAutomaton.cpp">
@@ -251,10 +251,10 @@
 		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/Token.h">
 			<Option target="project_2"/>
 		</Unit>
-		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/Tuples.cpp">
+		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/Tuple.cpp">
 			<Option target="project_2"/>
 		</Unit>
-		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/Tuples.h">
+		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/Tuple.h">
 			<Option target="project_2"/>
 		</Unit>
 		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/UndefinedAutomaton.cpp">

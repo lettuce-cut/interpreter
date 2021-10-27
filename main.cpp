@@ -1,5 +1,6 @@
 #include "Lexer.h"
 #include "DatalogProgram.h"
+#include "Interpreter.h"
 #include <fstream>
 #include <sstream>
 #include <iostream>
@@ -24,19 +25,34 @@ int main (int argc, char** argv) {
 
     ifs.close();
 
+
+
+
     Lexer myLexer = Lexer();
 //    myLexer.toString(Lexer().Run(input));
+
+    std::vector<Predicate> schemesMain;
+    std::vector<Predicate> factsMain;
+    std::vector<Predicate> queriesMain;
+    std::vector<Rule> rulesMain;
 
     try {
         DatalogProgram myParser = DatalogProgram();
         myParser.parseRun(myLexer.Run(input));
         std::cout << "Success!" << std::endl;
         myParser.outputString();
+        schemesMain = myParser.getSchemes();
+        factsMain = myParser.getFacts();
+        queriesMain = myParser.getQueries();
+        rulesMain = myParser.getRules();
     }
     catch (std::string error) {
         std::cout << "Failure!" << std::endl;
         std::cout << "  " << error << std::endl;
     }
+
+    Interpreter myInterpreter = Interpreter(schemesMain, factsMain, queriesMain, rulesMain);
+
 //    std::cout << "Hello World" << std::endl;
 
     delete lexer;

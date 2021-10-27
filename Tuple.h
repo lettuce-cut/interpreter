@@ -6,8 +6,8 @@
 
 class Tuple {
 private:
-    std::vector<std::string> values;
 public:
+    std::vector<std::string> values;
     bool operator<(const Tuple &rhs) const {
         return values < rhs.values;
     }

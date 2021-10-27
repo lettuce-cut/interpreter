@@ -393,29 +393,29 @@ ID.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/ID.cpp.s
 .PHONY : ID.cpp.s
 
-Interpreter_Classes.o: Interpreter_Classes.cpp.o
-.PHONY : Interpreter_Classes.o
+Interpreter.o: Interpreter.cpp.o
+.PHONY : Interpreter.o
 
 # target to build an object file
-Interpreter_Classes.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/Interpreter_Classes.cpp.o
-.PHONY : Interpreter_Classes.cpp.o
+Interpreter.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/Interpreter.cpp.o
+.PHONY : Interpreter.cpp.o
 
-Interpreter_Classes.i: Interpreter_Classes.cpp.i
-.PHONY : Interpreter_Classes.i
+Interpreter.i: Interpreter.cpp.i
+.PHONY : Interpreter.i
 
 # target to preprocess a source file
-Interpreter_Classes.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/Interpreter_Classes.cpp.i
-.PHONY : Interpreter_Classes.cpp.i
+Interpreter.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/Interpreter.cpp.i
+.PHONY : Interpreter.cpp.i
 
-Interpreter_Classes.s: Interpreter_Classes.cpp.s
-.PHONY : Interpreter_Classes.s
+Interpreter.s: Interpreter.cpp.s
+.PHONY : Interpreter.s
 
 # target to generate assembly for a file
-Interpreter_Classes.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/Interpreter_Classes.cpp.s
-.PHONY : Interpreter_Classes.cpp.s
+Interpreter.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/Interpreter.cpp.s
+.PHONY : Interpreter.cpp.s
 
 LeftParenAutomaton.o: LeftParenAutomaton.cpp.o
 .PHONY : LeftParenAutomaton.o
@@ -633,29 +633,29 @@ QueriesAutomaton.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/QueriesAutomaton.cpp.s
 .PHONY : QueriesAutomaton.cpp.s
 
-Relations.o: Relations.cpp.o
-.PHONY : Relations.o
+Relation.o: Relation.cpp.o
+.PHONY : Relation.o
 
 # target to build an object file
-Relations.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/Relations.cpp.o
-.PHONY : Relations.cpp.o
+Relation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/Relation.cpp.o
+.PHONY : Relation.cpp.o
 
-Relations.i: Relations.cpp.i
-.PHONY : Relations.i
+Relation.i: Relation.cpp.i
+.PHONY : Relation.i
 
 # target to preprocess a source file
-Relations.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/Relations.cpp.i
-.PHONY : Relations.cpp.i
+Relation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/Relation.cpp.i
+.PHONY : Relation.cpp.i
 
-Relations.s: Relations.cpp.s
-.PHONY : Relations.s
+Relation.s: Relation.cpp.s
+.PHONY : Relation.s
 
 # target to generate assembly for a file
-Relations.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/Relations.cpp.s
-.PHONY : Relations.cpp.s
+Relation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/Relation.cpp.s
+.PHONY : Relation.cpp.s
 
 RightParenAutomaton.o: RightParenAutomaton.cpp.o
 .PHONY : RightParenAutomaton.o
@@ -801,29 +801,29 @@ Token.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/Token.cpp.s
 .PHONY : Token.cpp.s
 
-Tuples.o: Tuples.cpp.o
-.PHONY : Tuples.o
+Tuple.o: Tuple.cpp.o
+.PHONY : Tuple.o
 
 # target to build an object file
-Tuples.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/Tuples.cpp.o
-.PHONY : Tuples.cpp.o
+Tuple.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/Tuple.cpp.o
+.PHONY : Tuple.cpp.o
 
-Tuples.i: Tuples.cpp.i
-.PHONY : Tuples.i
+Tuple.i: Tuple.cpp.i
+.PHONY : Tuple.i
 
 # target to preprocess a source file
-Tuples.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/Tuples.cpp.i
-.PHONY : Tuples.cpp.i
+Tuple.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/Tuple.cpp.i
+.PHONY : Tuple.cpp.i
 
-Tuples.s: Tuples.cpp.s
-.PHONY : Tuples.s
+Tuple.s: Tuple.cpp.s
+.PHONY : Tuple.s
 
 # target to generate assembly for a file
-Tuples.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/Tuples.cpp.s
-.PHONY : Tuples.cpp.s
+Tuple.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/Tuple.cpp.s
+.PHONY : Tuple.cpp.s
 
 UndefinedAutomaton.o: UndefinedAutomaton.cpp.o
 .PHONY : UndefinedAutomaton.o
@@ -915,9 +915,9 @@ help:
 	@echo "... ID.o"
 	@echo "... ID.i"
 	@echo "... ID.s"
-	@echo "... Interpreter_Classes.o"
-	@echo "... Interpreter_Classes.i"
-	@echo "... Interpreter_Classes.s"
+	@echo "... Interpreter.o"
+	@echo "... Interpreter.i"
+	@echo "... Interpreter.s"
 	@echo "... LeftParenAutomaton.o"
 	@echo "... LeftParenAutomaton.i"
 	@echo "... LeftParenAutomaton.s"
@@ -945,9 +945,9 @@ help:
 	@echo "... QueriesAutomaton.o"
 	@echo "... QueriesAutomaton.i"
 	@echo "... QueriesAutomaton.s"
-	@echo "... Relations.o"
-	@echo "... Relations.i"
-	@echo "... Relations.s"
+	@echo "... Relation.o"
+	@echo "... Relation.i"
+	@echo "... Relation.s"
 	@echo "... RightParenAutomaton.o"
 	@echo "... RightParenAutomaton.i"
 	@echo "... RightParenAutomaton.s"
@@ -966,9 +966,9 @@ help:
 	@echo "... Token.o"
 	@echo "... Token.i"
 	@echo "... Token.s"
-	@echo "... Tuples.o"
-	@echo "... Tuples.i"
-	@echo "... Tuples.s"
+	@echo "... Tuple.o"
+	@echo "... Tuple.i"
+	@echo "... Tuple.s"
 	@echo "... UndefinedAutomaton.o"
 	@echo "... UndefinedAutomaton.i"
 	@echo "... UndefinedAutomaton.s"

@@ -37,5 +37,11 @@ public:
     std::set<std::string> domainSet;
 
     void predicateParseRules(std::vector<Token *> toParse);
+
+
+    std::vector<Predicate> getSchemes();
+    std::vector<Predicate> getFacts();
+    std::vector<Rule> getRules();
+    std::vector<Predicate> getQueries();
 };
 #endif //PROJECT_2_DATALOGPROGRAM_H

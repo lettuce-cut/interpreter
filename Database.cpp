@@ -1,5 +1,8 @@
-//
-// Created by Sailor Ong on 10/26/21.
-//
-
 #include "Database.h"
+
+Database::Database(std::vector<Predicate>& schemes, std::vector<Predicate>& facts) {
+    schemesFromInterpreter = schemes;
+    factsFromInterpreter = facts;
+}
+
+Database::~Database() = default;

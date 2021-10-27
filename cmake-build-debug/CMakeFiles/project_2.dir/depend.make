@@ -26,6 +26,16 @@ CMakeFiles/project_2.dir/CommentAutomaton.cpp.o: \
  ../CommentAutomaton.cpp \
  ../CommentAutomaton.h \
  ../Token.h
+CMakeFiles/project_2.dir/Database.cpp.o: \
+ ../Database.cpp \
+ ../Database.h \
+ ../Header.h \
+ ../Parameter.h \
+ ../Predicate.h \
+ ../Relation.h \
+ ../Rule.h \
+ ../Token.h \
+ ../Tuple.h
 CMakeFiles/project_2.dir/DatalogProgram.cpp.o: \
  ../Automaton.h \
  ../DatalogProgram.cpp \
@@ -45,19 +55,25 @@ CMakeFiles/project_2.dir/FactsAutomaton.cpp.o: \
  ../FactsAutomaton.cpp \
  ../FactsAutomaton.h \
  ../Token.h
+CMakeFiles/project_2.dir/Header.cpp.o: \
+ ../Header.cpp
 CMakeFiles/project_2.dir/ID.cpp.o: \
  ../Automaton.h \
  ../ID.cpp \
  ../ID.h \
  ../Token.h
-CMakeFiles/project_2.dir/Interpreter_Classes.cpp.o: \
+CMakeFiles/project_2.dir/Interpreter.cpp.o: \
  ../Automaton.h \
- ../Interpreter_Classes.cpp \
- ../Interpreter_Classes.h \
+ ../Header.h \
+ ../Interpreter.cpp \
+ ../Interpreter.h \
  ../Lexer.h \
  ../Parameter.h \
  ../Predicate.h \
- ../Token.h
+ ../Relation.h \
+ ../Rule.h \
+ ../Token.h \
+ ../Tuple.h
 CMakeFiles/project_2.dir/LeftParenAutomaton.cpp.o: \
  ../Automaton.h \
  ../LeftParenAutomaton.cpp \
@@ -101,6 +117,11 @@ CMakeFiles/project_2.dir/QueriesAutomaton.cpp.o: \
  ../QueriesAutomaton.cpp \
  ../QueriesAutomaton.h \
  ../Token.h
+CMakeFiles/project_2.dir/Relation.cpp.o: \
+ ../Header.h \
+ ../Relation.cpp \
+ ../Relation.h \
+ ../Tuple.h
 CMakeFiles/project_2.dir/RightParenAutomaton.cpp.o: \
  ../Automaton.h \
  ../RightParenAutomaton.cpp \
@@ -130,6 +151,9 @@ CMakeFiles/project_2.dir/StringAutomaton.cpp.o: \
 CMakeFiles/project_2.dir/Token.cpp.o: \
  ../Token.cpp \
  ../Token.h
+CMakeFiles/project_2.dir/Tuple.cpp.o: \
+ ../Tuple.cpp \
+ ../Tuple.h
 CMakeFiles/project_2.dir/UndefinedAutomaton.cpp.o: \
  ../Automaton.h \
  ../Token.h \
@@ -138,9 +162,13 @@ CMakeFiles/project_2.dir/UndefinedAutomaton.cpp.o: \
 CMakeFiles/project_2.dir/main.cpp.o: \
  ../Automaton.h \
  ../DatalogProgram.h \
+ ../Header.h \
+ ../Interpreter.h \
  ../Lexer.h \
  ../Parameter.h \
  ../Predicate.h \
+ ../Relation.h \
  ../Rule.h \
  ../Token.h \
+ ../Tuple.h \
  ../main.cpp

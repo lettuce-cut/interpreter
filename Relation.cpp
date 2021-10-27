@@ -25,3 +25,15 @@ Relation::Relation() {
 Relation::~Relation() {
 
 }
+
+void Relation::addTuple(Tuple toAdd) {
+    relations.insert(toAdd);
+}
+
+void Relation::toString(std::set<Tuple> toPrint) {
+    for (Tuple t : toPrint) {
+        for (int i = 0; i < t.values.size(); i++){
+            std::cout << t.values.at(i) << std::endl;
+        }
+    }
+}

@@ -253,6 +253,23 @@ void DatalogProgram::domainString() {
     }
 }
 
+std::vector<Predicate> DatalogProgram::getSchemes() {
+    return vectorSchemes;
+}
+
+std::vector<Predicate> DatalogProgram::getFacts() {
+    return vectorFacts;
+}
+
+std::vector<Rule> DatalogProgram::getRules() {
+    return vectorRules;
+}
+
+std::vector<Predicate> DatalogProgram::getQueries() {
+    return vectorQueries;
+}
+
+
 DatalogProgram::DatalogProgram() = default;
 
 DatalogProgram::~DatalogProgram()= default;
