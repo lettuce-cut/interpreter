@@ -16,15 +16,13 @@ Relation Relation::Rename(std::list<std::string> forRename) {
     return Relation();
 }
 
-Relation::Relation() {
-    relationName = "";
-    relationHeader->attributes = {};
+Relation::Relation(std::string name, Header *header) {
+    relationName = name;
+    relationHeader->attributes = header->attributes;
     relations = {};
 }
 
-Relation::~Relation() {
-
-}
+Relation::~Relation() = default;
 
 void Relation::addTuple(Tuple toAdd) {
     relations.insert(toAdd);
@@ -36,4 +34,10 @@ void Relation::toString(std::set<Tuple> toPrint) {
             std::cout << t.values.at(i) << std::endl;
         }
     }
+}
+
+Relation::Relation() {
+    relationName = "";
+    relationHeader = {};
+    relations = {};
 }

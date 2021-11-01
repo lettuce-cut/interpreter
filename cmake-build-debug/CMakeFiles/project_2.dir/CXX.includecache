@@ -14,18 +14,6 @@ iostream
 utility
 -
 
-/Users/roliasong/Desktop/cs236/Interpreter/Database.cpp
-Database.h
-/Users/roliasong/Desktop/cs236/Interpreter/Database.h
-
-/Users/roliasong/Desktop/cs236/Interpreter/Database.h
-map
--
-Relation.h
-/Users/roliasong/Desktop/cs236/Interpreter/Relation.h
-Rule.h
-/Users/roliasong/Desktop/cs236/Interpreter/Rule.h
-
 /Users/roliasong/Desktop/cs236/Interpreter/DatalogProgram.h
 vector
 -
@@ -41,10 +29,8 @@ set
 /Users/roliasong/Desktop/cs236/Interpreter/Header.h
 vector
 -
-
-/Users/roliasong/Desktop/cs236/Interpreter/Interpreter.cpp
-Interpreter.h
-/Users/roliasong/Desktop/cs236/Interpreter/Interpreter.h
+Parameter.h
+/Users/roliasong/Desktop/cs236/Interpreter/Parameter.h
 
 /Users/roliasong/Desktop/cs236/Interpreter/Interpreter.h
 Lexer.h
@@ -107,6 +93,8 @@ iostream
 -
 vector
 -
+Parameter.h
+/Users/roliasong/Desktop/cs236/Interpreter/Parameter.h
 
 /Users/roliasong/Desktop/cs236/Interpreter/main.cpp
 Lexer.h

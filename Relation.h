@@ -8,10 +8,12 @@
 
 class Relation {
 private:
-    std::set<Tuple> relations;
-    std::string relationName;
-    Header* relationHeader;
 public:
+    std::string relationName;
+    std::set<Tuple> relations;
+    Header *relationHeader;
+
+    Relation(std::string name, Header *header);
     Relation();
     ~Relation();
     Relation SelectOne(int index, std::string value);

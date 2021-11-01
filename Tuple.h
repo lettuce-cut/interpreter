@@ -3,10 +3,12 @@
 
 #include <iostream>
 #include <vector>
-
+#include "Parameter.h"
 class Tuple {
 private:
 public:
+
+    Tuple(std::vector<Parameter *> input);
     std::vector<std::string> values;
     bool operator<(const Tuple &rhs) const {
         return values < rhs.values;

@@ -19,8 +19,9 @@ public:
     std::vector<Predicate> getFacts();
 
     void InterpreterRun();
+    void makeRelation();
 
-    Relation* evaluatePredicate(const Predicate& p);
+//    Relation* evaluatePredicate(const Predicate& p);
 };
 
 

@@ -56,7 +56,9 @@ CMakeFiles/project_2.dir/FactsAutomaton.cpp.o: \
  ../FactsAutomaton.h \
  ../Token.h
 CMakeFiles/project_2.dir/Header.cpp.o: \
- ../Header.cpp
+ ../Header.cpp \
+ ../Header.h \
+ ../Parameter.h
 CMakeFiles/project_2.dir/ID.cpp.o: \
  ../Automaton.h \
  ../ID.cpp \
@@ -64,6 +66,7 @@ CMakeFiles/project_2.dir/ID.cpp.o: \
  ../Token.h
 CMakeFiles/project_2.dir/Interpreter.cpp.o: \
  ../Automaton.h \
+ ../Database.h \
  ../Header.h \
  ../Interpreter.cpp \
  ../Interpreter.h \
@@ -119,6 +122,7 @@ CMakeFiles/project_2.dir/QueriesAutomaton.cpp.o: \
  ../Token.h
 CMakeFiles/project_2.dir/Relation.cpp.o: \
  ../Header.h \
+ ../Parameter.h \
  ../Relation.cpp \
  ../Relation.h \
  ../Tuple.h
@@ -152,6 +156,7 @@ CMakeFiles/project_2.dir/Token.cpp.o: \
  ../Token.cpp \
  ../Token.h
 CMakeFiles/project_2.dir/Tuple.cpp.o: \
+ ../Parameter.h \
  ../Tuple.cpp \
  ../Tuple.h
 CMakeFiles/project_2.dir/UndefinedAutomaton.cpp.o: \

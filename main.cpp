@@ -52,6 +52,9 @@ int main (int argc, char** argv) {
     }
 
     Interpreter myInterpreter = Interpreter(schemesMain, factsMain, queriesMain, rulesMain);
+    std::cout << std::endl << "IN INTERPRETER" << std::endl << std::endl;
+//    myInterpreter.InterpreterRun();
+    myInterpreter.makeRelation();
 
 //    std::cout << "Hello World" << std::endl;
 
