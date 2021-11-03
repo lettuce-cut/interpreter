@@ -67,6 +67,7 @@ CMakeFiles/project_2.dir/ID.cpp.o
 CMakeFiles/project_2.dir/Interpreter.cpp.o
  /Users/roliasong/Desktop/cs236/Interpreter/Automaton.h
  /Users/roliasong/Desktop/cs236/Interpreter/Database.h
+ /Users/roliasong/Desktop/cs236/Interpreter/DatalogProgram.h
  /Users/roliasong/Desktop/cs236/Interpreter/Header.h
  /Users/roliasong/Desktop/cs236/Interpreter/Interpreter.cpp
  /Users/roliasong/Desktop/cs236/Interpreter/Interpreter.h
@@ -166,6 +167,7 @@ CMakeFiles/project_2.dir/UndefinedAutomaton.cpp.o
  /Users/roliasong/Desktop/cs236/Interpreter/UndefinedAutomaton.h
 CMakeFiles/project_2.dir/main.cpp.o
  /Users/roliasong/Desktop/cs236/Interpreter/Automaton.h
+ /Users/roliasong/Desktop/cs236/Interpreter/Database.h
  /Users/roliasong/Desktop/cs236/Interpreter/DatalogProgram.h
  /Users/roliasong/Desktop/cs236/Interpreter/Header.h
  /Users/roliasong/Desktop/cs236/Interpreter/Interpreter.h

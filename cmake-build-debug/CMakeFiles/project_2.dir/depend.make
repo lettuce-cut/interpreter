@@ -67,6 +67,7 @@ CMakeFiles/project_2.dir/ID.cpp.o: \
 CMakeFiles/project_2.dir/Interpreter.cpp.o: \
  ../Automaton.h \
  ../Database.h \
+ ../DatalogProgram.h \
  ../Header.h \
  ../Interpreter.cpp \
  ../Interpreter.h \
@@ -166,6 +167,7 @@ CMakeFiles/project_2.dir/UndefinedAutomaton.cpp.o: \
  ../UndefinedAutomaton.h
 CMakeFiles/project_2.dir/main.cpp.o: \
  ../Automaton.h \
+ ../Database.h \
  ../DatalogProgram.h \
  ../Header.h \
  ../Interpreter.h \

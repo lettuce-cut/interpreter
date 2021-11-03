@@ -5,6 +5,7 @@
 #include "Relation.h"
 #include "Rule.h"
 #include "DatalogProgram.h"
+#include "Database.h"
 
 class Interpreter {
 private:
@@ -16,12 +17,9 @@ public:
     Interpreter(DatalogProgram fromParser);
     ~Interpreter();
 
-    std::vector<Predicate> getSchemes();
-    std::vector<Predicate> getFacts();
-
-    void InterpreterRun();
     void makeRelation();
 
+    Database myDatabase;
 //    Relation* evaluatePredicate(const Predicate& p);
 };
 

@@ -5,9 +5,11 @@
 //    factsFromInterpreter = facts;
 //}
 
-Database::Database(Relation input) {
-    database.insert( std::pair<std::string, Relation> (input.relationName, input));
-    std::cout << "relation stored" << std::endl;
+Database::Database() = default;
+
+void Database::addRelation(Relation toInsert) {
+    database[toInsert.relationName] = toInsert;
+
 }
 
 Database::~Database() = default;

@@ -11,6 +11,12 @@ Header::Header(std::vector<Parameter *> input) {
     }
 }
 
-Header::Header() {}
+Header::Header() = default;
+
+void Header::toString() {
+    for (int i = 0; i < attributes.size(); i++) {
+        std::cout << attributes[i] << std::endl;
+    }
+}
 
 Header::~Header() = default;

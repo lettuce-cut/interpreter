@@ -5,3 +5,7 @@ Tuple::Tuple(std::vector<Parameter *> input) {
         values.push_back(input[i]->paramString());
     }
 }
+
+Tuple::Tuple() = default;
+
+Tuple::~Tuple() = default;

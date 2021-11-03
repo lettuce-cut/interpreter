@@ -36,7 +36,7 @@ int main (int argc, char** argv) {
     try {
         myParser.parseRun(myLexer.Run(input));
         std::cout << "Success!" << std::endl;
-        myParser.outputString();
+//        myParser.outputString();
 
     }
     catch (std::string error) {
@@ -45,8 +45,6 @@ int main (int argc, char** argv) {
     }
 
     Interpreter myInterpreter(myParser);
-    std::cout << std::endl << "IN INTERPRETER" << std::endl << std::endl;
-//    myInterpreter.InterpreterRun();
     myInterpreter.makeRelation();
 
 //    std::cout << "Hello World" << std::endl;
