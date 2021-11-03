@@ -31,27 +31,20 @@ int main (int argc, char** argv) {
     Lexer myLexer = Lexer();
 //    myLexer.toString(Lexer().Run(input));
 
-    std::vector<Predicate> schemesMain;
-    std::vector<Predicate> factsMain;
-    std::vector<Predicate> queriesMain;
-    std::vector<Rule> rulesMain;
+    DatalogProgram myParser = DatalogProgram();
 
     try {
-        DatalogProgram myParser = DatalogProgram();
         myParser.parseRun(myLexer.Run(input));
         std::cout << "Success!" << std::endl;
         myParser.outputString();
-        schemesMain = myParser.getSchemes();
-        factsMain = myParser.getFacts();
-        queriesMain = myParser.getQueries();
-        rulesMain = myParser.getRules();
+
     }
     catch (std::string error) {
         std::cout << "Failure!" << std::endl;
         std::cout << "  " << error << std::endl;
     }
 
-    Interpreter myInterpreter = Interpreter(schemesMain, factsMain, queriesMain, rulesMain);
+    Interpreter myInterpreter(myParser);
     std::cout << std::endl << "IN INTERPRETER" << std::endl << std::endl;
 //    myInterpreter.InterpreterRun();
     myInterpreter.makeRelation();

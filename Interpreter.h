@@ -4,6 +4,7 @@
 #include "Lexer.h"
 #include "Relation.h"
 #include "Rule.h"
+#include "DatalogProgram.h"
 
 class Interpreter {
 private:
@@ -12,7 +13,7 @@ private:
     std::vector<Predicate> queriesFromParser;
     std::vector<Rule> rulesFromParser;
 public:
-    Interpreter(std::vector<Predicate>& schemes, std::vector<Predicate>& facts, std::vector<Predicate>& queries, std::vector<Rule>& rules);
+    Interpreter(DatalogProgram fromParser);
     ~Interpreter();
 
     std::vector<Predicate> getSchemes();

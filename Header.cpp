@@ -11,4 +11,6 @@ Header::Header(std::vector<Parameter *> input) {
     }
 }
 
+Header::Header() {}
+
 Header::~Header() = default;

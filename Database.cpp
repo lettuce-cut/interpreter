@@ -7,6 +7,7 @@
 
 Database::Database(Relation input) {
     database.insert( std::pair<std::string, Relation> (input.relationName, input));
+    std::cout << "relation stored" << std::endl;
 }
 
 Database::~Database() = default;

@@ -232,12 +232,12 @@ void DatalogProgram::outputString(){
     Predicate::stringPredicate(vectorSchemes, "Schemes");
     std::cout << "Facts(" << vectorFacts.size() << "):" << std::endl;
     Predicate::stringPredicate(vectorFacts, "Facts");
-    std::cout << "Rules(" << vectorRules.size() << "):" << std::endl;
-    Rule::ruleString(vectorRules);
-    std::cout << "Queries(" << vectorQueries.size() << "):" << std::endl;
-    Predicate::stringPredicate(vectorQueries, "Queries");
-    std::cout << "Domain(" << domainSet.size() << "):" << std::endl;
-    domainString();
+//    std::cout << "Rules(" << vectorRules.size() << "):" << std::endl;
+//    Rule::ruleString(vectorRules);
+//    std::cout << "Queries(" << vectorQueries.size() << "):" << std::endl;
+//    Predicate::stringPredicate(vectorQueries, "Queries");
+//    std::cout << "Domain(" << domainSet.size() << "):" << std::endl;
+//    domainString();
 
 }
 

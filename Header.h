@@ -9,6 +9,9 @@ public:
     std::vector<std::string> attributes;
 
     Header(std::vector<Parameter *> input);
+
+    Header();
+
     ~Header();
 };
 

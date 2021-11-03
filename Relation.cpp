@@ -18,7 +18,7 @@ Relation Relation::Rename(std::list<std::string> forRename) {
 
 Relation::Relation(std::string name, Header *header) {
     relationName = name;
-    relationHeader->attributes = header->attributes;
+    relationHeader.attributes= header->attributes;
     relations = {};
 }
 
@@ -38,6 +38,6 @@ void Relation::toString(std::set<Tuple> toPrint) {
 
 Relation::Relation() {
     relationName = "";
-    relationHeader = {};
+    relationHeader.attributes = {};
     relations = {};
 }

@@ -2,14 +2,6 @@
 #include "Relation.h"
 #include "Database.h"
 
-Interpreter::Interpreter(std::vector<Predicate>& schemes, std::vector<Predicate>& facts, std::vector<Predicate>& queries,
-                         std::vector<Rule>& rules) {
-    schemesFromParser = schemes;
-    factsFromParser = facts;
-    queriesFromParser = queries;
-    rulesFromParser = rules;
-}
-
 std::vector<Predicate> Interpreter::getSchemes() {
     return schemesFromParser;
 }
@@ -29,14 +21,22 @@ void Interpreter::InterpreterRun() {
 
 void Interpreter::makeRelation() {
     std::cout << "Making Relations" << std::endl;
+    std::cout << schemesFromParser.size() << std::endl;
     for (int i = 0; i < schemesFromParser.size(); i++) {
         Relation toAdd = Relation(schemesFromParser[i].id, new Header(schemesFromParser[i].parameters));
         if (factsFromParser[i].id == toAdd.relationName) {
             Tuple newTuple = Tuple(factsFromParser[i].parameters);
             toAdd.addTuple(newTuple);
         }
+        Database beingMade = Database(toAdd);
     }
 
+}
+
+Interpreter::Interpreter(DatalogProgram fromParser) {
+    schemesFromParser = fromParser.getSchemes();
+    factsFromParser = fromParser.getFacts();
+    queriesFromParser = fromParser.getQueries();
 }
 
 Interpreter::~Interpreter() = default;

@@ -11,7 +11,7 @@ private:
 public:
     std::string relationName;
     std::set<Tuple> relations;
-    Header *relationHeader;
+    Header relationHeader;
 
     Relation(std::string name, Header *header);
     Relation();
