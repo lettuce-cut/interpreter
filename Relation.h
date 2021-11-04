@@ -17,9 +17,9 @@ public:
 
     Relation(std::string name, Header header);
     ~Relation();
-//    Relation SelectOne(int index, std::string value);
-//    Relation SelectTwo(int index, int indexTwo);
-//    Relation Project(std::list<int> forProject);
+    Relation SelectOne(int index, std::string value);
+    Relation SelectTwo(int index, int indexTwo);
+//    Relation Project(std::list<int> forProject); maybe a vector
 //    Relation Rename(std::list<std::string> forRename);
     void addTuple(Tuple toAdd);
     void toString();

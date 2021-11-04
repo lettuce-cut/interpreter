@@ -46,6 +46,7 @@ int main (int argc, char** argv) {
 
     Interpreter myInterpreter(myParser);
     myInterpreter.makeRelation();
+    myInterpreter.evaluatePredicate(myParser.getQueries()[0]);
 
 //    std::cout << "Hello World" << std::endl;
 

@@ -14,13 +14,13 @@ private:
     std::vector<Predicate> queriesFromParser;
     std::vector<Rule> rulesFromParser;
 public:
+    Database myDatabase;
     Interpreter(DatalogProgram fromParser);
     ~Interpreter();
 
     void makeRelation();
-
-    Database myDatabase;
-//    Relation* evaluatePredicate(const Predicate& p);
+    Relation evaluatePredicate(Predicate p);
+    void evaluateAll();
 };
 
 
