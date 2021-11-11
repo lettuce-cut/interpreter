@@ -8,9 +8,9 @@ Interpreter::Interpreter(DatalogProgram fromParser) {
 }
 
 void Interpreter::makeRelation() {
-    for (int i = 0; i < schemesFromParser.size(); i++) {
+    for (long unsigned int i = 0; i < schemesFromParser.size(); i++) {
         Relation toDatabase = Relation(schemesFromParser[i].id, Header(schemesFromParser[i].parameters));
-        for (int j = 0; j < factsFromParser.size(); j++) {
+        for (long unsigned int j = 0; j < factsFromParser.size(); j++) {
             if (factsFromParser[j].id == schemesFromParser[i].id) {
                 toDatabase.addTuple(factsFromParser[j].parameters);
             }
@@ -24,7 +24,7 @@ Relation Interpreter::evaluatePredicate(Predicate p) {
     std::vector<int> indices;
     std::vector<std::string> forName;
 
-    for (int i = 0; i < p.parameters.size(); i++) {
+    for (long unsigned int i = 0; i < p.parameters.size(); i++) {
 //        std::cout << "ON PARAM: " << p.parameters[i]->paramString() << std::endl;
         if (p.parameters[i]->isConstant == true) {
             toReturn = toReturn.SelectOne(i, p.parameters[i]->paramString());
@@ -41,10 +41,10 @@ Relation Interpreter::evaluatePredicate(Predicate p) {
 }
 
 void Interpreter::evaluateAll() {
-    for (int i = 0; i < queriesFromParser.size(); i++) {
+    for (long unsigned int i = 0; i < queriesFromParser.size(); i++) {
         Relation evaluated = evaluatePredicate(queriesFromParser[i]);
         std::cout << queriesFromParser[i].id << "(";
-        for (int j =0; j < queriesFromParser[i].parameters.size(); j++) {
+        for (long unsigned int j =0; j < queriesFromParser[i].parameters.size(); j++) {
             if (j == queriesFromParser[i].parameters.size() -1) {
                 std::cout << queriesFromParser[i].parameters[j]->paramString() << ")?";
             }

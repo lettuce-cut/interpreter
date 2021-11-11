@@ -6,7 +6,7 @@
 #include <iostream>
 
 Header::Header(std::vector<Parameter *> input) {
-    for (int i = 0; i < input.size(); i++) {
+    for (long unsigned int i = 0; i < input.size(); i++) {
         attributes.push_back(input[i]->paramString());
     }
 }
@@ -14,7 +14,7 @@ Header::Header(std::vector<Parameter *> input) {
 Header::Header() = default;
 
 void Header::toString() {
-    for (int i = 0; i < attributes.size(); i++) {
+    for (long unsigned int i = 0; i < attributes.size(); i++) {
         std::cout << attributes[i] << std::endl;
     }
 }
