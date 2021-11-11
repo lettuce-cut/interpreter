@@ -19,7 +19,7 @@ void Relation::toString() {
         std::cout << "  ";
         for (long unsigned int i = 0; i < relationHeader.attributes.size(); i++) {
             if (i < relationHeader.attributes.size()-1) {
-                std::cout << relationHeader.attributes[i] << "=" << t.values[i] << ",";
+                std::cout << relationHeader.attributes[i] << "=" << t.values[i] << ", ";
             }
             else {
                 std::cout << relationHeader.attributes[i] << "=" << t.values[i] << std::endl;
