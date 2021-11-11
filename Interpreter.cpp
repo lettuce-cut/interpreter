@@ -35,19 +35,23 @@ Relation Interpreter::evaluatePredicate(Predicate p) {
 //            toReturn.toString();
         }
         else {//is a variable
-            if (position.find(i) == position.end()) {
+            if (position.find(i)->first == 0) {
                 position[i] = p.parameters[i]->paramString();
+                indices.push_back(i);
             }
             else {
                 for (long unsigned int m = 0; m < position.size(); m++) {
-                    if (p.parameters[i]->paramString() == position[m]) {//if first time seeing
+                    if (p.parameters[i]->paramString() == position[m]) {
                         toReturn = toReturn.SelectTwo(i, m);
 //                        std::cout << "DID SElECT TWO" << std::endl;
 //                        toReturn.toString();
                     }
+                    else{
+                        position[i] = p.parameters[i]->paramString();
+                        indices.push_back(i);
+                    }
                 }
             }
-            indices.push_back(i);
 //            std::cout << "SIZE: " << indices.size() << std::endl;
         }
     }
@@ -57,6 +61,8 @@ Relation Interpreter::evaluatePredicate(Predicate p) {
     std::map<int, std::string>::iterator it;
     for (it = position.begin(); it != position.end(); it++) {
         forNames.push_back(it->second);
+//        std::cout << "SEOCIFMESOFICJE" << std::endl;
+//        std::cout << it->second << std::endl;
     }
     toReturn = toReturn.Rename(forNames);
     return toReturn;
