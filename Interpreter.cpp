@@ -28,6 +28,7 @@ Relation Interpreter::evaluatePredicate(Predicate p) {
 
 
     for (long unsigned int i = 0; i < p.parameters.size(); i++) {
+        int count = 0;
 //        std::cout << p.parameters[i]->paramString() << std::endl;
         if (p.parameters[i]->isConstant == true) {
             toReturn = toReturn.SelectOne(i, p.parameters[i]->paramString());
@@ -37,6 +38,7 @@ Relation Interpreter::evaluatePredicate(Predicate p) {
         else {//is a variable
             if (position.find(i)->first == 0) {
                 position[i] = p.parameters[i]->paramString();
+                count += 1;
 //                indices.push_back(i);
 //                std::cout << "SIZE ELSE: " << indices.size() << std::endl;
             }
@@ -46,17 +48,20 @@ Relation Interpreter::evaluatePredicate(Predicate p) {
 //                    std::cout << p.parameters[i]->paramString() << " = " << position[m] << std::endl;
                     if ((i != m) and (p.parameters[i]->paramString() == position[m])) {
                         toReturn = toReturn.SelectTwo(i, m);
-//                        std::cout << "DID SElECT TWO" << std::endl;
+                        std::cout << "DID SElECT TWO" << std::endl;
 //                        toReturn.toString();
                     }
                     else{
 //                        forNames.push_back(p.parameters[i]->paramString());
                         position[i] = p.parameters[i]->paramString();
+                        count += 1;
 //                        std::cout << "SIZE 2 ELSE: " << indices.size() << std::endl;
                     }
                 }
             }
-            indices.push_back(i);
+            if (count > 0) {
+                indices.push_back(i);
+            }
 //            std::cout << "SIZE: " << indices.size() << std::endl;
         }
     }
