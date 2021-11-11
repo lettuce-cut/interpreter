@@ -66,5 +66,17 @@ Relation Relation::Rename(std::vector<std::string> forRename) {
     return toChange;
 }
 
+Relation Relation::SelectTwo(int index, int indexTwo) {
+    Relation toChange = Relation();
+    toChange.relationName = this->relationName;
+    toChange.relationHeader = this->relationHeader;
+    for (Tuple t : this->relations) {
+        if (t.values[index] == t.values[indexTwo]) {
+            toChange.addTuple(t);
+        }
+    }
+    return toChange;
+}
+
 
 Relation::Relation() = default;

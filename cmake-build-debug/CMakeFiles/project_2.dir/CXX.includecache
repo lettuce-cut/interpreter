@@ -14,6 +14,10 @@ iostream
 utility
 -
 
+/Users/roliasong/Desktop/cs236/Interpreter/Database.cpp
+Database.h
+/Users/roliasong/Desktop/cs236/Interpreter/Database.h
+
 /Users/roliasong/Desktop/cs236/Interpreter/Database.h
 map
 -
@@ -32,12 +36,6 @@ Lexer.h
 Rule.h
 /Users/roliasong/Desktop/cs236/Interpreter/Rule.h
 set
--
-
-/Users/roliasong/Desktop/cs236/Interpreter/Header.cpp
-Header.h
-/Users/roliasong/Desktop/cs236/Interpreter/Header.h
-iostream
 -
 
 /Users/roliasong/Desktop/cs236/Interpreter/Header.h
@@ -122,10 +120,6 @@ string
 utility
 -
 
-/Users/roliasong/Desktop/cs236/Interpreter/Tuple.cpp
-Tuple.h
-/Users/roliasong/Desktop/cs236/Interpreter/Tuple.h
-
 /Users/roliasong/Desktop/cs236/Interpreter/Tuple.h
 iostream
 -
@@ -133,4 +127,20 @@ vector
 -
 Parameter.h
 /Users/roliasong/Desktop/cs236/Interpreter/Parameter.h
+
+/Users/roliasong/Desktop/cs236/Interpreter/main.cpp
+Lexer.h
+/Users/roliasong/Desktop/cs236/Interpreter/Lexer.h
+DatalogProgram.h
+/Users/roliasong/Desktop/cs236/Interpreter/DatalogProgram.h
+Interpreter.h
+/Users/roliasong/Desktop/cs236/Interpreter/Interpreter.h
+fstream
+-
+sstream
+-
+iostream
+-
+string
+-
 

@@ -19,7 +19,7 @@ public:
     ~Relation();
 
     Relation SelectOne(int index, std::string value);
-//    int SelectTwo(int index, int indexTwo);
+    Relation SelectTwo(int index, int indexTwo);
     Relation Project(std::vector<int> forProject);
     Relation Rename(std::vector<std::string> forRename);
     void addTuple(Tuple toAdd);

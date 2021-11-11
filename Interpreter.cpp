@@ -31,7 +31,14 @@ Relation Interpreter::evaluatePredicate(Predicate p) {
         }
         else {
             indices.push_back(i);
-            forName.push_back(p.parameters[i]->paramString());
+            for (long unsigned int j = 0; j < forName.size(); j++) {
+                if (p.parameters[i]->paramString() != forName[j]) {
+                    forName.push_back(p.parameters[i]->paramString());
+                }
+                else {
+                    toReturn = toReturn.SelectTwo(i, j);
+                }
+            }
         }
     }
 
