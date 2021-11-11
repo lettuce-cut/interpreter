@@ -76,9 +76,6 @@ Relation Interpreter::evaluatePredicate(Predicate p) {
             }
         }
     }
-//    for (std::string name : forNames) {
-//        std::cout << "NAME: " << name << std::endl;
-//    }
     toReturn = toReturn.Rename(forNames);
     return toReturn;
 }
@@ -99,7 +96,7 @@ void Interpreter::evaluateAll() {
             std::cout << "No" << std::endl;
         }
         else {
-            std::cout << " Yes(" << evaluated.relations.size() << ")" << std::endl;
+            std::cout << "Yes(" << evaluated.relations.size() << ")" << std::endl;
             evaluated.toString();
         }
     }
