@@ -35,15 +35,12 @@ Relation Interpreter::evaluatePredicate(Predicate p) {
         }
         else {//is a variable
             indices.push_back(i);
-            if (position.size() == 0) {
+            if (position.find(i) == position.end()) {
                 position[i] = p.parameters[i]->paramString();
             }
             else {
                 for (long unsigned int m = 0; m < position.size(); m++) {
-                    if (p.parameters[i]->paramString() != position[m]) {//if first time seeing
-                        position[i] = p.parameters[i]->paramString();
-                    }
-                    else {
+                    if (p.parameters[i]->paramString() == position[m]) {//if first time seeing
                         toReturn = toReturn.SelectTwo(i, m);
 //                        std::cout << "DID SElECT TWO" << std::endl;
 //                        toReturn.toString();
