@@ -34,17 +34,24 @@ Relation Interpreter::evaluatePredicate(Predicate p) {
 //            toReturn.toString();
         }
         else {//is a variable
-            position[i] = p.parameters[i]->paramString();
-            for (long unsigned int m = 0; m < position.size(); m++) {
-                if (p.parameters[i]->paramString() == position[m]) {//if first time seeing
-                    toReturn = toReturn.SelectTwo(i, m);
-//                    std::cout << "DID SElECT TWO" << std::endl;
-//                    toReturn.toString();
+            indices.push_back(i);
+            if (position.size() == 0) {
+                position[i] = p.parameters[i]->paramString();
+            }
+            else {
+                for (long unsigned int m = 0; m < position.size(); m++) {
+                    if (p.parameters[i]->paramString() != position[m]) {//if first time seeing
+                        position[i] = p.parameters[i]->paramString();
+                    }
+                    else {
+                        toReturn = toReturn.SelectTwo(i, m);
+//                        std::cout << "DID SElECT TWO" << std::endl;
+//                        toReturn.toString();
+                    }
                 }
             }
-            indices.push_back(i);
+//            std::cout << "SIZE: " << indices.size() << std::endl;
         }
-//        std::cout << indices.size() << std::endl;
     }
     toReturn = toReturn.Project(indices);
 //    std::cout << "DID PROJECT" << std::endl;
