@@ -122,10 +122,18 @@ CMakeFiles/project_2.dir/QueriesAutomaton.cpp.o: \
  ../QueriesAutomaton.h \
  ../Token.h
 CMakeFiles/project_2.dir/Relation.cpp.o: \
+ ../Automaton.h \
+ ../Database.h \
+ ../DatalogProgram.h \
  ../Header.h \
+ ../Interpreter.h \
+ ../Lexer.h \
  ../Parameter.h \
+ ../Predicate.h \
  ../Relation.cpp \
  ../Relation.h \
+ ../Rule.h \
+ ../Token.h \
  ../Tuple.h
 CMakeFiles/project_2.dir/RightParenAutomaton.cpp.o: \
  ../Automaton.h \

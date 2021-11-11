@@ -1,5 +1,6 @@
 #include "Relation.h"
 #include <map>
+#include "Interpreter.h"
 
 Relation::Relation(std::string name, Header header) {
     relationName = name;
@@ -27,14 +28,10 @@ void Relation::toString() {
 }
 
 Relation Relation::SelectOne(int index, std::string value) {
-//    std::cout << "PASSINGVALUES" << std::endl;
-//    std::cout << value <<std::endl;
     Relation toChange = Relation();
     toChange.relationName = this->relationName;
     toChange.relationHeader = this->relationHeader;
     for (Tuple t : this->relations) {
-//        std::cout << "TVALUES" << std::endl;
-//        std::cout << t.values[index] <<std::endl;
         if (t.values[index] == value) {
             toChange.addTuple(t);
         }
@@ -42,17 +39,32 @@ Relation Relation::SelectOne(int index, std::string value) {
     return toChange;
 }
 
-Relation Relation::SelectTwo(int index, int indexTwo) {
+Relation Relation::Project(std::vector<int> forProject) {
     Relation toChange = Relation();
-    toChange.relationName = this->relationName;
-    toChange.relationHeader = this->relationHeader;
-    std::map<std::string, std::string> checkOff;
-    for (Tuple t : this->relations) {
-        if (t.values[index] == t.values[indexTwo]) {
-            checkOff[t.values[index]];
-        }
+    for (int index : forProject) {
+        toChange.relationHeader.attributes.push_back(this->relationHeader.attributes[index]);
     }
+    for (Tuple t : this->relations) {
+        Tuple newTuple;
+        for (int index : forProject) {
+            newTuple.values.push_back(t.values[index]);
+        }
+        toChange.addTuple(newTuple);
+    }
+
     return toChange;
 }
+
+Relation Relation::Rename(std::vector<std::string> forRename) {
+    Relation toChange = Relation();
+    toChange.relationName = this->relationName;
+    toChange.relations = this->relations;
+    for (std::string name : forRename) {
+        toChange.relationHeader.attributes.push_back(name);
+    }
+
+    return toChange;
+}
+
 
 Relation::Relation() = default;

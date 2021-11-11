@@ -35,7 +35,7 @@ int main (int argc, char** argv) {
 
     try {
         myParser.parseRun(myLexer.Run(input));
-        std::cout << "Success!" << std::endl;
+//        std::cout << "Success!" << std::endl;
 //        myParser.outputString();
 
     }
@@ -46,7 +46,7 @@ int main (int argc, char** argv) {
 
     Interpreter myInterpreter(myParser);
     myInterpreter.makeRelation();
-    myInterpreter.evaluatePredicate(myParser.getQueries()[0]);
+    myInterpreter.evaluateAll();
 
 //    std::cout << "Hello World" << std::endl;
 

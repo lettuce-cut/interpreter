@@ -6,6 +6,7 @@
 #include "Rule.h"
 #include "DatalogProgram.h"
 #include "Database.h"
+#include <list>
 
 class Interpreter {
 private:

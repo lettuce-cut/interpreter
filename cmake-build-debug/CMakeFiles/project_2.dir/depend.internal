@@ -122,10 +122,18 @@ CMakeFiles/project_2.dir/QueriesAutomaton.cpp.o
  /Users/roliasong/Desktop/cs236/Interpreter/QueriesAutomaton.h
  /Users/roliasong/Desktop/cs236/Interpreter/Token.h
 CMakeFiles/project_2.dir/Relation.cpp.o
+ /Users/roliasong/Desktop/cs236/Interpreter/Automaton.h
+ /Users/roliasong/Desktop/cs236/Interpreter/Database.h
+ /Users/roliasong/Desktop/cs236/Interpreter/DatalogProgram.h
  /Users/roliasong/Desktop/cs236/Interpreter/Header.h
+ /Users/roliasong/Desktop/cs236/Interpreter/Interpreter.h
+ /Users/roliasong/Desktop/cs236/Interpreter/Lexer.h
  /Users/roliasong/Desktop/cs236/Interpreter/Parameter.h
+ /Users/roliasong/Desktop/cs236/Interpreter/Predicate.h
  /Users/roliasong/Desktop/cs236/Interpreter/Relation.cpp
  /Users/roliasong/Desktop/cs236/Interpreter/Relation.h
+ /Users/roliasong/Desktop/cs236/Interpreter/Rule.h
+ /Users/roliasong/Desktop/cs236/Interpreter/Token.h
  /Users/roliasong/Desktop/cs236/Interpreter/Tuple.h
 CMakeFiles/project_2.dir/RightParenAutomaton.cpp.o
  /Users/roliasong/Desktop/cs236/Interpreter/Automaton.h
