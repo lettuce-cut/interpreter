@@ -47,6 +47,7 @@ Relation Interpreter::evaluatePredicate(Predicate p) {
 //                        toReturn.toString();
                     }
                     else{
+//                        forNames.push_back(p.parameters[i]->paramString());
                         position[i] = p.parameters[i]->paramString();
                         indices.push_back(i);
                     }
@@ -60,10 +61,24 @@ Relation Interpreter::evaluatePredicate(Predicate p) {
 //    toReturn.toString();
     std::map<int, std::string>::iterator it;
     for (it = position.begin(); it != position.end(); it++) {
-        forNames.push_back(it->second);
-//        std::cout << "SEOCIFMESOFICJE" << std::endl;
-//        std::cout << it->second << std::endl;
+        if (forNames.size() == 0) {
+            forNames.push_back(it->second);
+        }
+        else {
+            int count = 0;
+            for (std::string name : forNames) {
+                if (name == it->second) {
+                    count += 1;
+                }
+            }
+            if (count == 0 and it->second != "") {
+                forNames.push_back(it->second);
+            }
+        }
     }
+//    for (std::string name : forNames) {
+//        std::cout << "NAME: " << name << std::endl;
+//    }
     toReturn = toReturn.Rename(forNames);
     return toReturn;
 }
