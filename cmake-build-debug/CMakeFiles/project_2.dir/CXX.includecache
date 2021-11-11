@@ -14,10 +14,6 @@ iostream
 utility
 -
 
-/Users/roliasong/Desktop/cs236/Interpreter/Database.cpp
-Database.h
-/Users/roliasong/Desktop/cs236/Interpreter/Database.h
-
 /Users/roliasong/Desktop/cs236/Interpreter/Database.h
 map
 -
@@ -88,14 +84,6 @@ Parameter.h
 Token.h
 /Users/roliasong/Desktop/cs236/Interpreter/Token.h
 
-/Users/roliasong/Desktop/cs236/Interpreter/Relation.cpp
-Relation.h
-/Users/roliasong/Desktop/cs236/Interpreter/Relation.h
-map
--
-Interpreter.h
-/Users/roliasong/Desktop/cs236/Interpreter/Interpreter.h
-
 /Users/roliasong/Desktop/cs236/Interpreter/Relation.h
 set
 -
@@ -127,20 +115,4 @@ vector
 -
 Parameter.h
 /Users/roliasong/Desktop/cs236/Interpreter/Parameter.h
-
-/Users/roliasong/Desktop/cs236/Interpreter/main.cpp
-Lexer.h
-/Users/roliasong/Desktop/cs236/Interpreter/Lexer.h
-DatalogProgram.h
-/Users/roliasong/Desktop/cs236/Interpreter/DatalogProgram.h
-Interpreter.h
-/Users/roliasong/Desktop/cs236/Interpreter/Interpreter.h
-fstream
--
-sstream
--
-iostream
--
-string
--
 
