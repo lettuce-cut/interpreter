@@ -37,11 +37,14 @@ Relation Interpreter::evaluatePredicate(Predicate p) {
         else {//is a variable
             if (position.find(i)->first == 0) {
                 position[i] = p.parameters[i]->paramString();
-                indices.push_back(i);
+//                indices.push_back(i);
+//                std::cout << "SIZE ELSE: " << indices.size() << std::endl;
             }
             else {
                 for (long unsigned int m = 0; m < position.size(); m++) {
-                    if (p.parameters[i]->paramString() == position[m]) {
+//                    std::cout << "ENSDLFKJES:CFMOIEJWF" << std::endl;
+//                    std::cout << p.parameters[i]->paramString() << " = " << position[m] << std::endl;
+                    if ((i != m) and (p.parameters[i]->paramString() == position[m])) {
                         toReturn = toReturn.SelectTwo(i, m);
 //                        std::cout << "DID SElECT TWO" << std::endl;
 //                        toReturn.toString();
@@ -49,33 +52,51 @@ Relation Interpreter::evaluatePredicate(Predicate p) {
                     else{
 //                        forNames.push_back(p.parameters[i]->paramString());
                         position[i] = p.parameters[i]->paramString();
-                        indices.push_back(i);
+//                        std::cout << "SIZE 2 ELSE: " << indices.size() << std::endl;
                     }
                 }
             }
+            indices.push_back(i);
 //            std::cout << "SIZE: " << indices.size() << std::endl;
         }
     }
     toReturn = toReturn.Project(indices);
 //    std::cout << "DID PROJECT" << std::endl;
 //    toReturn.toString();
-    std::map<int, std::string>::iterator it;
-    for (it = position.begin(); it != position.end(); it++) {
+    for (int index : indices) {
         if (forNames.size() == 0) {
-            forNames.push_back(it->second);
+            forNames.push_back(position[index]);
         }
         else {
             int count = 0;
             for (std::string name : forNames) {
-                if (name == it->second) {
+                if (name == position[index]) {
                     count += 1;
                 }
             }
-            if (count == 0 and it->second != "") {
-                forNames.push_back(it->second);
+            if (count == 0 and position[index] != "") {
+                forNames.push_back(position[index]);
             }
         }
     }
+
+//    std::map<int, std::string>::iterator it;
+//    for (it = position.begin(); it != position.end(); it++) {
+//        if (forNames.size() == 0) {
+//            forNames.push_back(it->second);
+//        }
+//        else {
+//            int count = 0;
+//            for (std::string name : forNames) {
+//                if (name == it->second) {
+//                    count += 1;
+//                }
+//            }
+//            if (count == 0 and it->second != "") {
+//                forNames.push_back(it->second);
+//            }
+//        }
+//    }
     toReturn = toReturn.Rename(forNames);
     return toReturn;
 }

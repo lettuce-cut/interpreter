@@ -58,7 +58,12 @@ Relation Relation::Project(std::vector<int> forProject) {
         toChange.relationHeader.attributes.push_back(this->relationHeader.attributes[index]);
     }
     for (Tuple t : this->relations) {
+//        std::cout << "sdoicfjesocfij,li" << std::endl;
+//        for (std::string huh : t.values) {
+//            std::cout << huh << ", " << std::endl;
+//        }
         Tuple newTuple;
+//        std::cout << "SIZE: " << forProject.size() << std::endl;
         for (int index : forProject) {
             newTuple.values.push_back(t.values[index]);
         }
