@@ -39,6 +39,18 @@ Relation Relation::SelectOne(int index, std::string value) {
     return toChange;
 }
 
+Relation Relation::SelectTwo(int index, int indexTwo) {
+    Relation toChange = Relation();
+    toChange.relationName = this->relationName;
+    toChange.relationHeader = this->relationHeader;
+    for (Tuple t : this->relations) {
+        if (t.values[index] == t.values[indexTwo]) {
+            toChange.addTuple(t);
+        }
+    }
+    return toChange;
+}
+
 Relation Relation::Project(std::vector<int> forProject) {
     Relation toChange = Relation();
     for (int index : forProject) {
@@ -63,18 +75,6 @@ Relation Relation::Rename(std::vector<std::string> forRename) {
         toChange.relationHeader.attributes.push_back(name);
     }
 
-    return toChange;
-}
-
-Relation Relation::SelectTwo(int index, int indexTwo) {
-    Relation toChange = Relation();
-    toChange.relationName = this->relationName;
-    toChange.relationHeader = this->relationHeader;
-    for (Tuple t : this->relations) {
-        if (t.values[index] == t.values[indexTwo]) {
-            toChange.addTuple(t);
-        }
-    }
     return toChange;
 }
 

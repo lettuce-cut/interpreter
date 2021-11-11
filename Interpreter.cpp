@@ -21,27 +21,39 @@ void Interpreter::makeRelation() {
 
 Relation Interpreter::evaluatePredicate(Predicate p) {
     Relation toReturn = myDatabase.database[p.id];
+    std::vector<std::map<std::string, std::string>> tupleMaps;
     std::vector<int> indices;
-    std::vector<std::string> forName;
+    std::map<int, std::string> position;
+    std::vector<std::string> forNames;
+
 
     for (long unsigned int i = 0; i < p.parameters.size(); i++) {
-//        std::cout << "ON PARAM: " << p.parameters[i]->paramString() << std::endl;
         if (p.parameters[i]->isConstant == true) {
             toReturn = toReturn.SelectOne(i, p.parameters[i]->paramString());
+//            std::cout << "DID SElECT ONE" << std::endl;
+//            toReturn.toString();
         }
-        else {
-            indices.push_back(i);
-            for (long unsigned int j = 0; j < forName.size(); j++) {
-                if (p.parameters[i]->paramString() == forName[j]) {
-                    toReturn = toReturn.SelectTwo(i, j);
+        else {//is a variable
+            position[i] = p.parameters[i]->paramString();
+            for (long unsigned int m = 0; m < position.size(); m++) {
+                if (p.parameters[i]->paramString() == position[m]) {//if first time seeing
+                    toReturn = toReturn.SelectTwo(i, m);
+//                    std::cout << "DID SElECT TWO" << std::endl;
+//                    toReturn.toString();
                 }
-                forName.push_back(p.parameters[i]->paramString());
             }
+            indices.push_back(i);
         }
+//        std::cout << indices.size() << std::endl;
     }
-
     toReturn = toReturn.Project(indices);
-    toReturn = toReturn.Rename(forName);
+//    std::cout << "DID PROJECT" << std::endl;
+//    toReturn.toString();
+    std::map<int, std::string>::iterator it;
+    for (it = position.begin(); it != position.end(); it++) {
+        forNames.push_back(it->second);
+    }
+    toReturn = toReturn.Rename(forNames);
     return toReturn;
 }
 
