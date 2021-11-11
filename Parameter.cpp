@@ -2,8 +2,7 @@
 #include <typeinfo>
 Parameter::Parameter(std::string input) {
     p = input;
-    a = p.at(0);
-    if (a == '\'') {
+    if (p[0] == '\'') {
         isConstant = true;
     }
 //    std::cout<< "Parameter added: " << p << std::endl;

@@ -28,13 +28,13 @@ Relation Interpreter::evaluatePredicate(Predicate p) {
 
 
     for (long unsigned int i = 0; i < p.parameters.size(); i++) {
+//        std::cout << p.parameters[i]->paramString() << std::endl;
         if (p.parameters[i]->isConstant == true) {
             toReturn = toReturn.SelectOne(i, p.parameters[i]->paramString());
 //            std::cout << "DID SElECT ONE" << std::endl;
 //            toReturn.toString();
         }
         else {//is a variable
-            indices.push_back(i);
             if (position.find(i) == position.end()) {
                 position[i] = p.parameters[i]->paramString();
             }
@@ -47,6 +47,7 @@ Relation Interpreter::evaluatePredicate(Predicate p) {
                     }
                 }
             }
+            indices.push_back(i);
 //            std::cout << "SIZE: " << indices.size() << std::endl;
         }
     }

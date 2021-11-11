@@ -7,7 +7,6 @@
 class Parameter {
 private:
     std::string p;
-    char a;
 public:
     bool isConstant;
     Parameter(std::string input);
