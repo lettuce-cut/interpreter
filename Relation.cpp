@@ -17,6 +17,7 @@ void Relation::addTuple(Tuple toAdd) {
 void Relation::toString() {
     for (Tuple t : relations) {
         for (long unsigned int i = 0; i < relationHeader.attributes.size(); i++) {
+            std::cout << "  ";
             if (i < relationHeader.attributes.size()-1) {
                 std::cout << relationHeader.attributes[i] << "=" << t.values[i] << ",";
             }

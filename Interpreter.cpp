@@ -96,7 +96,7 @@ void Interpreter::evaluateAll() {
             std::cout << "No" << std::endl;
         }
         else {
-            std::cout << "Yes(" << evaluated.relations.size() << ")" << std::endl;
+            std::cout << " Yes(" << evaluated.relations.size() << ")" << std::endl;
             evaluated.toString();
         }
     }

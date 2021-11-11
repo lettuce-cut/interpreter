@@ -40,12 +40,6 @@ vector
 Parameter.h
 /Users/roliasong/Desktop/cs236/Interpreter/Parameter.h
 
-/Users/roliasong/Desktop/cs236/Interpreter/Interpreter.cpp
-Interpreter.h
-/Users/roliasong/Desktop/cs236/Interpreter/Interpreter.h
-Relation.h
-/Users/roliasong/Desktop/cs236/Interpreter/Relation.h
-
 /Users/roliasong/Desktop/cs236/Interpreter/Interpreter.h
 Lexer.h
 /Users/roliasong/Desktop/cs236/Interpreter/Lexer.h
@@ -83,6 +77,14 @@ Parameter.h
 /Users/roliasong/Desktop/cs236/Interpreter/Parameter.h
 Token.h
 /Users/roliasong/Desktop/cs236/Interpreter/Token.h
+
+/Users/roliasong/Desktop/cs236/Interpreter/Relation.cpp
+Relation.h
+/Users/roliasong/Desktop/cs236/Interpreter/Relation.h
+map
+-
+Interpreter.h
+/Users/roliasong/Desktop/cs236/Interpreter/Interpreter.h
 
 /Users/roliasong/Desktop/cs236/Interpreter/Relation.h
 set
