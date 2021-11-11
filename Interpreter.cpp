@@ -29,45 +29,31 @@ Relation Interpreter::evaluatePredicate(Predicate p) {
 
     for (long unsigned int i = 0; i < p.parameters.size(); i++) {
         int count = 0;
-//        std::cout << p.parameters[i]->paramString() << std::endl;
         if (p.parameters[i]->isConstant == true) {
             toReturn = toReturn.SelectOne(i, p.parameters[i]->paramString());
-//            std::cout << "DID SElECT ONE" << std::endl;
-//            toReturn.toString();
         }
         else {//is a variable
             if (position.find(i)->first == 0) {
                 position[i] = p.parameters[i]->paramString();
                 count += 1;
-//                indices.push_back(i);
-//                std::cout << "SIZE ELSE: " << indices.size() << std::endl;
             }
             else {
                 for (long unsigned int m = 0; m < position.size(); m++) {
-//                    std::cout << "ENSDLFKJES:CFMOIEJWF" << std::endl;
-//                    std::cout << p.parameters[i]->paramString() << " = " << position[m] << std::endl;
                     if ((i != m) and (p.parameters[i]->paramString() == position[m])) {
                         toReturn = toReturn.SelectTwo(i, m);
-                        std::cout << "DID SElECT TWO" << std::endl;
-//                        toReturn.toString();
                     }
                     else{
-//                        forNames.push_back(p.parameters[i]->paramString());
                         position[i] = p.parameters[i]->paramString();
                         count += 1;
-//                        std::cout << "SIZE 2 ELSE: " << indices.size() << std::endl;
                     }
                 }
             }
             if (count > 0) {
                 indices.push_back(i);
             }
-//            std::cout << "SIZE: " << indices.size() << std::endl;
         }
     }
     toReturn = toReturn.Project(indices);
-//    std::cout << "DID PROJECT" << std::endl;
-//    toReturn.toString();
     for (int index : indices) {
         if (forNames.size() == 0) {
             forNames.push_back(position[index]);
@@ -84,24 +70,6 @@ Relation Interpreter::evaluatePredicate(Predicate p) {
             }
         }
     }
-
-//    std::map<int, std::string>::iterator it;
-//    for (it = position.begin(); it != position.end(); it++) {
-//        if (forNames.size() == 0) {
-//            forNames.push_back(it->second);
-//        }
-//        else {
-//            int count = 0;
-//            for (std::string name : forNames) {
-//                if (name == it->second) {
-//                    count += 1;
-//                }
-//            }
-//            if (count == 0 and it->second != "") {
-//                forNames.push_back(it->second);
-//            }
-//        }
-//    }
     toReturn = toReturn.Rename(forNames);
     return toReturn;
 }
