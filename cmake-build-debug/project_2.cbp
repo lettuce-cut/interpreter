@@ -80,115 +80,37 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/AddAutomaton.cpp">
+			<Option target="project_2"/>
+		</Unit>
+		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/AddAutomaton.h">
+			<Option target="project_2"/>
+		</Unit>
 		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/Automaton.h">
 			<Option target="project_2"/>
 		</Unit>
-		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/Automatons/AddAutomaton.cpp">
+		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/ColonAutomaton.cpp">
 			<Option target="project_2"/>
 		</Unit>
-		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/Automatons/AddAutomaton.h">
+		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/ColonAutomaton.h">
 			<Option target="project_2"/>
 		</Unit>
-		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/Automatons/ColonAutomaton.cpp">
+		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/ColonDashAutomaton.cpp">
 			<Option target="project_2"/>
 		</Unit>
-		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/Automatons/ColonAutomaton.h">
+		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/ColonDashAutomaton.h">
 			<Option target="project_2"/>
 		</Unit>
-		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/Automatons/ColonDashAutomaton.cpp">
+		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/CommaAutomaton.cpp">
 			<Option target="project_2"/>
 		</Unit>
-		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/Automatons/ColonDashAutomaton.h">
+		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/CommaAutomaton.h">
 			<Option target="project_2"/>
 		</Unit>
-		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/Automatons/CommaAutomaton.cpp">
+		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/CommentAutomaton.cpp">
 			<Option target="project_2"/>
 		</Unit>
-		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/Automatons/CommaAutomaton.h">
-			<Option target="project_2"/>
-		</Unit>
-		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/Automatons/CommentAutomaton.cpp">
-			<Option target="project_2"/>
-		</Unit>
-		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/Automatons/CommentAutomaton.h">
-			<Option target="project_2"/>
-		</Unit>
-		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/Automatons/EOFAutomaton.cpp">
-			<Option target="project_2"/>
-		</Unit>
-		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/Automatons/EOFAutomaton.h">
-			<Option target="project_2"/>
-		</Unit>
-		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/Automatons/FactsAutomaton.cpp">
-			<Option target="project_2"/>
-		</Unit>
-		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/Automatons/FactsAutomaton.h">
-			<Option target="project_2"/>
-		</Unit>
-		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/Automatons/LeftParenAutomaton.cpp">
-			<Option target="project_2"/>
-		</Unit>
-		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/Automatons/LeftParenAutomaton.h">
-			<Option target="project_2"/>
-		</Unit>
-		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/Automatons/MultiComment.cpp">
-			<Option target="project_2"/>
-		</Unit>
-		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/Automatons/MultiComment.h">
-			<Option target="project_2"/>
-		</Unit>
-		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/Automatons/MultiplyAutomaton.cpp">
-			<Option target="project_2"/>
-		</Unit>
-		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/Automatons/MultiplyAutomaton.h">
-			<Option target="project_2"/>
-		</Unit>
-		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/Automatons/PeriodAutomaton.cpp">
-			<Option target="project_2"/>
-		</Unit>
-		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/Automatons/PeriodAutomaton.h">
-			<Option target="project_2"/>
-		</Unit>
-		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/Automatons/QmarkAutomaton.cpp">
-			<Option target="project_2"/>
-		</Unit>
-		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/Automatons/QmarkAutomaton.h">
-			<Option target="project_2"/>
-		</Unit>
-		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/Automatons/QueriesAutomaton.cpp">
-			<Option target="project_2"/>
-		</Unit>
-		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/Automatons/QueriesAutomaton.h">
-			<Option target="project_2"/>
-		</Unit>
-		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/Automatons/RightParenAutomaton.cpp">
-			<Option target="project_2"/>
-		</Unit>
-		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/Automatons/RightParenAutomaton.h">
-			<Option target="project_2"/>
-		</Unit>
-		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/Automatons/RulesAutomaton.cpp">
-			<Option target="project_2"/>
-		</Unit>
-		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/Automatons/RulesAutomaton.h">
-			<Option target="project_2"/>
-		</Unit>
-		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/Automatons/SchemesAutomaton.cpp">
-			<Option target="project_2"/>
-		</Unit>
-		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/Automatons/SchemesAutomaton.h">
-			<Option target="project_2"/>
-		</Unit>
-		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/Automatons/StringAutomaton.cpp">
-			<Option target="project_2"/>
-		</Unit>
-		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/Automatons/StringAutomaton.h">
-			<Option target="project_2"/>
-		</Unit>
-		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/Automatons/UndefinedAutomaton.cpp">
-			<Option target="project_2"/>
-		</Unit>
-		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/Automatons/UndefinedAutomaton.h">
+		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/CommentAutomaton.h">
 			<Option target="project_2"/>
 		</Unit>
 		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/Database.cpp">
@@ -201,6 +123,18 @@
 			<Option target="project_2"/>
 		</Unit>
 		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/DatalogProgram.h">
+			<Option target="project_2"/>
+		</Unit>
+		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/EOFAutomaton.cpp">
+			<Option target="project_2"/>
+		</Unit>
+		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/EOFAutomaton.h">
+			<Option target="project_2"/>
+		</Unit>
+		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/FactsAutomaton.cpp">
+			<Option target="project_2"/>
+		</Unit>
+		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/FactsAutomaton.h">
 			<Option target="project_2"/>
 		</Unit>
 		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/Header.cpp">
@@ -221,10 +155,28 @@
 		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/Interpreter.h">
 			<Option target="project_2"/>
 		</Unit>
+		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/LeftParenAutomaton.cpp">
+			<Option target="project_2"/>
+		</Unit>
+		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/LeftParenAutomaton.h">
+			<Option target="project_2"/>
+		</Unit>
 		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/Lexer.cpp">
 			<Option target="project_2"/>
 		</Unit>
 		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/Lexer.h">
+			<Option target="project_2"/>
+		</Unit>
+		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/MultiComment.cpp">
+			<Option target="project_2"/>
+		</Unit>
+		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/MultiComment.h">
+			<Option target="project_2"/>
+		</Unit>
+		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/MultiplyAutomaton.cpp">
+			<Option target="project_2"/>
+		</Unit>
+		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/MultiplyAutomaton.h">
 			<Option target="project_2"/>
 		</Unit>
 		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/Parameter.cpp">
@@ -233,10 +185,28 @@
 		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/Parameter.h">
 			<Option target="project_2"/>
 		</Unit>
+		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/PeriodAutomaton.cpp">
+			<Option target="project_2"/>
+		</Unit>
+		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/PeriodAutomaton.h">
+			<Option target="project_2"/>
+		</Unit>
 		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/Predicate.cpp">
 			<Option target="project_2"/>
 		</Unit>
 		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/Predicate.h">
+			<Option target="project_2"/>
+		</Unit>
+		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/QmarkAutomaton.cpp">
+			<Option target="project_2"/>
+		</Unit>
+		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/QmarkAutomaton.h">
+			<Option target="project_2"/>
+		</Unit>
+		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/QueriesAutomaton.cpp">
+			<Option target="project_2"/>
+		</Unit>
+		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/QueriesAutomaton.h">
 			<Option target="project_2"/>
 		</Unit>
 		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/Relation.cpp">
@@ -245,10 +215,34 @@
 		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/Relation.h">
 			<Option target="project_2"/>
 		</Unit>
+		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/RightParenAutomaton.cpp">
+			<Option target="project_2"/>
+		</Unit>
+		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/RightParenAutomaton.h">
+			<Option target="project_2"/>
+		</Unit>
 		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/Rule.cpp">
 			<Option target="project_2"/>
 		</Unit>
 		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/Rule.h">
+			<Option target="project_2"/>
+		</Unit>
+		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/RulesAutomaton.cpp">
+			<Option target="project_2"/>
+		</Unit>
+		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/RulesAutomaton.h">
+			<Option target="project_2"/>
+		</Unit>
+		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/SchemesAutomaton.cpp">
+			<Option target="project_2"/>
+		</Unit>
+		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/SchemesAutomaton.h">
+			<Option target="project_2"/>
+		</Unit>
+		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/StringAutomaton.cpp">
+			<Option target="project_2"/>
+		</Unit>
+		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/StringAutomaton.h">
 			<Option target="project_2"/>
 		</Unit>
 		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/Token.cpp">
@@ -261,6 +255,12 @@
 			<Option target="project_2"/>
 		</Unit>
 		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/Tuple.h">
+			<Option target="project_2"/>
+		</Unit>
+		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/UndefinedAutomaton.cpp">
+			<Option target="project_2"/>
+		</Unit>
+		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/UndefinedAutomaton.h">
 			<Option target="project_2"/>
 		</Unit>
 		<Unit filename="/Users/roliasong/Desktop/cs236/Interpreter/main.cpp">

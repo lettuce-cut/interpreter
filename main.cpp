@@ -46,7 +46,7 @@ int main (int argc, char** argv) {
 
     Interpreter myInterpreter(myParser);
     myInterpreter.makeRelation(); //evaluates schemes and facts
-    std::cout << "\nRule Evaluation" << std::endl;
+    std::cout << "Rule Evaluation" << std::endl;
     myInterpreter.allRules(); //evaluates rules
     myInterpreter.evaluateAll(); //evaluates queries
 
