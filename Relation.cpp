@@ -69,7 +69,7 @@ Relation Relation::Project(std::vector<int> forProject) {
     return toChange;
 }
 
-Relation Relation::Rename(std::vector<std::string> forRename) {
+Relation Relation::Rename(std::vector<std::string> forRename) const {
 //    std::cout << "IN RENAME" << std::endl;
 //    this->toString();
     Relation toChange = Relation();
@@ -155,8 +155,8 @@ Tuple Relation::combineTuples(Tuple firstTuple, Tuple secondTuple, std::map<int,
     Tuple toReturn = Tuple();
 
 
-    for (long unsigned int i = 0; i < secondTuple.values.size(); i++) {
-        toReturn.values.push_back(secondTuple.values[i]);
+    for (const auto & value : secondTuple.values) {
+        toReturn.values.push_back(value);
     }
 
     for (long unsigned int i = 0; i < firstTuple.values.size(); i++) {
