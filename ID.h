@@ -1,7 +1,7 @@
 #ifndef PROJECT1_STARTER_CODE_ID_H
 #define PROJECT1_STARTER_CODE_ID_H
 
-#include "Automatons/Automaton.h"
+#include "Automaton.h"
 
 class IDAutomaton : public Automaton
 {
