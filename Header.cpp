@@ -30,13 +30,13 @@ Header Header::combineHeaders(Header headerToJoin, std::map<int, int>& indices) 
 //    headerToJoin.toString();
 //    std::cout << std::endl;
 
-    for (int i =0; i < headerToJoin.attributes.size(); i++){
+    for (long unsigned int i =0; i < headerToJoin.attributes.size(); i++){
         if (toReturn.attributes.size() ==0) {
             toReturn.attributes.push_back(headerToJoin.attributes[i]);
         }
         else {
             int firstCounter = 0;
-            for (int m =0; m < toReturn.attributes.size(); m++) {
+            for (long unsigned int m =0; m < toReturn.attributes.size(); m++) {
                 if (headerToJoin.attributes[i] == toReturn.attributes[m]){
                     firstCounter += 1;
                 }
@@ -46,7 +46,7 @@ Header Header::combineHeaders(Header headerToJoin, std::map<int, int>& indices) 
             }
         }
         int counter = 0;
-        for (int j =0; j < this->attributes.size(); j++){
+        for (long unsigned int j =0; j < this->attributes.size(); j++){
 //            std::cout << headerToJoin.attributes[i] << " + " << this->attributes[j] << std::endl;
             if (headerToJoin.attributes[i] == this->attributes[j]){
 //                std::cout << i << " + " << j << std::endl;

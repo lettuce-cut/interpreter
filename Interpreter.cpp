@@ -101,7 +101,7 @@ Relation Interpreter::evaluateRule(Rule r) {
     Relation ogReturn = Relation();
     //STEPS 1 AND 2
 //    std::cout << "TEST" <<std::endl;
-    for (int s =  0; s < r.getBody().size(); s++) {
+    for (long unsigned int s =  0; s < r.getBody().size(); s++) {
         Relation toReturn = myDatabase.database[r.getBody().at(s).id];
 
 //        std::cout << "TEST" <<std::endl;
@@ -180,8 +180,8 @@ Relation Interpreter::evaluateRule(Rule r) {
     std::vector<int> indices;
     std::vector<std::string> forNames;
 
-    for (int i =0; i < r.getHead().parameters.size(); i++) {
-        for(int j=0; j< ogReturn.relationHeader.attributes.size(); j++) {
+    for (long unsigned int i =0; i < r.getHead().parameters.size(); i++) {
+        for(long unsigned int j=0; j< ogReturn.relationHeader.attributes.size(); j++) {
             if (r.getHead().parameters[i]->paramString() == ogReturn.relationHeader.attributes[j]) {
                 indices.push_back(j);
             }
@@ -191,7 +191,7 @@ Relation Interpreter::evaluateRule(Rule r) {
 
 
 //    STEP 4
-    for (int i =0; i < myDatabase.database[r.getHead().id].relationHeader.attributes.size(); i++) {
+    for (long unsigned int i =0; i < myDatabase.database[r.getHead().id].relationHeader.attributes.size(); i++) {
         forNames.push_back(myDatabase.database[r.getHead().id].relationHeader.attributes[i]);
     }
     ogReturn = ogReturn.Rename(forNames);
@@ -209,7 +209,7 @@ void Interpreter::allRules() {
     int passCount = 0;
 
     while (postCount != preCount) {
-        for (int i = 0; i < rulesFromParser.size(); i++) {
+        for (long unsigned int i = 0; i < rulesFromParser.size(); i++) {
             preCount = myDatabase.database[rulesFromParser[i].getHead().id].relations.size();
             evaluateRule(rulesFromParser[i]);
             postCount = myDatabase.database[rulesFromParser[i].getHead().id].relations.size();

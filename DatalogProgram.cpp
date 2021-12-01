@@ -233,7 +233,7 @@ void DatalogProgram::outputString(){
     std::cout << "Facts(" << vectorFacts.size() << "):" << std::endl;
     Predicate::stringPredicate(vectorFacts, "Facts");
     std::cout << "Rules(" << vectorRules.size() << "):" << std::endl;
-    for (int i = 0; i<vectorRules.size(); i++){
+    for (long unsigned int i = 0; i<vectorRules.size(); i++){
         Rule::ruleString(vectorRules[i]);
     }
     std::cout << "Queries(" << vectorQueries.size() << "):" << std::endl;

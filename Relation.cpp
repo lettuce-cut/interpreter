@@ -155,11 +155,11 @@ Tuple Relation::combineTuples(Tuple firstTuple, Tuple secondTuple, std::map<int,
     Tuple toReturn = Tuple();
 
 
-    for (int i = 0; i < secondTuple.values.size(); i++) {
+    for (long unsigned int i = 0; i < secondTuple.values.size(); i++) {
         toReturn.values.push_back(secondTuple.values[i]);
     }
 
-    for (int i = 0; i < firstTuple.values.size(); i++) {
+    for (long unsigned int i = 0; i < firstTuple.values.size(); i++) {
         if (firstTuple.values[i] != toReturn.values[toReturn.values.size()-1]) {
             toReturn.values.push_back(firstTuple.values[i]);
         }
