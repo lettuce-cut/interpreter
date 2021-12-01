@@ -1,7 +1,5 @@
 #include "Relation.h"
 #include <map>
-#include "Interpreter.h"
-
 Relation::Relation(std::string name, Header header) {
     relationName = name;
     relationHeader.attributes= header.attributes;
@@ -11,7 +9,7 @@ Relation::Relation(std::string name, Header header) {
 Relation::~Relation() = default;
 
 void Relation::addTuple(Tuple toAdd) {
-    relations.insert(toAdd);
+    relations.insert(relations.end(), toAdd);
 }
 
 void Relation::toString() {
@@ -33,6 +31,9 @@ Relation Relation::SelectOne(int index, std::string value) {
     toChange.relationName = this->relationName;
     toChange.relationHeader = this->relationHeader;
     for (Tuple t : this->relations) {
+//        for (int i =0; i < t.values.size(); i++) {
+//            std::cout << t.values[i] << std::endl;
+//        }
         if (t.values[index] == value) {
             toChange.addTuple(t);
         }
@@ -69,6 +70,8 @@ Relation Relation::Project(std::vector<int> forProject) {
 }
 
 Relation Relation::Rename(std::vector<std::string> forRename) {
+//    std::cout << "IN RENAME" << std::endl;
+//    this->toString();
     Relation toChange = Relation();
     toChange.relationName = this->relationName;
     toChange.relations = this->relations;
@@ -79,5 +82,98 @@ Relation Relation::Rename(std::vector<std::string> forRename) {
     return toChange;
 }
 
+Relation Relation::Join(Relation joinWith) {
+//
+//    std::cout << "IN JOIN" << std::endl;
+//    this->toString();
+//    std::cout << std::endl;
+//    joinWith.toString();
+//    std::cout << std::endl;
+
+    Relation isJoining = Relation();
+    bool canJoin = false;
+    std::map<int, int> indices;
+    Tuple tupleOne;
+    Tuple tupleTwo;
+    Tuple toAdd;
+
+//    std::cout << "INDEX CHECK::\n";
+//    for (int i =0; i < indices.size(); i++) {
+//        std::cout << "INDEX:: " << indices[i] << std::endl;
+//    }
+
+    isJoining.relationHeader = this->relationHeader.combineHeaders(joinWith.relationHeader, indices);
+//    std::cout << "COMBIEND HEADER" << std::endl;
+//    isJoining.relationHeader.toString();
+
+
+    for (Tuple t : this->relations) {
+        for (Tuple u : joinWith.relations) {
+            canJoin = isJoinable(t, u, indices);
+            if (canJoin == true) {
+//                std::cout << "is JOIN TRUE" << std::endl;
+                toAdd = combineTuples(t, u, indices);
+                isJoining.addTuple(toAdd);
+            }
+        }
+    }
+    return isJoining;
+}
+
+bool Relation::isJoinable(Tuple firstTuple, Tuple secondTuple, std::map<int, int>& indices) {
+    bool toReturn;
+    int counter = 0;
+
+    if (indices.size() == 0) {
+        toReturn = true;
+    }
+
+
+    else {
+
+        std::map<int, int>:: iterator it;
+
+        for (it = indices.begin(); it != indices.end(); it++) {
+
+            if (firstTuple.values[it->second] == secondTuple.values[it->first]) {
+                counter += 1;
+            }
+        }
+    }
+
+    if (counter > 0) {
+        toReturn = true;
+    }
+    else {
+        toReturn = false;
+    }
+    return toReturn;
+}
+
+Tuple Relation::combineTuples(Tuple firstTuple, Tuple secondTuple, std::map<int, int>& indices) {
+//    std::cout << "IN COMBINE" << std::endl;
+    Tuple toReturn = Tuple();
+
+
+    for (int i = 0; i < secondTuple.values.size(); i++) {
+        toReturn.values.push_back(secondTuple.values[i]);
+    }
+
+    for (int i = 0; i < firstTuple.values.size(); i++) {
+        if (firstTuple.values[i] != toReturn.values[toReturn.values.size()-1]) {
+            toReturn.values.push_back(firstTuple.values[i]);
+        }
+    }
+    return toReturn;
+}
+
+Relation Relation::Uniter(Relation toUnite) {
+
+    for (Tuple t : this->relations) {
+        toUnite.addTuple(t);
+    }
+
+    return toUnite;
+}
 
 Relation::Relation() = default;

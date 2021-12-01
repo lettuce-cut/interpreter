@@ -3,6 +3,7 @@
 
 #include <vector>
 #include "Parameter.h"
+#include <map>
 
 class Header {
 public:
@@ -11,6 +12,8 @@ public:
     Header();
     ~Header();
     void toString();
+
+    Header combineHeaders(Header headerToJoin, std::map<int, int>& indices);
 };
 
 #endif //PROJECT_2_HEADER_H

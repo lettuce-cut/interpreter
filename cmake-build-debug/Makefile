@@ -129,125 +129,437 @@ project_2/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/build
 .PHONY : project_2/fast
 
-AddAutomaton.o: AddAutomaton.cpp.o
-.PHONY : AddAutomaton.o
+Automatons/AddAutomaton.o: Automatons/AddAutomaton.cpp.o
+.PHONY : Automatons/AddAutomaton.o
 
 # target to build an object file
-AddAutomaton.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/AddAutomaton.cpp.o
-.PHONY : AddAutomaton.cpp.o
+Automatons/AddAutomaton.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/Automatons/AddAutomaton.cpp.o
+.PHONY : Automatons/AddAutomaton.cpp.o
 
-AddAutomaton.i: AddAutomaton.cpp.i
-.PHONY : AddAutomaton.i
+Automatons/AddAutomaton.i: Automatons/AddAutomaton.cpp.i
+.PHONY : Automatons/AddAutomaton.i
 
 # target to preprocess a source file
-AddAutomaton.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/AddAutomaton.cpp.i
-.PHONY : AddAutomaton.cpp.i
+Automatons/AddAutomaton.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/Automatons/AddAutomaton.cpp.i
+.PHONY : Automatons/AddAutomaton.cpp.i
 
-AddAutomaton.s: AddAutomaton.cpp.s
-.PHONY : AddAutomaton.s
+Automatons/AddAutomaton.s: Automatons/AddAutomaton.cpp.s
+.PHONY : Automatons/AddAutomaton.s
 
 # target to generate assembly for a file
-AddAutomaton.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/AddAutomaton.cpp.s
-.PHONY : AddAutomaton.cpp.s
+Automatons/AddAutomaton.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/Automatons/AddAutomaton.cpp.s
+.PHONY : Automatons/AddAutomaton.cpp.s
 
-ColonAutomaton.o: ColonAutomaton.cpp.o
-.PHONY : ColonAutomaton.o
+Automatons/ColonAutomaton.o: Automatons/ColonAutomaton.cpp.o
+.PHONY : Automatons/ColonAutomaton.o
 
 # target to build an object file
-ColonAutomaton.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/ColonAutomaton.cpp.o
-.PHONY : ColonAutomaton.cpp.o
+Automatons/ColonAutomaton.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/Automatons/ColonAutomaton.cpp.o
+.PHONY : Automatons/ColonAutomaton.cpp.o
 
-ColonAutomaton.i: ColonAutomaton.cpp.i
-.PHONY : ColonAutomaton.i
+Automatons/ColonAutomaton.i: Automatons/ColonAutomaton.cpp.i
+.PHONY : Automatons/ColonAutomaton.i
 
 # target to preprocess a source file
-ColonAutomaton.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/ColonAutomaton.cpp.i
-.PHONY : ColonAutomaton.cpp.i
+Automatons/ColonAutomaton.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/Automatons/ColonAutomaton.cpp.i
+.PHONY : Automatons/ColonAutomaton.cpp.i
 
-ColonAutomaton.s: ColonAutomaton.cpp.s
-.PHONY : ColonAutomaton.s
+Automatons/ColonAutomaton.s: Automatons/ColonAutomaton.cpp.s
+.PHONY : Automatons/ColonAutomaton.s
 
 # target to generate assembly for a file
-ColonAutomaton.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/ColonAutomaton.cpp.s
-.PHONY : ColonAutomaton.cpp.s
+Automatons/ColonAutomaton.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/Automatons/ColonAutomaton.cpp.s
+.PHONY : Automatons/ColonAutomaton.cpp.s
 
-ColonDashAutomaton.o: ColonDashAutomaton.cpp.o
-.PHONY : ColonDashAutomaton.o
+Automatons/ColonDashAutomaton.o: Automatons/ColonDashAutomaton.cpp.o
+.PHONY : Automatons/ColonDashAutomaton.o
 
 # target to build an object file
-ColonDashAutomaton.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/ColonDashAutomaton.cpp.o
-.PHONY : ColonDashAutomaton.cpp.o
+Automatons/ColonDashAutomaton.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/Automatons/ColonDashAutomaton.cpp.o
+.PHONY : Automatons/ColonDashAutomaton.cpp.o
 
-ColonDashAutomaton.i: ColonDashAutomaton.cpp.i
-.PHONY : ColonDashAutomaton.i
+Automatons/ColonDashAutomaton.i: Automatons/ColonDashAutomaton.cpp.i
+.PHONY : Automatons/ColonDashAutomaton.i
 
 # target to preprocess a source file
-ColonDashAutomaton.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/ColonDashAutomaton.cpp.i
-.PHONY : ColonDashAutomaton.cpp.i
+Automatons/ColonDashAutomaton.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/Automatons/ColonDashAutomaton.cpp.i
+.PHONY : Automatons/ColonDashAutomaton.cpp.i
 
-ColonDashAutomaton.s: ColonDashAutomaton.cpp.s
-.PHONY : ColonDashAutomaton.s
+Automatons/ColonDashAutomaton.s: Automatons/ColonDashAutomaton.cpp.s
+.PHONY : Automatons/ColonDashAutomaton.s
 
 # target to generate assembly for a file
-ColonDashAutomaton.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/ColonDashAutomaton.cpp.s
-.PHONY : ColonDashAutomaton.cpp.s
+Automatons/ColonDashAutomaton.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/Automatons/ColonDashAutomaton.cpp.s
+.PHONY : Automatons/ColonDashAutomaton.cpp.s
 
-CommaAutomaton.o: CommaAutomaton.cpp.o
-.PHONY : CommaAutomaton.o
+Automatons/CommaAutomaton.o: Automatons/CommaAutomaton.cpp.o
+.PHONY : Automatons/CommaAutomaton.o
 
 # target to build an object file
-CommaAutomaton.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/CommaAutomaton.cpp.o
-.PHONY : CommaAutomaton.cpp.o
+Automatons/CommaAutomaton.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/Automatons/CommaAutomaton.cpp.o
+.PHONY : Automatons/CommaAutomaton.cpp.o
 
-CommaAutomaton.i: CommaAutomaton.cpp.i
-.PHONY : CommaAutomaton.i
+Automatons/CommaAutomaton.i: Automatons/CommaAutomaton.cpp.i
+.PHONY : Automatons/CommaAutomaton.i
 
 # target to preprocess a source file
-CommaAutomaton.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/CommaAutomaton.cpp.i
-.PHONY : CommaAutomaton.cpp.i
+Automatons/CommaAutomaton.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/Automatons/CommaAutomaton.cpp.i
+.PHONY : Automatons/CommaAutomaton.cpp.i
 
-CommaAutomaton.s: CommaAutomaton.cpp.s
-.PHONY : CommaAutomaton.s
+Automatons/CommaAutomaton.s: Automatons/CommaAutomaton.cpp.s
+.PHONY : Automatons/CommaAutomaton.s
 
 # target to generate assembly for a file
-CommaAutomaton.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/CommaAutomaton.cpp.s
-.PHONY : CommaAutomaton.cpp.s
+Automatons/CommaAutomaton.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/Automatons/CommaAutomaton.cpp.s
+.PHONY : Automatons/CommaAutomaton.cpp.s
 
-CommentAutomaton.o: CommentAutomaton.cpp.o
-.PHONY : CommentAutomaton.o
+Automatons/CommentAutomaton.o: Automatons/CommentAutomaton.cpp.o
+.PHONY : Automatons/CommentAutomaton.o
 
 # target to build an object file
-CommentAutomaton.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/CommentAutomaton.cpp.o
-.PHONY : CommentAutomaton.cpp.o
+Automatons/CommentAutomaton.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/Automatons/CommentAutomaton.cpp.o
+.PHONY : Automatons/CommentAutomaton.cpp.o
 
-CommentAutomaton.i: CommentAutomaton.cpp.i
-.PHONY : CommentAutomaton.i
+Automatons/CommentAutomaton.i: Automatons/CommentAutomaton.cpp.i
+.PHONY : Automatons/CommentAutomaton.i
 
 # target to preprocess a source file
-CommentAutomaton.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/CommentAutomaton.cpp.i
-.PHONY : CommentAutomaton.cpp.i
+Automatons/CommentAutomaton.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/Automatons/CommentAutomaton.cpp.i
+.PHONY : Automatons/CommentAutomaton.cpp.i
 
-CommentAutomaton.s: CommentAutomaton.cpp.s
-.PHONY : CommentAutomaton.s
+Automatons/CommentAutomaton.s: Automatons/CommentAutomaton.cpp.s
+.PHONY : Automatons/CommentAutomaton.s
 
 # target to generate assembly for a file
-CommentAutomaton.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/CommentAutomaton.cpp.s
-.PHONY : CommentAutomaton.cpp.s
+Automatons/CommentAutomaton.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/Automatons/CommentAutomaton.cpp.s
+.PHONY : Automatons/CommentAutomaton.cpp.s
+
+Automatons/EOFAutomaton.o: Automatons/EOFAutomaton.cpp.o
+.PHONY : Automatons/EOFAutomaton.o
+
+# target to build an object file
+Automatons/EOFAutomaton.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/Automatons/EOFAutomaton.cpp.o
+.PHONY : Automatons/EOFAutomaton.cpp.o
+
+Automatons/EOFAutomaton.i: Automatons/EOFAutomaton.cpp.i
+.PHONY : Automatons/EOFAutomaton.i
+
+# target to preprocess a source file
+Automatons/EOFAutomaton.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/Automatons/EOFAutomaton.cpp.i
+.PHONY : Automatons/EOFAutomaton.cpp.i
+
+Automatons/EOFAutomaton.s: Automatons/EOFAutomaton.cpp.s
+.PHONY : Automatons/EOFAutomaton.s
+
+# target to generate assembly for a file
+Automatons/EOFAutomaton.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/Automatons/EOFAutomaton.cpp.s
+.PHONY : Automatons/EOFAutomaton.cpp.s
+
+Automatons/FactsAutomaton.o: Automatons/FactsAutomaton.cpp.o
+.PHONY : Automatons/FactsAutomaton.o
+
+# target to build an object file
+Automatons/FactsAutomaton.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/Automatons/FactsAutomaton.cpp.o
+.PHONY : Automatons/FactsAutomaton.cpp.o
+
+Automatons/FactsAutomaton.i: Automatons/FactsAutomaton.cpp.i
+.PHONY : Automatons/FactsAutomaton.i
+
+# target to preprocess a source file
+Automatons/FactsAutomaton.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/Automatons/FactsAutomaton.cpp.i
+.PHONY : Automatons/FactsAutomaton.cpp.i
+
+Automatons/FactsAutomaton.s: Automatons/FactsAutomaton.cpp.s
+.PHONY : Automatons/FactsAutomaton.s
+
+# target to generate assembly for a file
+Automatons/FactsAutomaton.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/Automatons/FactsAutomaton.cpp.s
+.PHONY : Automatons/FactsAutomaton.cpp.s
+
+Automatons/LeftParenAutomaton.o: Automatons/LeftParenAutomaton.cpp.o
+.PHONY : Automatons/LeftParenAutomaton.o
+
+# target to build an object file
+Automatons/LeftParenAutomaton.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/Automatons/LeftParenAutomaton.cpp.o
+.PHONY : Automatons/LeftParenAutomaton.cpp.o
+
+Automatons/LeftParenAutomaton.i: Automatons/LeftParenAutomaton.cpp.i
+.PHONY : Automatons/LeftParenAutomaton.i
+
+# target to preprocess a source file
+Automatons/LeftParenAutomaton.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/Automatons/LeftParenAutomaton.cpp.i
+.PHONY : Automatons/LeftParenAutomaton.cpp.i
+
+Automatons/LeftParenAutomaton.s: Automatons/LeftParenAutomaton.cpp.s
+.PHONY : Automatons/LeftParenAutomaton.s
+
+# target to generate assembly for a file
+Automatons/LeftParenAutomaton.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/Automatons/LeftParenAutomaton.cpp.s
+.PHONY : Automatons/LeftParenAutomaton.cpp.s
+
+Automatons/MultiComment.o: Automatons/MultiComment.cpp.o
+.PHONY : Automatons/MultiComment.o
+
+# target to build an object file
+Automatons/MultiComment.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/Automatons/MultiComment.cpp.o
+.PHONY : Automatons/MultiComment.cpp.o
+
+Automatons/MultiComment.i: Automatons/MultiComment.cpp.i
+.PHONY : Automatons/MultiComment.i
+
+# target to preprocess a source file
+Automatons/MultiComment.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/Automatons/MultiComment.cpp.i
+.PHONY : Automatons/MultiComment.cpp.i
+
+Automatons/MultiComment.s: Automatons/MultiComment.cpp.s
+.PHONY : Automatons/MultiComment.s
+
+# target to generate assembly for a file
+Automatons/MultiComment.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/Automatons/MultiComment.cpp.s
+.PHONY : Automatons/MultiComment.cpp.s
+
+Automatons/MultiplyAutomaton.o: Automatons/MultiplyAutomaton.cpp.o
+.PHONY : Automatons/MultiplyAutomaton.o
+
+# target to build an object file
+Automatons/MultiplyAutomaton.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/Automatons/MultiplyAutomaton.cpp.o
+.PHONY : Automatons/MultiplyAutomaton.cpp.o
+
+Automatons/MultiplyAutomaton.i: Automatons/MultiplyAutomaton.cpp.i
+.PHONY : Automatons/MultiplyAutomaton.i
+
+# target to preprocess a source file
+Automatons/MultiplyAutomaton.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/Automatons/MultiplyAutomaton.cpp.i
+.PHONY : Automatons/MultiplyAutomaton.cpp.i
+
+Automatons/MultiplyAutomaton.s: Automatons/MultiplyAutomaton.cpp.s
+.PHONY : Automatons/MultiplyAutomaton.s
+
+# target to generate assembly for a file
+Automatons/MultiplyAutomaton.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/Automatons/MultiplyAutomaton.cpp.s
+.PHONY : Automatons/MultiplyAutomaton.cpp.s
+
+Automatons/PeriodAutomaton.o: Automatons/PeriodAutomaton.cpp.o
+.PHONY : Automatons/PeriodAutomaton.o
+
+# target to build an object file
+Automatons/PeriodAutomaton.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/Automatons/PeriodAutomaton.cpp.o
+.PHONY : Automatons/PeriodAutomaton.cpp.o
+
+Automatons/PeriodAutomaton.i: Automatons/PeriodAutomaton.cpp.i
+.PHONY : Automatons/PeriodAutomaton.i
+
+# target to preprocess a source file
+Automatons/PeriodAutomaton.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/Automatons/PeriodAutomaton.cpp.i
+.PHONY : Automatons/PeriodAutomaton.cpp.i
+
+Automatons/PeriodAutomaton.s: Automatons/PeriodAutomaton.cpp.s
+.PHONY : Automatons/PeriodAutomaton.s
+
+# target to generate assembly for a file
+Automatons/PeriodAutomaton.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/Automatons/PeriodAutomaton.cpp.s
+.PHONY : Automatons/PeriodAutomaton.cpp.s
+
+Automatons/QmarkAutomaton.o: Automatons/QmarkAutomaton.cpp.o
+.PHONY : Automatons/QmarkAutomaton.o
+
+# target to build an object file
+Automatons/QmarkAutomaton.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/Automatons/QmarkAutomaton.cpp.o
+.PHONY : Automatons/QmarkAutomaton.cpp.o
+
+Automatons/QmarkAutomaton.i: Automatons/QmarkAutomaton.cpp.i
+.PHONY : Automatons/QmarkAutomaton.i
+
+# target to preprocess a source file
+Automatons/QmarkAutomaton.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/Automatons/QmarkAutomaton.cpp.i
+.PHONY : Automatons/QmarkAutomaton.cpp.i
+
+Automatons/QmarkAutomaton.s: Automatons/QmarkAutomaton.cpp.s
+.PHONY : Automatons/QmarkAutomaton.s
+
+# target to generate assembly for a file
+Automatons/QmarkAutomaton.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/Automatons/QmarkAutomaton.cpp.s
+.PHONY : Automatons/QmarkAutomaton.cpp.s
+
+Automatons/QueriesAutomaton.o: Automatons/QueriesAutomaton.cpp.o
+.PHONY : Automatons/QueriesAutomaton.o
+
+# target to build an object file
+Automatons/QueriesAutomaton.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/Automatons/QueriesAutomaton.cpp.o
+.PHONY : Automatons/QueriesAutomaton.cpp.o
+
+Automatons/QueriesAutomaton.i: Automatons/QueriesAutomaton.cpp.i
+.PHONY : Automatons/QueriesAutomaton.i
+
+# target to preprocess a source file
+Automatons/QueriesAutomaton.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/Automatons/QueriesAutomaton.cpp.i
+.PHONY : Automatons/QueriesAutomaton.cpp.i
+
+Automatons/QueriesAutomaton.s: Automatons/QueriesAutomaton.cpp.s
+.PHONY : Automatons/QueriesAutomaton.s
+
+# target to generate assembly for a file
+Automatons/QueriesAutomaton.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/Automatons/QueriesAutomaton.cpp.s
+.PHONY : Automatons/QueriesAutomaton.cpp.s
+
+Automatons/RightParenAutomaton.o: Automatons/RightParenAutomaton.cpp.o
+.PHONY : Automatons/RightParenAutomaton.o
+
+# target to build an object file
+Automatons/RightParenAutomaton.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/Automatons/RightParenAutomaton.cpp.o
+.PHONY : Automatons/RightParenAutomaton.cpp.o
+
+Automatons/RightParenAutomaton.i: Automatons/RightParenAutomaton.cpp.i
+.PHONY : Automatons/RightParenAutomaton.i
+
+# target to preprocess a source file
+Automatons/RightParenAutomaton.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/Automatons/RightParenAutomaton.cpp.i
+.PHONY : Automatons/RightParenAutomaton.cpp.i
+
+Automatons/RightParenAutomaton.s: Automatons/RightParenAutomaton.cpp.s
+.PHONY : Automatons/RightParenAutomaton.s
+
+# target to generate assembly for a file
+Automatons/RightParenAutomaton.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/Automatons/RightParenAutomaton.cpp.s
+.PHONY : Automatons/RightParenAutomaton.cpp.s
+
+Automatons/RulesAutomaton.o: Automatons/RulesAutomaton.cpp.o
+.PHONY : Automatons/RulesAutomaton.o
+
+# target to build an object file
+Automatons/RulesAutomaton.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/Automatons/RulesAutomaton.cpp.o
+.PHONY : Automatons/RulesAutomaton.cpp.o
+
+Automatons/RulesAutomaton.i: Automatons/RulesAutomaton.cpp.i
+.PHONY : Automatons/RulesAutomaton.i
+
+# target to preprocess a source file
+Automatons/RulesAutomaton.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/Automatons/RulesAutomaton.cpp.i
+.PHONY : Automatons/RulesAutomaton.cpp.i
+
+Automatons/RulesAutomaton.s: Automatons/RulesAutomaton.cpp.s
+.PHONY : Automatons/RulesAutomaton.s
+
+# target to generate assembly for a file
+Automatons/RulesAutomaton.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/Automatons/RulesAutomaton.cpp.s
+.PHONY : Automatons/RulesAutomaton.cpp.s
+
+Automatons/SchemesAutomaton.o: Automatons/SchemesAutomaton.cpp.o
+.PHONY : Automatons/SchemesAutomaton.o
+
+# target to build an object file
+Automatons/SchemesAutomaton.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/Automatons/SchemesAutomaton.cpp.o
+.PHONY : Automatons/SchemesAutomaton.cpp.o
+
+Automatons/SchemesAutomaton.i: Automatons/SchemesAutomaton.cpp.i
+.PHONY : Automatons/SchemesAutomaton.i
+
+# target to preprocess a source file
+Automatons/SchemesAutomaton.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/Automatons/SchemesAutomaton.cpp.i
+.PHONY : Automatons/SchemesAutomaton.cpp.i
+
+Automatons/SchemesAutomaton.s: Automatons/SchemesAutomaton.cpp.s
+.PHONY : Automatons/SchemesAutomaton.s
+
+# target to generate assembly for a file
+Automatons/SchemesAutomaton.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/Automatons/SchemesAutomaton.cpp.s
+.PHONY : Automatons/SchemesAutomaton.cpp.s
+
+Automatons/StringAutomaton.o: Automatons/StringAutomaton.cpp.o
+.PHONY : Automatons/StringAutomaton.o
+
+# target to build an object file
+Automatons/StringAutomaton.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/Automatons/StringAutomaton.cpp.o
+.PHONY : Automatons/StringAutomaton.cpp.o
+
+Automatons/StringAutomaton.i: Automatons/StringAutomaton.cpp.i
+.PHONY : Automatons/StringAutomaton.i
+
+# target to preprocess a source file
+Automatons/StringAutomaton.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/Automatons/StringAutomaton.cpp.i
+.PHONY : Automatons/StringAutomaton.cpp.i
+
+Automatons/StringAutomaton.s: Automatons/StringAutomaton.cpp.s
+.PHONY : Automatons/StringAutomaton.s
+
+# target to generate assembly for a file
+Automatons/StringAutomaton.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/Automatons/StringAutomaton.cpp.s
+.PHONY : Automatons/StringAutomaton.cpp.s
+
+Automatons/UndefinedAutomaton.o: Automatons/UndefinedAutomaton.cpp.o
+.PHONY : Automatons/UndefinedAutomaton.o
+
+# target to build an object file
+Automatons/UndefinedAutomaton.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/Automatons/UndefinedAutomaton.cpp.o
+.PHONY : Automatons/UndefinedAutomaton.cpp.o
+
+Automatons/UndefinedAutomaton.i: Automatons/UndefinedAutomaton.cpp.i
+.PHONY : Automatons/UndefinedAutomaton.i
+
+# target to preprocess a source file
+Automatons/UndefinedAutomaton.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/Automatons/UndefinedAutomaton.cpp.i
+.PHONY : Automatons/UndefinedAutomaton.cpp.i
+
+Automatons/UndefinedAutomaton.s: Automatons/UndefinedAutomaton.cpp.s
+.PHONY : Automatons/UndefinedAutomaton.s
+
+# target to generate assembly for a file
+Automatons/UndefinedAutomaton.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/Automatons/UndefinedAutomaton.cpp.s
+.PHONY : Automatons/UndefinedAutomaton.cpp.s
 
 Database.o: Database.cpp.o
 .PHONY : Database.o
@@ -296,54 +608,6 @@ DatalogProgram.s: DatalogProgram.cpp.s
 DatalogProgram.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/DatalogProgram.cpp.s
 .PHONY : DatalogProgram.cpp.s
-
-EOFAutomaton.o: EOFAutomaton.cpp.o
-.PHONY : EOFAutomaton.o
-
-# target to build an object file
-EOFAutomaton.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/EOFAutomaton.cpp.o
-.PHONY : EOFAutomaton.cpp.o
-
-EOFAutomaton.i: EOFAutomaton.cpp.i
-.PHONY : EOFAutomaton.i
-
-# target to preprocess a source file
-EOFAutomaton.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/EOFAutomaton.cpp.i
-.PHONY : EOFAutomaton.cpp.i
-
-EOFAutomaton.s: EOFAutomaton.cpp.s
-.PHONY : EOFAutomaton.s
-
-# target to generate assembly for a file
-EOFAutomaton.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/EOFAutomaton.cpp.s
-.PHONY : EOFAutomaton.cpp.s
-
-FactsAutomaton.o: FactsAutomaton.cpp.o
-.PHONY : FactsAutomaton.o
-
-# target to build an object file
-FactsAutomaton.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/FactsAutomaton.cpp.o
-.PHONY : FactsAutomaton.cpp.o
-
-FactsAutomaton.i: FactsAutomaton.cpp.i
-.PHONY : FactsAutomaton.i
-
-# target to preprocess a source file
-FactsAutomaton.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/FactsAutomaton.cpp.i
-.PHONY : FactsAutomaton.cpp.i
-
-FactsAutomaton.s: FactsAutomaton.cpp.s
-.PHONY : FactsAutomaton.s
-
-# target to generate assembly for a file
-FactsAutomaton.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/FactsAutomaton.cpp.s
-.PHONY : FactsAutomaton.cpp.s
 
 Header.o: Header.cpp.o
 .PHONY : Header.o
@@ -417,30 +681,6 @@ Interpreter.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/Interpreter.cpp.s
 .PHONY : Interpreter.cpp.s
 
-LeftParenAutomaton.o: LeftParenAutomaton.cpp.o
-.PHONY : LeftParenAutomaton.o
-
-# target to build an object file
-LeftParenAutomaton.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/LeftParenAutomaton.cpp.o
-.PHONY : LeftParenAutomaton.cpp.o
-
-LeftParenAutomaton.i: LeftParenAutomaton.cpp.i
-.PHONY : LeftParenAutomaton.i
-
-# target to preprocess a source file
-LeftParenAutomaton.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/LeftParenAutomaton.cpp.i
-.PHONY : LeftParenAutomaton.cpp.i
-
-LeftParenAutomaton.s: LeftParenAutomaton.cpp.s
-.PHONY : LeftParenAutomaton.s
-
-# target to generate assembly for a file
-LeftParenAutomaton.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/LeftParenAutomaton.cpp.s
-.PHONY : LeftParenAutomaton.cpp.s
-
 Lexer.o: Lexer.cpp.o
 .PHONY : Lexer.o
 
@@ -464,54 +704,6 @@ Lexer.s: Lexer.cpp.s
 Lexer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/Lexer.cpp.s
 .PHONY : Lexer.cpp.s
-
-MultiComment.o: MultiComment.cpp.o
-.PHONY : MultiComment.o
-
-# target to build an object file
-MultiComment.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/MultiComment.cpp.o
-.PHONY : MultiComment.cpp.o
-
-MultiComment.i: MultiComment.cpp.i
-.PHONY : MultiComment.i
-
-# target to preprocess a source file
-MultiComment.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/MultiComment.cpp.i
-.PHONY : MultiComment.cpp.i
-
-MultiComment.s: MultiComment.cpp.s
-.PHONY : MultiComment.s
-
-# target to generate assembly for a file
-MultiComment.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/MultiComment.cpp.s
-.PHONY : MultiComment.cpp.s
-
-MultiplyAutomaton.o: MultiplyAutomaton.cpp.o
-.PHONY : MultiplyAutomaton.o
-
-# target to build an object file
-MultiplyAutomaton.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/MultiplyAutomaton.cpp.o
-.PHONY : MultiplyAutomaton.cpp.o
-
-MultiplyAutomaton.i: MultiplyAutomaton.cpp.i
-.PHONY : MultiplyAutomaton.i
-
-# target to preprocess a source file
-MultiplyAutomaton.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/MultiplyAutomaton.cpp.i
-.PHONY : MultiplyAutomaton.cpp.i
-
-MultiplyAutomaton.s: MultiplyAutomaton.cpp.s
-.PHONY : MultiplyAutomaton.s
-
-# target to generate assembly for a file
-MultiplyAutomaton.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/MultiplyAutomaton.cpp.s
-.PHONY : MultiplyAutomaton.cpp.s
 
 Parameter.o: Parameter.cpp.o
 .PHONY : Parameter.o
@@ -537,30 +729,6 @@ Parameter.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/Parameter.cpp.s
 .PHONY : Parameter.cpp.s
 
-PeriodAutomaton.o: PeriodAutomaton.cpp.o
-.PHONY : PeriodAutomaton.o
-
-# target to build an object file
-PeriodAutomaton.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/PeriodAutomaton.cpp.o
-.PHONY : PeriodAutomaton.cpp.o
-
-PeriodAutomaton.i: PeriodAutomaton.cpp.i
-.PHONY : PeriodAutomaton.i
-
-# target to preprocess a source file
-PeriodAutomaton.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/PeriodAutomaton.cpp.i
-.PHONY : PeriodAutomaton.cpp.i
-
-PeriodAutomaton.s: PeriodAutomaton.cpp.s
-.PHONY : PeriodAutomaton.s
-
-# target to generate assembly for a file
-PeriodAutomaton.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/PeriodAutomaton.cpp.s
-.PHONY : PeriodAutomaton.cpp.s
-
 Predicate.o: Predicate.cpp.o
 .PHONY : Predicate.o
 
@@ -584,54 +752,6 @@ Predicate.s: Predicate.cpp.s
 Predicate.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/Predicate.cpp.s
 .PHONY : Predicate.cpp.s
-
-QmarkAutomaton.o: QmarkAutomaton.cpp.o
-.PHONY : QmarkAutomaton.o
-
-# target to build an object file
-QmarkAutomaton.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/QmarkAutomaton.cpp.o
-.PHONY : QmarkAutomaton.cpp.o
-
-QmarkAutomaton.i: QmarkAutomaton.cpp.i
-.PHONY : QmarkAutomaton.i
-
-# target to preprocess a source file
-QmarkAutomaton.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/QmarkAutomaton.cpp.i
-.PHONY : QmarkAutomaton.cpp.i
-
-QmarkAutomaton.s: QmarkAutomaton.cpp.s
-.PHONY : QmarkAutomaton.s
-
-# target to generate assembly for a file
-QmarkAutomaton.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/QmarkAutomaton.cpp.s
-.PHONY : QmarkAutomaton.cpp.s
-
-QueriesAutomaton.o: QueriesAutomaton.cpp.o
-.PHONY : QueriesAutomaton.o
-
-# target to build an object file
-QueriesAutomaton.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/QueriesAutomaton.cpp.o
-.PHONY : QueriesAutomaton.cpp.o
-
-QueriesAutomaton.i: QueriesAutomaton.cpp.i
-.PHONY : QueriesAutomaton.i
-
-# target to preprocess a source file
-QueriesAutomaton.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/QueriesAutomaton.cpp.i
-.PHONY : QueriesAutomaton.cpp.i
-
-QueriesAutomaton.s: QueriesAutomaton.cpp.s
-.PHONY : QueriesAutomaton.s
-
-# target to generate assembly for a file
-QueriesAutomaton.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/QueriesAutomaton.cpp.s
-.PHONY : QueriesAutomaton.cpp.s
 
 Relation.o: Relation.cpp.o
 .PHONY : Relation.o
@@ -657,30 +777,6 @@ Relation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/Relation.cpp.s
 .PHONY : Relation.cpp.s
 
-RightParenAutomaton.o: RightParenAutomaton.cpp.o
-.PHONY : RightParenAutomaton.o
-
-# target to build an object file
-RightParenAutomaton.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/RightParenAutomaton.cpp.o
-.PHONY : RightParenAutomaton.cpp.o
-
-RightParenAutomaton.i: RightParenAutomaton.cpp.i
-.PHONY : RightParenAutomaton.i
-
-# target to preprocess a source file
-RightParenAutomaton.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/RightParenAutomaton.cpp.i
-.PHONY : RightParenAutomaton.cpp.i
-
-RightParenAutomaton.s: RightParenAutomaton.cpp.s
-.PHONY : RightParenAutomaton.s
-
-# target to generate assembly for a file
-RightParenAutomaton.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/RightParenAutomaton.cpp.s
-.PHONY : RightParenAutomaton.cpp.s
-
 Rule.o: Rule.cpp.o
 .PHONY : Rule.o
 
@@ -704,78 +800,6 @@ Rule.s: Rule.cpp.s
 Rule.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/Rule.cpp.s
 .PHONY : Rule.cpp.s
-
-RulesAutomaton.o: RulesAutomaton.cpp.o
-.PHONY : RulesAutomaton.o
-
-# target to build an object file
-RulesAutomaton.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/RulesAutomaton.cpp.o
-.PHONY : RulesAutomaton.cpp.o
-
-RulesAutomaton.i: RulesAutomaton.cpp.i
-.PHONY : RulesAutomaton.i
-
-# target to preprocess a source file
-RulesAutomaton.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/RulesAutomaton.cpp.i
-.PHONY : RulesAutomaton.cpp.i
-
-RulesAutomaton.s: RulesAutomaton.cpp.s
-.PHONY : RulesAutomaton.s
-
-# target to generate assembly for a file
-RulesAutomaton.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/RulesAutomaton.cpp.s
-.PHONY : RulesAutomaton.cpp.s
-
-SchemesAutomaton.o: SchemesAutomaton.cpp.o
-.PHONY : SchemesAutomaton.o
-
-# target to build an object file
-SchemesAutomaton.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/SchemesAutomaton.cpp.o
-.PHONY : SchemesAutomaton.cpp.o
-
-SchemesAutomaton.i: SchemesAutomaton.cpp.i
-.PHONY : SchemesAutomaton.i
-
-# target to preprocess a source file
-SchemesAutomaton.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/SchemesAutomaton.cpp.i
-.PHONY : SchemesAutomaton.cpp.i
-
-SchemesAutomaton.s: SchemesAutomaton.cpp.s
-.PHONY : SchemesAutomaton.s
-
-# target to generate assembly for a file
-SchemesAutomaton.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/SchemesAutomaton.cpp.s
-.PHONY : SchemesAutomaton.cpp.s
-
-StringAutomaton.o: StringAutomaton.cpp.o
-.PHONY : StringAutomaton.o
-
-# target to build an object file
-StringAutomaton.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/StringAutomaton.cpp.o
-.PHONY : StringAutomaton.cpp.o
-
-StringAutomaton.i: StringAutomaton.cpp.i
-.PHONY : StringAutomaton.i
-
-# target to preprocess a source file
-StringAutomaton.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/StringAutomaton.cpp.i
-.PHONY : StringAutomaton.cpp.i
-
-StringAutomaton.s: StringAutomaton.cpp.s
-.PHONY : StringAutomaton.s
-
-# target to generate assembly for a file
-StringAutomaton.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/StringAutomaton.cpp.s
-.PHONY : StringAutomaton.cpp.s
 
 Token.o: Token.cpp.o
 .PHONY : Token.o
@@ -825,30 +849,6 @@ Tuple.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/Tuple.cpp.s
 .PHONY : Tuple.cpp.s
 
-UndefinedAutomaton.o: UndefinedAutomaton.cpp.o
-.PHONY : UndefinedAutomaton.o
-
-# target to build an object file
-UndefinedAutomaton.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/UndefinedAutomaton.cpp.o
-.PHONY : UndefinedAutomaton.cpp.o
-
-UndefinedAutomaton.i: UndefinedAutomaton.cpp.i
-.PHONY : UndefinedAutomaton.i
-
-# target to preprocess a source file
-UndefinedAutomaton.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/UndefinedAutomaton.cpp.i
-.PHONY : UndefinedAutomaton.cpp.i
-
-UndefinedAutomaton.s: UndefinedAutomaton.cpp.s
-.PHONY : UndefinedAutomaton.s
-
-# target to generate assembly for a file
-UndefinedAutomaton.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/UndefinedAutomaton.cpp.s
-.PHONY : UndefinedAutomaton.cpp.s
-
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -882,33 +882,66 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... project_2"
-	@echo "... AddAutomaton.o"
-	@echo "... AddAutomaton.i"
-	@echo "... AddAutomaton.s"
-	@echo "... ColonAutomaton.o"
-	@echo "... ColonAutomaton.i"
-	@echo "... ColonAutomaton.s"
-	@echo "... ColonDashAutomaton.o"
-	@echo "... ColonDashAutomaton.i"
-	@echo "... ColonDashAutomaton.s"
-	@echo "... CommaAutomaton.o"
-	@echo "... CommaAutomaton.i"
-	@echo "... CommaAutomaton.s"
-	@echo "... CommentAutomaton.o"
-	@echo "... CommentAutomaton.i"
-	@echo "... CommentAutomaton.s"
+	@echo "... Automatons/AddAutomaton.o"
+	@echo "... Automatons/AddAutomaton.i"
+	@echo "... Automatons/AddAutomaton.s"
+	@echo "... Automatons/ColonAutomaton.o"
+	@echo "... Automatons/ColonAutomaton.i"
+	@echo "... Automatons/ColonAutomaton.s"
+	@echo "... Automatons/ColonDashAutomaton.o"
+	@echo "... Automatons/ColonDashAutomaton.i"
+	@echo "... Automatons/ColonDashAutomaton.s"
+	@echo "... Automatons/CommaAutomaton.o"
+	@echo "... Automatons/CommaAutomaton.i"
+	@echo "... Automatons/CommaAutomaton.s"
+	@echo "... Automatons/CommentAutomaton.o"
+	@echo "... Automatons/CommentAutomaton.i"
+	@echo "... Automatons/CommentAutomaton.s"
+	@echo "... Automatons/EOFAutomaton.o"
+	@echo "... Automatons/EOFAutomaton.i"
+	@echo "... Automatons/EOFAutomaton.s"
+	@echo "... Automatons/FactsAutomaton.o"
+	@echo "... Automatons/FactsAutomaton.i"
+	@echo "... Automatons/FactsAutomaton.s"
+	@echo "... Automatons/LeftParenAutomaton.o"
+	@echo "... Automatons/LeftParenAutomaton.i"
+	@echo "... Automatons/LeftParenAutomaton.s"
+	@echo "... Automatons/MultiComment.o"
+	@echo "... Automatons/MultiComment.i"
+	@echo "... Automatons/MultiComment.s"
+	@echo "... Automatons/MultiplyAutomaton.o"
+	@echo "... Automatons/MultiplyAutomaton.i"
+	@echo "... Automatons/MultiplyAutomaton.s"
+	@echo "... Automatons/PeriodAutomaton.o"
+	@echo "... Automatons/PeriodAutomaton.i"
+	@echo "... Automatons/PeriodAutomaton.s"
+	@echo "... Automatons/QmarkAutomaton.o"
+	@echo "... Automatons/QmarkAutomaton.i"
+	@echo "... Automatons/QmarkAutomaton.s"
+	@echo "... Automatons/QueriesAutomaton.o"
+	@echo "... Automatons/QueriesAutomaton.i"
+	@echo "... Automatons/QueriesAutomaton.s"
+	@echo "... Automatons/RightParenAutomaton.o"
+	@echo "... Automatons/RightParenAutomaton.i"
+	@echo "... Automatons/RightParenAutomaton.s"
+	@echo "... Automatons/RulesAutomaton.o"
+	@echo "... Automatons/RulesAutomaton.i"
+	@echo "... Automatons/RulesAutomaton.s"
+	@echo "... Automatons/SchemesAutomaton.o"
+	@echo "... Automatons/SchemesAutomaton.i"
+	@echo "... Automatons/SchemesAutomaton.s"
+	@echo "... Automatons/StringAutomaton.o"
+	@echo "... Automatons/StringAutomaton.i"
+	@echo "... Automatons/StringAutomaton.s"
+	@echo "... Automatons/UndefinedAutomaton.o"
+	@echo "... Automatons/UndefinedAutomaton.i"
+	@echo "... Automatons/UndefinedAutomaton.s"
 	@echo "... Database.o"
 	@echo "... Database.i"
 	@echo "... Database.s"
 	@echo "... DatalogProgram.o"
 	@echo "... DatalogProgram.i"
 	@echo "... DatalogProgram.s"
-	@echo "... EOFAutomaton.o"
-	@echo "... EOFAutomaton.i"
-	@echo "... EOFAutomaton.s"
-	@echo "... FactsAutomaton.o"
-	@echo "... FactsAutomaton.i"
-	@echo "... FactsAutomaton.s"
 	@echo "... Header.o"
 	@echo "... Header.i"
 	@echo "... Header.s"
@@ -918,60 +951,27 @@ help:
 	@echo "... Interpreter.o"
 	@echo "... Interpreter.i"
 	@echo "... Interpreter.s"
-	@echo "... LeftParenAutomaton.o"
-	@echo "... LeftParenAutomaton.i"
-	@echo "... LeftParenAutomaton.s"
 	@echo "... Lexer.o"
 	@echo "... Lexer.i"
 	@echo "... Lexer.s"
-	@echo "... MultiComment.o"
-	@echo "... MultiComment.i"
-	@echo "... MultiComment.s"
-	@echo "... MultiplyAutomaton.o"
-	@echo "... MultiplyAutomaton.i"
-	@echo "... MultiplyAutomaton.s"
 	@echo "... Parameter.o"
 	@echo "... Parameter.i"
 	@echo "... Parameter.s"
-	@echo "... PeriodAutomaton.o"
-	@echo "... PeriodAutomaton.i"
-	@echo "... PeriodAutomaton.s"
 	@echo "... Predicate.o"
 	@echo "... Predicate.i"
 	@echo "... Predicate.s"
-	@echo "... QmarkAutomaton.o"
-	@echo "... QmarkAutomaton.i"
-	@echo "... QmarkAutomaton.s"
-	@echo "... QueriesAutomaton.o"
-	@echo "... QueriesAutomaton.i"
-	@echo "... QueriesAutomaton.s"
 	@echo "... Relation.o"
 	@echo "... Relation.i"
 	@echo "... Relation.s"
-	@echo "... RightParenAutomaton.o"
-	@echo "... RightParenAutomaton.i"
-	@echo "... RightParenAutomaton.s"
 	@echo "... Rule.o"
 	@echo "... Rule.i"
 	@echo "... Rule.s"
-	@echo "... RulesAutomaton.o"
-	@echo "... RulesAutomaton.i"
-	@echo "... RulesAutomaton.s"
-	@echo "... SchemesAutomaton.o"
-	@echo "... SchemesAutomaton.i"
-	@echo "... SchemesAutomaton.s"
-	@echo "... StringAutomaton.o"
-	@echo "... StringAutomaton.i"
-	@echo "... StringAutomaton.s"
 	@echo "... Token.o"
 	@echo "... Token.i"
 	@echo "... Token.s"
 	@echo "... Tuple.o"
 	@echo "... Tuple.i"
 	@echo "... Tuple.s"
-	@echo "... UndefinedAutomaton.o"
-	@echo "... UndefinedAutomaton.i"
-	@echo "... UndefinedAutomaton.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

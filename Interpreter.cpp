@@ -5,6 +5,7 @@ Interpreter::Interpreter(DatalogProgram fromParser) {
     schemesFromParser = fromParser.getSchemes();
     factsFromParser = fromParser.getFacts();
     queriesFromParser = fromParser.getQueries();
+    rulesFromParser = fromParser.getRules();
 }
 
 void Interpreter::makeRelation() {
@@ -21,7 +22,6 @@ void Interpreter::makeRelation() {
 
 Relation Interpreter::evaluatePredicate(Predicate p) {
     Relation toReturn = myDatabase.database[p.id];
-    std::vector<std::map<std::string, std::string>> tupleMaps;
     std::vector<int> indices;
     std::map<int, std::string> position;
     std::vector<std::string> forNames;
@@ -75,6 +75,7 @@ Relation Interpreter::evaluatePredicate(Predicate p) {
 }
 
 void Interpreter::evaluateAll() {
+    std::cout << "Query Evaluation" << std::endl;
     for (long unsigned int i = 0; i < queriesFromParser.size(); i++) {
         Relation evaluated = evaluatePredicate(queriesFromParser[i]);
         std::cout << queriesFromParser[i].id << "(";
@@ -94,6 +95,139 @@ void Interpreter::evaluateAll() {
             evaluated.toString();
         }
     }
+}
+
+Relation Interpreter::evaluateRule(Rule r) {
+    Relation ogReturn = Relation();
+    //STEPS 1 AND 2
+//    std::cout << "TEST" <<std::endl;
+    for (int s =  0; s < r.getBody().size(); s++) {
+        Relation toReturn = myDatabase.database[r.getBody().at(s).id];
+
+//        std::cout << "TEST" <<std::endl;
+//        std::cout << toReturn.relationName << std::endl;
+//        toReturn.toString();
+//        std::cout << "HEADER TEST" << std::endl;
+//        toReturn.relationHeader.toString();
+
+        std::vector<int> indices;
+        std::map<int, std::string> position;
+        std::vector<std::string> forNames;
+
+        for (long unsigned int i = 0; i < r.getBody().at(s).parameters.size(); i++) {
+            int count = 0;
+            if (r.getBody().at(s).parameters[i]->isConstant == true) {
+                toReturn = toReturn.SelectOne(i, r.getBody().at(s).parameters[i]->paramString());
+            }
+            else {//is a variable
+                if (position.find(i)->first == 0) {
+                    position[i] = r.getBody().at(s).parameters[i]->paramString();
+                    count += 1;
+                }
+                else {
+                    for (long unsigned int L = 0; L < position.size(); L++) {
+                        if ((i != s) and (r.getBody().at(s).parameters[i]->paramString() == position[L])) {
+                            toReturn = toReturn.SelectTwo(i, L);
+                        }
+                        else{
+                            position[i] = r.getBody().at(s).parameters[i]->paramString();
+                            count += 1;
+                        }
+                    }
+                }
+                if (count > 0) {
+                    indices.push_back(i);
+                }
+            }
+        }
+
+        toReturn = toReturn.Project(indices);
+//        std::cout << "TEst" <<std::endl;
+//        toReturn.toString();
+
+        for (int index : indices) {
+            if (forNames.size() == 0) {
+                forNames.push_back(position[index]);
+            }
+            else {
+                int count = 0;
+                for (std::string name : forNames) {
+                    if (name == position[index]) {
+                        count += 1;
+                    }
+                }
+                if (count == 0 and position[index] != "") {
+                    forNames.push_back(position[index]);
+                }
+            }
+        }
+        toReturn = toReturn.Rename(forNames);
+//        std::cout << "Test" <<std::endl;
+//        toReturn.toString();
+
+
+        if (ogReturn.relations.size() == 0) {
+            ogReturn = toReturn;
+//            std::cout << "ascofialaje" <<std::endl;
+//            ogReturn.toString();
+        }
+        else {
+            ogReturn = toReturn.Join(ogReturn);
+        }
+    }
+
+    //STEP 3
+    std::vector<int> indices;
+    std::vector<std::string> forNames;
+
+    for (int i =0; i < r.getHead().parameters.size(); i++) {
+        for(int j=0; j< ogReturn.relationHeader.attributes.size(); j++) {
+            if (r.getHead().parameters[i]->paramString() == ogReturn.relationHeader.attributes[j]) {
+                indices.push_back(j);
+            }
+        }
+    }
+    ogReturn = ogReturn.Project(indices);
+
+
+//    STEP 4
+    for (int i =0; i < myDatabase.database[r.getHead().id].relationHeader.attributes.size(); i++) {
+        forNames.push_back(myDatabase.database[r.getHead().id].relationHeader.attributes[i]);
+    }
+    ogReturn = ogReturn.Rename(forNames);
+
+    //Step 5
+    myDatabase.database[r.getHead().id].relations = ogReturn.Uniter(myDatabase.database[r.getHead().id]).relations;
+
+//    std::cout << "FINAL" << std::endl;
+    return ogReturn;
+}
+
+void Interpreter::allRules() {
+    int preCount = 0;
+    int postCount = -1;
+    int passCount = 0;
+
+    while (postCount != preCount) {
+        for (int i = 0; i < rulesFromParser.size(); i++) {
+            preCount = myDatabase.database[rulesFromParser[i].getHead().id].relations.size();
+            evaluateRule(rulesFromParser[i]);
+            postCount = myDatabase.database[rulesFromParser[i].getHead().id].relations.size();
+//            std::cout << preCount << " + " << postCount << std::endl;
+
+            if (preCount != postCount) {
+                Rule::ruleString(rulesFromParser[i]);
+                evaluateRule(rulesFromParser[i]).toString();
+            }
+            else {
+                Rule::ruleString(rulesFromParser[i]);
+            }
+        }
+        passCount += 1;
+    }
+
+
+    std::cout << "\nSchemes populated after running " << passCount << " passes through the Rules.\n" << std::endl;
 }
 
 Interpreter::~Interpreter() = default;

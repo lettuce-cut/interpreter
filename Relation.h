@@ -24,6 +24,13 @@ public:
     Relation Rename(std::vector<std::string> forRename);
     void addTuple(Tuple toAdd);
     void toString();
+
+    //below is the functions for Project 4
+
+    Relation Join(Relation joinWith);
+    bool isJoinable(Tuple firstTuple, Tuple secondTuple, std::map<int, int>& indices);
+    Tuple combineTuples(Tuple firstTuple, Tuple secondTuple, std::map<int, int>& indices);
+    Relation Uniter(Relation toUnite);
 };
 
 #endif //PROJECT_2_RELATION_H

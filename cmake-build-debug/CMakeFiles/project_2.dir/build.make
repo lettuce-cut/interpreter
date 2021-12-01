@@ -66,31 +66,31 @@ include CMakeFiles/project_2.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/project_2.dir/flags.make
 
-CMakeFiles/project_2.dir/ColonAutomaton.cpp.o: CMakeFiles/project_2.dir/flags.make
-CMakeFiles/project_2.dir/ColonAutomaton.cpp.o: ../ColonAutomaton.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/roliasong/Desktop/cs236/Interpreter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/project_2.dir/ColonAutomaton.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_2.dir/ColonAutomaton.cpp.o -c /Users/roliasong/Desktop/cs236/Interpreter/ColonAutomaton.cpp
+CMakeFiles/project_2.dir/Automatons/ColonAutomaton.cpp.o: CMakeFiles/project_2.dir/flags.make
+CMakeFiles/project_2.dir/Automatons/ColonAutomaton.cpp.o: ../Automatons/ColonAutomaton.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/roliasong/Desktop/cs236/Interpreter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/project_2.dir/Automatons/ColonAutomaton.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_2.dir/Automatons/ColonAutomaton.cpp.o -c /Users/roliasong/Desktop/cs236/Interpreter/Automatons/ColonAutomaton.cpp
 
-CMakeFiles/project_2.dir/ColonAutomaton.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_2.dir/ColonAutomaton.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/roliasong/Desktop/cs236/Interpreter/ColonAutomaton.cpp > CMakeFiles/project_2.dir/ColonAutomaton.cpp.i
+CMakeFiles/project_2.dir/Automatons/ColonAutomaton.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_2.dir/Automatons/ColonAutomaton.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/roliasong/Desktop/cs236/Interpreter/Automatons/ColonAutomaton.cpp > CMakeFiles/project_2.dir/Automatons/ColonAutomaton.cpp.i
 
-CMakeFiles/project_2.dir/ColonAutomaton.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_2.dir/ColonAutomaton.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/roliasong/Desktop/cs236/Interpreter/ColonAutomaton.cpp -o CMakeFiles/project_2.dir/ColonAutomaton.cpp.s
+CMakeFiles/project_2.dir/Automatons/ColonAutomaton.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_2.dir/Automatons/ColonAutomaton.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/roliasong/Desktop/cs236/Interpreter/Automatons/ColonAutomaton.cpp -o CMakeFiles/project_2.dir/Automatons/ColonAutomaton.cpp.s
 
-CMakeFiles/project_2.dir/ColonDashAutomaton.cpp.o: CMakeFiles/project_2.dir/flags.make
-CMakeFiles/project_2.dir/ColonDashAutomaton.cpp.o: ../ColonDashAutomaton.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/roliasong/Desktop/cs236/Interpreter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/project_2.dir/ColonDashAutomaton.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_2.dir/ColonDashAutomaton.cpp.o -c /Users/roliasong/Desktop/cs236/Interpreter/ColonDashAutomaton.cpp
+CMakeFiles/project_2.dir/Automatons/ColonDashAutomaton.cpp.o: CMakeFiles/project_2.dir/flags.make
+CMakeFiles/project_2.dir/Automatons/ColonDashAutomaton.cpp.o: ../Automatons/ColonDashAutomaton.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/roliasong/Desktop/cs236/Interpreter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/project_2.dir/Automatons/ColonDashAutomaton.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_2.dir/Automatons/ColonDashAutomaton.cpp.o -c /Users/roliasong/Desktop/cs236/Interpreter/Automatons/ColonDashAutomaton.cpp
 
-CMakeFiles/project_2.dir/ColonDashAutomaton.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_2.dir/ColonDashAutomaton.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/roliasong/Desktop/cs236/Interpreter/ColonDashAutomaton.cpp > CMakeFiles/project_2.dir/ColonDashAutomaton.cpp.i
+CMakeFiles/project_2.dir/Automatons/ColonDashAutomaton.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_2.dir/Automatons/ColonDashAutomaton.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/roliasong/Desktop/cs236/Interpreter/Automatons/ColonDashAutomaton.cpp > CMakeFiles/project_2.dir/Automatons/ColonDashAutomaton.cpp.i
 
-CMakeFiles/project_2.dir/ColonDashAutomaton.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_2.dir/ColonDashAutomaton.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/roliasong/Desktop/cs236/Interpreter/ColonDashAutomaton.cpp -o CMakeFiles/project_2.dir/ColonDashAutomaton.cpp.s
+CMakeFiles/project_2.dir/Automatons/ColonDashAutomaton.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_2.dir/Automatons/ColonDashAutomaton.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/roliasong/Desktop/cs236/Interpreter/Automatons/ColonDashAutomaton.cpp -o CMakeFiles/project_2.dir/Automatons/ColonDashAutomaton.cpp.s
 
 CMakeFiles/project_2.dir/Lexer.cpp.o: CMakeFiles/project_2.dir/flags.make
 CMakeFiles/project_2.dir/Lexer.cpp.o: ../Lexer.cpp
@@ -131,200 +131,200 @@ CMakeFiles/project_2.dir/Token.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_2.dir/Token.cpp.s"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/roliasong/Desktop/cs236/Interpreter/Token.cpp -o CMakeFiles/project_2.dir/Token.cpp.s
 
-CMakeFiles/project_2.dir/CommaAutomaton.cpp.o: CMakeFiles/project_2.dir/flags.make
-CMakeFiles/project_2.dir/CommaAutomaton.cpp.o: ../CommaAutomaton.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/roliasong/Desktop/cs236/Interpreter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/project_2.dir/CommaAutomaton.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_2.dir/CommaAutomaton.cpp.o -c /Users/roliasong/Desktop/cs236/Interpreter/CommaAutomaton.cpp
+CMakeFiles/project_2.dir/Automatons/CommaAutomaton.cpp.o: CMakeFiles/project_2.dir/flags.make
+CMakeFiles/project_2.dir/Automatons/CommaAutomaton.cpp.o: ../Automatons/CommaAutomaton.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/roliasong/Desktop/cs236/Interpreter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/project_2.dir/Automatons/CommaAutomaton.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_2.dir/Automatons/CommaAutomaton.cpp.o -c /Users/roliasong/Desktop/cs236/Interpreter/Automatons/CommaAutomaton.cpp
 
-CMakeFiles/project_2.dir/CommaAutomaton.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_2.dir/CommaAutomaton.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/roliasong/Desktop/cs236/Interpreter/CommaAutomaton.cpp > CMakeFiles/project_2.dir/CommaAutomaton.cpp.i
+CMakeFiles/project_2.dir/Automatons/CommaAutomaton.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_2.dir/Automatons/CommaAutomaton.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/roliasong/Desktop/cs236/Interpreter/Automatons/CommaAutomaton.cpp > CMakeFiles/project_2.dir/Automatons/CommaAutomaton.cpp.i
 
-CMakeFiles/project_2.dir/CommaAutomaton.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_2.dir/CommaAutomaton.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/roliasong/Desktop/cs236/Interpreter/CommaAutomaton.cpp -o CMakeFiles/project_2.dir/CommaAutomaton.cpp.s
+CMakeFiles/project_2.dir/Automatons/CommaAutomaton.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_2.dir/Automatons/CommaAutomaton.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/roliasong/Desktop/cs236/Interpreter/Automatons/CommaAutomaton.cpp -o CMakeFiles/project_2.dir/Automatons/CommaAutomaton.cpp.s
 
-CMakeFiles/project_2.dir/PeriodAutomaton.cpp.o: CMakeFiles/project_2.dir/flags.make
-CMakeFiles/project_2.dir/PeriodAutomaton.cpp.o: ../PeriodAutomaton.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/roliasong/Desktop/cs236/Interpreter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/project_2.dir/PeriodAutomaton.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_2.dir/PeriodAutomaton.cpp.o -c /Users/roliasong/Desktop/cs236/Interpreter/PeriodAutomaton.cpp
+CMakeFiles/project_2.dir/Automatons/PeriodAutomaton.cpp.o: CMakeFiles/project_2.dir/flags.make
+CMakeFiles/project_2.dir/Automatons/PeriodAutomaton.cpp.o: ../Automatons/PeriodAutomaton.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/roliasong/Desktop/cs236/Interpreter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/project_2.dir/Automatons/PeriodAutomaton.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_2.dir/Automatons/PeriodAutomaton.cpp.o -c /Users/roliasong/Desktop/cs236/Interpreter/Automatons/PeriodAutomaton.cpp
 
-CMakeFiles/project_2.dir/PeriodAutomaton.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_2.dir/PeriodAutomaton.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/roliasong/Desktop/cs236/Interpreter/PeriodAutomaton.cpp > CMakeFiles/project_2.dir/PeriodAutomaton.cpp.i
+CMakeFiles/project_2.dir/Automatons/PeriodAutomaton.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_2.dir/Automatons/PeriodAutomaton.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/roliasong/Desktop/cs236/Interpreter/Automatons/PeriodAutomaton.cpp > CMakeFiles/project_2.dir/Automatons/PeriodAutomaton.cpp.i
 
-CMakeFiles/project_2.dir/PeriodAutomaton.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_2.dir/PeriodAutomaton.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/roliasong/Desktop/cs236/Interpreter/PeriodAutomaton.cpp -o CMakeFiles/project_2.dir/PeriodAutomaton.cpp.s
+CMakeFiles/project_2.dir/Automatons/PeriodAutomaton.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_2.dir/Automatons/PeriodAutomaton.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/roliasong/Desktop/cs236/Interpreter/Automatons/PeriodAutomaton.cpp -o CMakeFiles/project_2.dir/Automatons/PeriodAutomaton.cpp.s
 
-CMakeFiles/project_2.dir/QmarkAutomaton.cpp.o: CMakeFiles/project_2.dir/flags.make
-CMakeFiles/project_2.dir/QmarkAutomaton.cpp.o: ../QmarkAutomaton.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/roliasong/Desktop/cs236/Interpreter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/project_2.dir/QmarkAutomaton.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_2.dir/QmarkAutomaton.cpp.o -c /Users/roliasong/Desktop/cs236/Interpreter/QmarkAutomaton.cpp
+CMakeFiles/project_2.dir/Automatons/QmarkAutomaton.cpp.o: CMakeFiles/project_2.dir/flags.make
+CMakeFiles/project_2.dir/Automatons/QmarkAutomaton.cpp.o: ../Automatons/QmarkAutomaton.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/roliasong/Desktop/cs236/Interpreter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/project_2.dir/Automatons/QmarkAutomaton.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_2.dir/Automatons/QmarkAutomaton.cpp.o -c /Users/roliasong/Desktop/cs236/Interpreter/Automatons/QmarkAutomaton.cpp
 
-CMakeFiles/project_2.dir/QmarkAutomaton.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_2.dir/QmarkAutomaton.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/roliasong/Desktop/cs236/Interpreter/QmarkAutomaton.cpp > CMakeFiles/project_2.dir/QmarkAutomaton.cpp.i
+CMakeFiles/project_2.dir/Automatons/QmarkAutomaton.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_2.dir/Automatons/QmarkAutomaton.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/roliasong/Desktop/cs236/Interpreter/Automatons/QmarkAutomaton.cpp > CMakeFiles/project_2.dir/Automatons/QmarkAutomaton.cpp.i
 
-CMakeFiles/project_2.dir/QmarkAutomaton.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_2.dir/QmarkAutomaton.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/roliasong/Desktop/cs236/Interpreter/QmarkAutomaton.cpp -o CMakeFiles/project_2.dir/QmarkAutomaton.cpp.s
+CMakeFiles/project_2.dir/Automatons/QmarkAutomaton.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_2.dir/Automatons/QmarkAutomaton.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/roliasong/Desktop/cs236/Interpreter/Automatons/QmarkAutomaton.cpp -o CMakeFiles/project_2.dir/Automatons/QmarkAutomaton.cpp.s
 
-CMakeFiles/project_2.dir/LeftParenAutomaton.cpp.o: CMakeFiles/project_2.dir/flags.make
-CMakeFiles/project_2.dir/LeftParenAutomaton.cpp.o: ../LeftParenAutomaton.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/roliasong/Desktop/cs236/Interpreter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/project_2.dir/LeftParenAutomaton.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_2.dir/LeftParenAutomaton.cpp.o -c /Users/roliasong/Desktop/cs236/Interpreter/LeftParenAutomaton.cpp
+CMakeFiles/project_2.dir/Automatons/LeftParenAutomaton.cpp.o: CMakeFiles/project_2.dir/flags.make
+CMakeFiles/project_2.dir/Automatons/LeftParenAutomaton.cpp.o: ../Automatons/LeftParenAutomaton.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/roliasong/Desktop/cs236/Interpreter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/project_2.dir/Automatons/LeftParenAutomaton.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_2.dir/Automatons/LeftParenAutomaton.cpp.o -c /Users/roliasong/Desktop/cs236/Interpreter/Automatons/LeftParenAutomaton.cpp
 
-CMakeFiles/project_2.dir/LeftParenAutomaton.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_2.dir/LeftParenAutomaton.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/roliasong/Desktop/cs236/Interpreter/LeftParenAutomaton.cpp > CMakeFiles/project_2.dir/LeftParenAutomaton.cpp.i
+CMakeFiles/project_2.dir/Automatons/LeftParenAutomaton.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_2.dir/Automatons/LeftParenAutomaton.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/roliasong/Desktop/cs236/Interpreter/Automatons/LeftParenAutomaton.cpp > CMakeFiles/project_2.dir/Automatons/LeftParenAutomaton.cpp.i
 
-CMakeFiles/project_2.dir/LeftParenAutomaton.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_2.dir/LeftParenAutomaton.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/roliasong/Desktop/cs236/Interpreter/LeftParenAutomaton.cpp -o CMakeFiles/project_2.dir/LeftParenAutomaton.cpp.s
+CMakeFiles/project_2.dir/Automatons/LeftParenAutomaton.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_2.dir/Automatons/LeftParenAutomaton.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/roliasong/Desktop/cs236/Interpreter/Automatons/LeftParenAutomaton.cpp -o CMakeFiles/project_2.dir/Automatons/LeftParenAutomaton.cpp.s
 
-CMakeFiles/project_2.dir/RightParenAutomaton.cpp.o: CMakeFiles/project_2.dir/flags.make
-CMakeFiles/project_2.dir/RightParenAutomaton.cpp.o: ../RightParenAutomaton.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/roliasong/Desktop/cs236/Interpreter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/project_2.dir/RightParenAutomaton.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_2.dir/RightParenAutomaton.cpp.o -c /Users/roliasong/Desktop/cs236/Interpreter/RightParenAutomaton.cpp
+CMakeFiles/project_2.dir/Automatons/RightParenAutomaton.cpp.o: CMakeFiles/project_2.dir/flags.make
+CMakeFiles/project_2.dir/Automatons/RightParenAutomaton.cpp.o: ../Automatons/RightParenAutomaton.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/roliasong/Desktop/cs236/Interpreter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/project_2.dir/Automatons/RightParenAutomaton.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_2.dir/Automatons/RightParenAutomaton.cpp.o -c /Users/roliasong/Desktop/cs236/Interpreter/Automatons/RightParenAutomaton.cpp
 
-CMakeFiles/project_2.dir/RightParenAutomaton.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_2.dir/RightParenAutomaton.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/roliasong/Desktop/cs236/Interpreter/RightParenAutomaton.cpp > CMakeFiles/project_2.dir/RightParenAutomaton.cpp.i
+CMakeFiles/project_2.dir/Automatons/RightParenAutomaton.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_2.dir/Automatons/RightParenAutomaton.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/roliasong/Desktop/cs236/Interpreter/Automatons/RightParenAutomaton.cpp > CMakeFiles/project_2.dir/Automatons/RightParenAutomaton.cpp.i
 
-CMakeFiles/project_2.dir/RightParenAutomaton.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_2.dir/RightParenAutomaton.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/roliasong/Desktop/cs236/Interpreter/RightParenAutomaton.cpp -o CMakeFiles/project_2.dir/RightParenAutomaton.cpp.s
+CMakeFiles/project_2.dir/Automatons/RightParenAutomaton.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_2.dir/Automatons/RightParenAutomaton.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/roliasong/Desktop/cs236/Interpreter/Automatons/RightParenAutomaton.cpp -o CMakeFiles/project_2.dir/Automatons/RightParenAutomaton.cpp.s
 
-CMakeFiles/project_2.dir/MultiplyAutomaton.cpp.o: CMakeFiles/project_2.dir/flags.make
-CMakeFiles/project_2.dir/MultiplyAutomaton.cpp.o: ../MultiplyAutomaton.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/roliasong/Desktop/cs236/Interpreter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/project_2.dir/MultiplyAutomaton.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_2.dir/MultiplyAutomaton.cpp.o -c /Users/roliasong/Desktop/cs236/Interpreter/MultiplyAutomaton.cpp
+CMakeFiles/project_2.dir/Automatons/MultiplyAutomaton.cpp.o: CMakeFiles/project_2.dir/flags.make
+CMakeFiles/project_2.dir/Automatons/MultiplyAutomaton.cpp.o: ../Automatons/MultiplyAutomaton.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/roliasong/Desktop/cs236/Interpreter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/project_2.dir/Automatons/MultiplyAutomaton.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_2.dir/Automatons/MultiplyAutomaton.cpp.o -c /Users/roliasong/Desktop/cs236/Interpreter/Automatons/MultiplyAutomaton.cpp
 
-CMakeFiles/project_2.dir/MultiplyAutomaton.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_2.dir/MultiplyAutomaton.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/roliasong/Desktop/cs236/Interpreter/MultiplyAutomaton.cpp > CMakeFiles/project_2.dir/MultiplyAutomaton.cpp.i
+CMakeFiles/project_2.dir/Automatons/MultiplyAutomaton.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_2.dir/Automatons/MultiplyAutomaton.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/roliasong/Desktop/cs236/Interpreter/Automatons/MultiplyAutomaton.cpp > CMakeFiles/project_2.dir/Automatons/MultiplyAutomaton.cpp.i
 
-CMakeFiles/project_2.dir/MultiplyAutomaton.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_2.dir/MultiplyAutomaton.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/roliasong/Desktop/cs236/Interpreter/MultiplyAutomaton.cpp -o CMakeFiles/project_2.dir/MultiplyAutomaton.cpp.s
+CMakeFiles/project_2.dir/Automatons/MultiplyAutomaton.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_2.dir/Automatons/MultiplyAutomaton.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/roliasong/Desktop/cs236/Interpreter/Automatons/MultiplyAutomaton.cpp -o CMakeFiles/project_2.dir/Automatons/MultiplyAutomaton.cpp.s
 
-CMakeFiles/project_2.dir/AddAutomaton.cpp.o: CMakeFiles/project_2.dir/flags.make
-CMakeFiles/project_2.dir/AddAutomaton.cpp.o: ../AddAutomaton.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/roliasong/Desktop/cs236/Interpreter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/project_2.dir/AddAutomaton.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_2.dir/AddAutomaton.cpp.o -c /Users/roliasong/Desktop/cs236/Interpreter/AddAutomaton.cpp
+CMakeFiles/project_2.dir/Automatons/AddAutomaton.cpp.o: CMakeFiles/project_2.dir/flags.make
+CMakeFiles/project_2.dir/Automatons/AddAutomaton.cpp.o: ../Automatons/AddAutomaton.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/roliasong/Desktop/cs236/Interpreter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/project_2.dir/Automatons/AddAutomaton.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_2.dir/Automatons/AddAutomaton.cpp.o -c /Users/roliasong/Desktop/cs236/Interpreter/Automatons/AddAutomaton.cpp
 
-CMakeFiles/project_2.dir/AddAutomaton.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_2.dir/AddAutomaton.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/roliasong/Desktop/cs236/Interpreter/AddAutomaton.cpp > CMakeFiles/project_2.dir/AddAutomaton.cpp.i
+CMakeFiles/project_2.dir/Automatons/AddAutomaton.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_2.dir/Automatons/AddAutomaton.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/roliasong/Desktop/cs236/Interpreter/Automatons/AddAutomaton.cpp > CMakeFiles/project_2.dir/Automatons/AddAutomaton.cpp.i
 
-CMakeFiles/project_2.dir/AddAutomaton.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_2.dir/AddAutomaton.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/roliasong/Desktop/cs236/Interpreter/AddAutomaton.cpp -o CMakeFiles/project_2.dir/AddAutomaton.cpp.s
+CMakeFiles/project_2.dir/Automatons/AddAutomaton.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_2.dir/Automatons/AddAutomaton.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/roliasong/Desktop/cs236/Interpreter/Automatons/AddAutomaton.cpp -o CMakeFiles/project_2.dir/Automatons/AddAutomaton.cpp.s
 
-CMakeFiles/project_2.dir/SchemesAutomaton.cpp.o: CMakeFiles/project_2.dir/flags.make
-CMakeFiles/project_2.dir/SchemesAutomaton.cpp.o: ../SchemesAutomaton.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/roliasong/Desktop/cs236/Interpreter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/project_2.dir/SchemesAutomaton.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_2.dir/SchemesAutomaton.cpp.o -c /Users/roliasong/Desktop/cs236/Interpreter/SchemesAutomaton.cpp
+CMakeFiles/project_2.dir/Automatons/SchemesAutomaton.cpp.o: CMakeFiles/project_2.dir/flags.make
+CMakeFiles/project_2.dir/Automatons/SchemesAutomaton.cpp.o: ../Automatons/SchemesAutomaton.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/roliasong/Desktop/cs236/Interpreter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/project_2.dir/Automatons/SchemesAutomaton.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_2.dir/Automatons/SchemesAutomaton.cpp.o -c /Users/roliasong/Desktop/cs236/Interpreter/Automatons/SchemesAutomaton.cpp
 
-CMakeFiles/project_2.dir/SchemesAutomaton.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_2.dir/SchemesAutomaton.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/roliasong/Desktop/cs236/Interpreter/SchemesAutomaton.cpp > CMakeFiles/project_2.dir/SchemesAutomaton.cpp.i
+CMakeFiles/project_2.dir/Automatons/SchemesAutomaton.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_2.dir/Automatons/SchemesAutomaton.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/roliasong/Desktop/cs236/Interpreter/Automatons/SchemesAutomaton.cpp > CMakeFiles/project_2.dir/Automatons/SchemesAutomaton.cpp.i
 
-CMakeFiles/project_2.dir/SchemesAutomaton.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_2.dir/SchemesAutomaton.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/roliasong/Desktop/cs236/Interpreter/SchemesAutomaton.cpp -o CMakeFiles/project_2.dir/SchemesAutomaton.cpp.s
+CMakeFiles/project_2.dir/Automatons/SchemesAutomaton.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_2.dir/Automatons/SchemesAutomaton.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/roliasong/Desktop/cs236/Interpreter/Automatons/SchemesAutomaton.cpp -o CMakeFiles/project_2.dir/Automatons/SchemesAutomaton.cpp.s
 
-CMakeFiles/project_2.dir/FactsAutomaton.cpp.o: CMakeFiles/project_2.dir/flags.make
-CMakeFiles/project_2.dir/FactsAutomaton.cpp.o: ../FactsAutomaton.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/roliasong/Desktop/cs236/Interpreter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/project_2.dir/FactsAutomaton.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_2.dir/FactsAutomaton.cpp.o -c /Users/roliasong/Desktop/cs236/Interpreter/FactsAutomaton.cpp
+CMakeFiles/project_2.dir/Automatons/FactsAutomaton.cpp.o: CMakeFiles/project_2.dir/flags.make
+CMakeFiles/project_2.dir/Automatons/FactsAutomaton.cpp.o: ../Automatons/FactsAutomaton.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/roliasong/Desktop/cs236/Interpreter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/project_2.dir/Automatons/FactsAutomaton.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_2.dir/Automatons/FactsAutomaton.cpp.o -c /Users/roliasong/Desktop/cs236/Interpreter/Automatons/FactsAutomaton.cpp
 
-CMakeFiles/project_2.dir/FactsAutomaton.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_2.dir/FactsAutomaton.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/roliasong/Desktop/cs236/Interpreter/FactsAutomaton.cpp > CMakeFiles/project_2.dir/FactsAutomaton.cpp.i
+CMakeFiles/project_2.dir/Automatons/FactsAutomaton.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_2.dir/Automatons/FactsAutomaton.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/roliasong/Desktop/cs236/Interpreter/Automatons/FactsAutomaton.cpp > CMakeFiles/project_2.dir/Automatons/FactsAutomaton.cpp.i
 
-CMakeFiles/project_2.dir/FactsAutomaton.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_2.dir/FactsAutomaton.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/roliasong/Desktop/cs236/Interpreter/FactsAutomaton.cpp -o CMakeFiles/project_2.dir/FactsAutomaton.cpp.s
+CMakeFiles/project_2.dir/Automatons/FactsAutomaton.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_2.dir/Automatons/FactsAutomaton.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/roliasong/Desktop/cs236/Interpreter/Automatons/FactsAutomaton.cpp -o CMakeFiles/project_2.dir/Automatons/FactsAutomaton.cpp.s
 
-CMakeFiles/project_2.dir/RulesAutomaton.cpp.o: CMakeFiles/project_2.dir/flags.make
-CMakeFiles/project_2.dir/RulesAutomaton.cpp.o: ../RulesAutomaton.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/roliasong/Desktop/cs236/Interpreter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/project_2.dir/RulesAutomaton.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_2.dir/RulesAutomaton.cpp.o -c /Users/roliasong/Desktop/cs236/Interpreter/RulesAutomaton.cpp
+CMakeFiles/project_2.dir/Automatons/RulesAutomaton.cpp.o: CMakeFiles/project_2.dir/flags.make
+CMakeFiles/project_2.dir/Automatons/RulesAutomaton.cpp.o: ../Automatons/RulesAutomaton.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/roliasong/Desktop/cs236/Interpreter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/project_2.dir/Automatons/RulesAutomaton.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_2.dir/Automatons/RulesAutomaton.cpp.o -c /Users/roliasong/Desktop/cs236/Interpreter/Automatons/RulesAutomaton.cpp
 
-CMakeFiles/project_2.dir/RulesAutomaton.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_2.dir/RulesAutomaton.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/roliasong/Desktop/cs236/Interpreter/RulesAutomaton.cpp > CMakeFiles/project_2.dir/RulesAutomaton.cpp.i
+CMakeFiles/project_2.dir/Automatons/RulesAutomaton.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_2.dir/Automatons/RulesAutomaton.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/roliasong/Desktop/cs236/Interpreter/Automatons/RulesAutomaton.cpp > CMakeFiles/project_2.dir/Automatons/RulesAutomaton.cpp.i
 
-CMakeFiles/project_2.dir/RulesAutomaton.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_2.dir/RulesAutomaton.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/roliasong/Desktop/cs236/Interpreter/RulesAutomaton.cpp -o CMakeFiles/project_2.dir/RulesAutomaton.cpp.s
+CMakeFiles/project_2.dir/Automatons/RulesAutomaton.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_2.dir/Automatons/RulesAutomaton.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/roliasong/Desktop/cs236/Interpreter/Automatons/RulesAutomaton.cpp -o CMakeFiles/project_2.dir/Automatons/RulesAutomaton.cpp.s
 
-CMakeFiles/project_2.dir/QueriesAutomaton.cpp.o: CMakeFiles/project_2.dir/flags.make
-CMakeFiles/project_2.dir/QueriesAutomaton.cpp.o: ../QueriesAutomaton.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/roliasong/Desktop/cs236/Interpreter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/project_2.dir/QueriesAutomaton.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_2.dir/QueriesAutomaton.cpp.o -c /Users/roliasong/Desktop/cs236/Interpreter/QueriesAutomaton.cpp
+CMakeFiles/project_2.dir/Automatons/QueriesAutomaton.cpp.o: CMakeFiles/project_2.dir/flags.make
+CMakeFiles/project_2.dir/Automatons/QueriesAutomaton.cpp.o: ../Automatons/QueriesAutomaton.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/roliasong/Desktop/cs236/Interpreter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/project_2.dir/Automatons/QueriesAutomaton.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_2.dir/Automatons/QueriesAutomaton.cpp.o -c /Users/roliasong/Desktop/cs236/Interpreter/Automatons/QueriesAutomaton.cpp
 
-CMakeFiles/project_2.dir/QueriesAutomaton.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_2.dir/QueriesAutomaton.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/roliasong/Desktop/cs236/Interpreter/QueriesAutomaton.cpp > CMakeFiles/project_2.dir/QueriesAutomaton.cpp.i
+CMakeFiles/project_2.dir/Automatons/QueriesAutomaton.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_2.dir/Automatons/QueriesAutomaton.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/roliasong/Desktop/cs236/Interpreter/Automatons/QueriesAutomaton.cpp > CMakeFiles/project_2.dir/Automatons/QueriesAutomaton.cpp.i
 
-CMakeFiles/project_2.dir/QueriesAutomaton.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_2.dir/QueriesAutomaton.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/roliasong/Desktop/cs236/Interpreter/QueriesAutomaton.cpp -o CMakeFiles/project_2.dir/QueriesAutomaton.cpp.s
+CMakeFiles/project_2.dir/Automatons/QueriesAutomaton.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_2.dir/Automatons/QueriesAutomaton.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/roliasong/Desktop/cs236/Interpreter/Automatons/QueriesAutomaton.cpp -o CMakeFiles/project_2.dir/Automatons/QueriesAutomaton.cpp.s
 
-CMakeFiles/project_2.dir/StringAutomaton.cpp.o: CMakeFiles/project_2.dir/flags.make
-CMakeFiles/project_2.dir/StringAutomaton.cpp.o: ../StringAutomaton.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/roliasong/Desktop/cs236/Interpreter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/project_2.dir/StringAutomaton.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_2.dir/StringAutomaton.cpp.o -c /Users/roliasong/Desktop/cs236/Interpreter/StringAutomaton.cpp
+CMakeFiles/project_2.dir/Automatons/StringAutomaton.cpp.o: CMakeFiles/project_2.dir/flags.make
+CMakeFiles/project_2.dir/Automatons/StringAutomaton.cpp.o: ../Automatons/StringAutomaton.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/roliasong/Desktop/cs236/Interpreter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/project_2.dir/Automatons/StringAutomaton.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_2.dir/Automatons/StringAutomaton.cpp.o -c /Users/roliasong/Desktop/cs236/Interpreter/Automatons/StringAutomaton.cpp
 
-CMakeFiles/project_2.dir/StringAutomaton.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_2.dir/StringAutomaton.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/roliasong/Desktop/cs236/Interpreter/StringAutomaton.cpp > CMakeFiles/project_2.dir/StringAutomaton.cpp.i
+CMakeFiles/project_2.dir/Automatons/StringAutomaton.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_2.dir/Automatons/StringAutomaton.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/roliasong/Desktop/cs236/Interpreter/Automatons/StringAutomaton.cpp > CMakeFiles/project_2.dir/Automatons/StringAutomaton.cpp.i
 
-CMakeFiles/project_2.dir/StringAutomaton.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_2.dir/StringAutomaton.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/roliasong/Desktop/cs236/Interpreter/StringAutomaton.cpp -o CMakeFiles/project_2.dir/StringAutomaton.cpp.s
+CMakeFiles/project_2.dir/Automatons/StringAutomaton.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_2.dir/Automatons/StringAutomaton.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/roliasong/Desktop/cs236/Interpreter/Automatons/StringAutomaton.cpp -o CMakeFiles/project_2.dir/Automatons/StringAutomaton.cpp.s
 
-CMakeFiles/project_2.dir/CommentAutomaton.cpp.o: CMakeFiles/project_2.dir/flags.make
-CMakeFiles/project_2.dir/CommentAutomaton.cpp.o: ../CommentAutomaton.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/roliasong/Desktop/cs236/Interpreter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/project_2.dir/CommentAutomaton.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_2.dir/CommentAutomaton.cpp.o -c /Users/roliasong/Desktop/cs236/Interpreter/CommentAutomaton.cpp
+CMakeFiles/project_2.dir/Automatons/CommentAutomaton.cpp.o: CMakeFiles/project_2.dir/flags.make
+CMakeFiles/project_2.dir/Automatons/CommentAutomaton.cpp.o: ../Automatons/CommentAutomaton.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/roliasong/Desktop/cs236/Interpreter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/project_2.dir/Automatons/CommentAutomaton.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_2.dir/Automatons/CommentAutomaton.cpp.o -c /Users/roliasong/Desktop/cs236/Interpreter/Automatons/CommentAutomaton.cpp
 
-CMakeFiles/project_2.dir/CommentAutomaton.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_2.dir/CommentAutomaton.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/roliasong/Desktop/cs236/Interpreter/CommentAutomaton.cpp > CMakeFiles/project_2.dir/CommentAutomaton.cpp.i
+CMakeFiles/project_2.dir/Automatons/CommentAutomaton.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_2.dir/Automatons/CommentAutomaton.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/roliasong/Desktop/cs236/Interpreter/Automatons/CommentAutomaton.cpp > CMakeFiles/project_2.dir/Automatons/CommentAutomaton.cpp.i
 
-CMakeFiles/project_2.dir/CommentAutomaton.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_2.dir/CommentAutomaton.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/roliasong/Desktop/cs236/Interpreter/CommentAutomaton.cpp -o CMakeFiles/project_2.dir/CommentAutomaton.cpp.s
+CMakeFiles/project_2.dir/Automatons/CommentAutomaton.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_2.dir/Automatons/CommentAutomaton.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/roliasong/Desktop/cs236/Interpreter/Automatons/CommentAutomaton.cpp -o CMakeFiles/project_2.dir/Automatons/CommentAutomaton.cpp.s
 
-CMakeFiles/project_2.dir/UndefinedAutomaton.cpp.o: CMakeFiles/project_2.dir/flags.make
-CMakeFiles/project_2.dir/UndefinedAutomaton.cpp.o: ../UndefinedAutomaton.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/roliasong/Desktop/cs236/Interpreter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/project_2.dir/UndefinedAutomaton.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_2.dir/UndefinedAutomaton.cpp.o -c /Users/roliasong/Desktop/cs236/Interpreter/UndefinedAutomaton.cpp
+CMakeFiles/project_2.dir/Automatons/UndefinedAutomaton.cpp.o: CMakeFiles/project_2.dir/flags.make
+CMakeFiles/project_2.dir/Automatons/UndefinedAutomaton.cpp.o: ../Automatons/UndefinedAutomaton.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/roliasong/Desktop/cs236/Interpreter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/project_2.dir/Automatons/UndefinedAutomaton.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_2.dir/Automatons/UndefinedAutomaton.cpp.o -c /Users/roliasong/Desktop/cs236/Interpreter/Automatons/UndefinedAutomaton.cpp
 
-CMakeFiles/project_2.dir/UndefinedAutomaton.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_2.dir/UndefinedAutomaton.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/roliasong/Desktop/cs236/Interpreter/UndefinedAutomaton.cpp > CMakeFiles/project_2.dir/UndefinedAutomaton.cpp.i
+CMakeFiles/project_2.dir/Automatons/UndefinedAutomaton.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_2.dir/Automatons/UndefinedAutomaton.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/roliasong/Desktop/cs236/Interpreter/Automatons/UndefinedAutomaton.cpp > CMakeFiles/project_2.dir/Automatons/UndefinedAutomaton.cpp.i
 
-CMakeFiles/project_2.dir/UndefinedAutomaton.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_2.dir/UndefinedAutomaton.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/roliasong/Desktop/cs236/Interpreter/UndefinedAutomaton.cpp -o CMakeFiles/project_2.dir/UndefinedAutomaton.cpp.s
+CMakeFiles/project_2.dir/Automatons/UndefinedAutomaton.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_2.dir/Automatons/UndefinedAutomaton.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/roliasong/Desktop/cs236/Interpreter/Automatons/UndefinedAutomaton.cpp -o CMakeFiles/project_2.dir/Automatons/UndefinedAutomaton.cpp.s
 
-CMakeFiles/project_2.dir/EOFAutomaton.cpp.o: CMakeFiles/project_2.dir/flags.make
-CMakeFiles/project_2.dir/EOFAutomaton.cpp.o: ../EOFAutomaton.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/roliasong/Desktop/cs236/Interpreter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/project_2.dir/EOFAutomaton.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_2.dir/EOFAutomaton.cpp.o -c /Users/roliasong/Desktop/cs236/Interpreter/EOFAutomaton.cpp
+CMakeFiles/project_2.dir/Automatons/EOFAutomaton.cpp.o: CMakeFiles/project_2.dir/flags.make
+CMakeFiles/project_2.dir/Automatons/EOFAutomaton.cpp.o: ../Automatons/EOFAutomaton.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/roliasong/Desktop/cs236/Interpreter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/project_2.dir/Automatons/EOFAutomaton.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_2.dir/Automatons/EOFAutomaton.cpp.o -c /Users/roliasong/Desktop/cs236/Interpreter/Automatons/EOFAutomaton.cpp
 
-CMakeFiles/project_2.dir/EOFAutomaton.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_2.dir/EOFAutomaton.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/roliasong/Desktop/cs236/Interpreter/EOFAutomaton.cpp > CMakeFiles/project_2.dir/EOFAutomaton.cpp.i
+CMakeFiles/project_2.dir/Automatons/EOFAutomaton.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_2.dir/Automatons/EOFAutomaton.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/roliasong/Desktop/cs236/Interpreter/Automatons/EOFAutomaton.cpp > CMakeFiles/project_2.dir/Automatons/EOFAutomaton.cpp.i
 
-CMakeFiles/project_2.dir/EOFAutomaton.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_2.dir/EOFAutomaton.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/roliasong/Desktop/cs236/Interpreter/EOFAutomaton.cpp -o CMakeFiles/project_2.dir/EOFAutomaton.cpp.s
+CMakeFiles/project_2.dir/Automatons/EOFAutomaton.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_2.dir/Automatons/EOFAutomaton.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/roliasong/Desktop/cs236/Interpreter/Automatons/EOFAutomaton.cpp -o CMakeFiles/project_2.dir/Automatons/EOFAutomaton.cpp.s
 
 CMakeFiles/project_2.dir/ID.cpp.o: CMakeFiles/project_2.dir/flags.make
 CMakeFiles/project_2.dir/ID.cpp.o: ../ID.cpp
@@ -339,18 +339,18 @@ CMakeFiles/project_2.dir/ID.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_2.dir/ID.cpp.s"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/roliasong/Desktop/cs236/Interpreter/ID.cpp -o CMakeFiles/project_2.dir/ID.cpp.s
 
-CMakeFiles/project_2.dir/MultiComment.cpp.o: CMakeFiles/project_2.dir/flags.make
-CMakeFiles/project_2.dir/MultiComment.cpp.o: ../MultiComment.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/roliasong/Desktop/cs236/Interpreter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/project_2.dir/MultiComment.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_2.dir/MultiComment.cpp.o -c /Users/roliasong/Desktop/cs236/Interpreter/MultiComment.cpp
+CMakeFiles/project_2.dir/Automatons/MultiComment.cpp.o: CMakeFiles/project_2.dir/flags.make
+CMakeFiles/project_2.dir/Automatons/MultiComment.cpp.o: ../Automatons/MultiComment.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/roliasong/Desktop/cs236/Interpreter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/project_2.dir/Automatons/MultiComment.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_2.dir/Automatons/MultiComment.cpp.o -c /Users/roliasong/Desktop/cs236/Interpreter/Automatons/MultiComment.cpp
 
-CMakeFiles/project_2.dir/MultiComment.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_2.dir/MultiComment.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/roliasong/Desktop/cs236/Interpreter/MultiComment.cpp > CMakeFiles/project_2.dir/MultiComment.cpp.i
+CMakeFiles/project_2.dir/Automatons/MultiComment.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_2.dir/Automatons/MultiComment.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/roliasong/Desktop/cs236/Interpreter/Automatons/MultiComment.cpp > CMakeFiles/project_2.dir/Automatons/MultiComment.cpp.i
 
-CMakeFiles/project_2.dir/MultiComment.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_2.dir/MultiComment.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/roliasong/Desktop/cs236/Interpreter/MultiComment.cpp -o CMakeFiles/project_2.dir/MultiComment.cpp.s
+CMakeFiles/project_2.dir/Automatons/MultiComment.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_2.dir/Automatons/MultiComment.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/roliasong/Desktop/cs236/Interpreter/Automatons/MultiComment.cpp -o CMakeFiles/project_2.dir/Automatons/MultiComment.cpp.s
 
 CMakeFiles/project_2.dir/DatalogProgram.cpp.o: CMakeFiles/project_2.dir/flags.make
 CMakeFiles/project_2.dir/DatalogProgram.cpp.o: ../DatalogProgram.cpp
@@ -471,28 +471,28 @@ CMakeFiles/project_2.dir/Database.cpp.s: cmake_force
 
 # Object files for target project_2
 project_2_OBJECTS = \
-"CMakeFiles/project_2.dir/ColonAutomaton.cpp.o" \
-"CMakeFiles/project_2.dir/ColonDashAutomaton.cpp.o" \
+"CMakeFiles/project_2.dir/Automatons/ColonAutomaton.cpp.o" \
+"CMakeFiles/project_2.dir/Automatons/ColonDashAutomaton.cpp.o" \
 "CMakeFiles/project_2.dir/Lexer.cpp.o" \
 "CMakeFiles/project_2.dir/main.cpp.o" \
 "CMakeFiles/project_2.dir/Token.cpp.o" \
-"CMakeFiles/project_2.dir/CommaAutomaton.cpp.o" \
-"CMakeFiles/project_2.dir/PeriodAutomaton.cpp.o" \
-"CMakeFiles/project_2.dir/QmarkAutomaton.cpp.o" \
-"CMakeFiles/project_2.dir/LeftParenAutomaton.cpp.o" \
-"CMakeFiles/project_2.dir/RightParenAutomaton.cpp.o" \
-"CMakeFiles/project_2.dir/MultiplyAutomaton.cpp.o" \
-"CMakeFiles/project_2.dir/AddAutomaton.cpp.o" \
-"CMakeFiles/project_2.dir/SchemesAutomaton.cpp.o" \
-"CMakeFiles/project_2.dir/FactsAutomaton.cpp.o" \
-"CMakeFiles/project_2.dir/RulesAutomaton.cpp.o" \
-"CMakeFiles/project_2.dir/QueriesAutomaton.cpp.o" \
-"CMakeFiles/project_2.dir/StringAutomaton.cpp.o" \
-"CMakeFiles/project_2.dir/CommentAutomaton.cpp.o" \
-"CMakeFiles/project_2.dir/UndefinedAutomaton.cpp.o" \
-"CMakeFiles/project_2.dir/EOFAutomaton.cpp.o" \
+"CMakeFiles/project_2.dir/Automatons/CommaAutomaton.cpp.o" \
+"CMakeFiles/project_2.dir/Automatons/PeriodAutomaton.cpp.o" \
+"CMakeFiles/project_2.dir/Automatons/QmarkAutomaton.cpp.o" \
+"CMakeFiles/project_2.dir/Automatons/LeftParenAutomaton.cpp.o" \
+"CMakeFiles/project_2.dir/Automatons/RightParenAutomaton.cpp.o" \
+"CMakeFiles/project_2.dir/Automatons/MultiplyAutomaton.cpp.o" \
+"CMakeFiles/project_2.dir/Automatons/AddAutomaton.cpp.o" \
+"CMakeFiles/project_2.dir/Automatons/SchemesAutomaton.cpp.o" \
+"CMakeFiles/project_2.dir/Automatons/FactsAutomaton.cpp.o" \
+"CMakeFiles/project_2.dir/Automatons/RulesAutomaton.cpp.o" \
+"CMakeFiles/project_2.dir/Automatons/QueriesAutomaton.cpp.o" \
+"CMakeFiles/project_2.dir/Automatons/StringAutomaton.cpp.o" \
+"CMakeFiles/project_2.dir/Automatons/CommentAutomaton.cpp.o" \
+"CMakeFiles/project_2.dir/Automatons/UndefinedAutomaton.cpp.o" \
+"CMakeFiles/project_2.dir/Automatons/EOFAutomaton.cpp.o" \
 "CMakeFiles/project_2.dir/ID.cpp.o" \
-"CMakeFiles/project_2.dir/MultiComment.cpp.o" \
+"CMakeFiles/project_2.dir/Automatons/MultiComment.cpp.o" \
 "CMakeFiles/project_2.dir/DatalogProgram.cpp.o" \
 "CMakeFiles/project_2.dir/Rule.cpp.o" \
 "CMakeFiles/project_2.dir/Predicate.cpp.o" \
@@ -506,28 +506,28 @@ project_2_OBJECTS = \
 # External object files for target project_2
 project_2_EXTERNAL_OBJECTS =
 
-project_2: CMakeFiles/project_2.dir/ColonAutomaton.cpp.o
-project_2: CMakeFiles/project_2.dir/ColonDashAutomaton.cpp.o
+project_2: CMakeFiles/project_2.dir/Automatons/ColonAutomaton.cpp.o
+project_2: CMakeFiles/project_2.dir/Automatons/ColonDashAutomaton.cpp.o
 project_2: CMakeFiles/project_2.dir/Lexer.cpp.o
 project_2: CMakeFiles/project_2.dir/main.cpp.o
 project_2: CMakeFiles/project_2.dir/Token.cpp.o
-project_2: CMakeFiles/project_2.dir/CommaAutomaton.cpp.o
-project_2: CMakeFiles/project_2.dir/PeriodAutomaton.cpp.o
-project_2: CMakeFiles/project_2.dir/QmarkAutomaton.cpp.o
-project_2: CMakeFiles/project_2.dir/LeftParenAutomaton.cpp.o
-project_2: CMakeFiles/project_2.dir/RightParenAutomaton.cpp.o
-project_2: CMakeFiles/project_2.dir/MultiplyAutomaton.cpp.o
-project_2: CMakeFiles/project_2.dir/AddAutomaton.cpp.o
-project_2: CMakeFiles/project_2.dir/SchemesAutomaton.cpp.o
-project_2: CMakeFiles/project_2.dir/FactsAutomaton.cpp.o
-project_2: CMakeFiles/project_2.dir/RulesAutomaton.cpp.o
-project_2: CMakeFiles/project_2.dir/QueriesAutomaton.cpp.o
-project_2: CMakeFiles/project_2.dir/StringAutomaton.cpp.o
-project_2: CMakeFiles/project_2.dir/CommentAutomaton.cpp.o
-project_2: CMakeFiles/project_2.dir/UndefinedAutomaton.cpp.o
-project_2: CMakeFiles/project_2.dir/EOFAutomaton.cpp.o
+project_2: CMakeFiles/project_2.dir/Automatons/CommaAutomaton.cpp.o
+project_2: CMakeFiles/project_2.dir/Automatons/PeriodAutomaton.cpp.o
+project_2: CMakeFiles/project_2.dir/Automatons/QmarkAutomaton.cpp.o
+project_2: CMakeFiles/project_2.dir/Automatons/LeftParenAutomaton.cpp.o
+project_2: CMakeFiles/project_2.dir/Automatons/RightParenAutomaton.cpp.o
+project_2: CMakeFiles/project_2.dir/Automatons/MultiplyAutomaton.cpp.o
+project_2: CMakeFiles/project_2.dir/Automatons/AddAutomaton.cpp.o
+project_2: CMakeFiles/project_2.dir/Automatons/SchemesAutomaton.cpp.o
+project_2: CMakeFiles/project_2.dir/Automatons/FactsAutomaton.cpp.o
+project_2: CMakeFiles/project_2.dir/Automatons/RulesAutomaton.cpp.o
+project_2: CMakeFiles/project_2.dir/Automatons/QueriesAutomaton.cpp.o
+project_2: CMakeFiles/project_2.dir/Automatons/StringAutomaton.cpp.o
+project_2: CMakeFiles/project_2.dir/Automatons/CommentAutomaton.cpp.o
+project_2: CMakeFiles/project_2.dir/Automatons/UndefinedAutomaton.cpp.o
+project_2: CMakeFiles/project_2.dir/Automatons/EOFAutomaton.cpp.o
 project_2: CMakeFiles/project_2.dir/ID.cpp.o
-project_2: CMakeFiles/project_2.dir/MultiComment.cpp.o
+project_2: CMakeFiles/project_2.dir/Automatons/MultiComment.cpp.o
 project_2: CMakeFiles/project_2.dir/DatalogProgram.cpp.o
 project_2: CMakeFiles/project_2.dir/Rule.cpp.o
 project_2: CMakeFiles/project_2.dir/Predicate.cpp.o

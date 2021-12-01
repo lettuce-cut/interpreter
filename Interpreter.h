@@ -22,6 +22,10 @@ public:
     void makeRelation();
     Relation evaluatePredicate(Predicate p);
     void evaluateAll();
+
+    //Project 4
+    Relation evaluateRule(Rule r);
+    void allRules();
 };
 
 

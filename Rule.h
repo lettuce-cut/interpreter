@@ -12,11 +12,13 @@ private:
 public:
     ~Rule();
     void addBody(std::vector<Predicate> input);
-    static void ruleString(std::vector<Rule> input);
+    static void ruleString(Rule input);
 
     Rule();
 
     void setHead(const Predicate& input);
+    Predicate getHead();
+    std::vector<Predicate> getBody();
 };
 
 #endif //PROJECT_2_RULE_H

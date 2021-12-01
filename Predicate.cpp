@@ -11,7 +11,7 @@ void Predicate::addParameter(std::vector<Parameter*> input) {
 
 void Predicate::stringPredicate(std::vector<Predicate> input, std::string punct) {
     for (auto & i : input) {
-        std::cout << "  " << i.id << "(";
+        std::cout << i.id << "(";
         for (long unsigned int j = 0; j < i.parameters.size(); j++) {
             if (j == i.parameters.size() - 1) {
                 std::cout << i.parameters.at(j)->paramString() << ")";
@@ -28,7 +28,6 @@ void Predicate::stringPredicate(std::vector<Predicate> input, std::string punct)
         }
         std::cout << std::endl;
     }
-//    std::cout << std::endl;
 }
 
 Predicate::Predicate(Predicate *pPredicate) {
