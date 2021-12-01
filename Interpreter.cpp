@@ -227,7 +227,7 @@ void Interpreter::allRules() {
     }
 
 
-    std::cout << "\nSchemes populated after running " << passCount << " passes through the Rules.\n" << std::endl;
+    std::cout << "\nSchemes populated after " << passCount << " passes through the Rules.\n" << std::endl;
 }
 
 Interpreter::~Interpreter() = default;
