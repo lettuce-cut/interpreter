@@ -8,7 +8,7 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Werror")
 include_directories(.)
 
 add_executable(project_2
-        Automaton.h
+        Automatons/Automaton.h
         Automatons/ColonAutomaton.cpp
         Automatons/ColonAutomaton.h
         Automatons/ColonDashAutomaton.cpp
