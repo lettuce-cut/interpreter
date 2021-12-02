@@ -209,7 +209,7 @@ void Interpreter::allRules() {
 
 
     while (postCount != preCount) {
-        int allPass = rulesFromParser.size();
+        long unsigned int allPass = rulesFromParser.size();
         for (long unsigned int i = 0; i < rulesFromParser.size(); i++) {
             preCount = myDatabase.database[rulesFromParser[i].getHead().id].relations.size();
             evaluateRule(rulesFromParser[i]);

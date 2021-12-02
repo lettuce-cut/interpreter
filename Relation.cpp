@@ -154,7 +154,7 @@ bool Relation::isJoinable(Tuple firstTuple, Tuple secondTuple, std::map<int, int
     return toReturn;
 }
 
-Tuple Relation::combineTuples(Tuple firstTuple, Tuple secondTuple, std::map<int, int>& indices, int headerCount) {
+Tuple Relation::combineTuples(Tuple firstTuple, Tuple secondTuple, std::map<int, int>& indices, long unsigned int headerCount) {
 //    std::cout << "IN COMBINE" << std::endl;
     Tuple toReturn = Tuple();
 
