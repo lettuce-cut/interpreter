@@ -193,10 +193,16 @@ Tuple Relation::combineTuples(Tuple firstTuple, Tuple secondTuple, std::map<int,
     return toReturn;
 }
 
-Relation Relation::Uniter(Relation toUnite) {
+Relation Relation::Uniter(Relation toUnite, std::set<Tuple>& relationsAdded) {
 
     for (Tuple t : this->relations) {
-        toUnite.addTuple(t);
+        if(toUnite.relations.find(t) != toUnite.relations.end()) {
+            toUnite.addTuple(t);
+        }
+        else {
+            relationsAdded.insert(t);
+            toUnite.addTuple(t);
+        }
     }
 
     return toUnite;

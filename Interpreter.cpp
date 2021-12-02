@@ -167,11 +167,11 @@ Relation Interpreter::evaluateRule(Rule r) {
 
 
         if (ogReturn.relations.size() == 0) {
+//            std::cout << "WON'T JOIN" << std::endl;
             ogReturn = toReturn;
-//            std::cout << "ascofialaje" <<std::endl;
-//            ogReturn.toString();
         }
         else {
+//            std::cout << "WILL JOIN" << std::endl;
             ogReturn = toReturn.Join(ogReturn);
         }
     }
@@ -197,8 +197,10 @@ Relation Interpreter::evaluateRule(Rule r) {
     ogReturn = ogReturn.Rename(forNames);
 
     //Step 5
-    myDatabase.database[r.getHead().id].relations = ogReturn.Uniter(myDatabase.database[r.getHead().id]).relations;
-//    std::cout << "FINAL" << std::endl;
+    Relation relationsAdded = Relation();
+    myDatabase.database[r.getHead().id].relations = ogReturn.Uniter(myDatabase.database[r.getHead().id], relationsAdded.relations).relations;
+    ogReturn.relations = relationsAdded.relations;
+//    ogReturn.toString();
     return ogReturn;
 }
 
@@ -206,13 +208,14 @@ void Interpreter::allRules() {
     int preCount = 0;
     int postCount = -1;
     int passCount = 0;
+    Relation evaluated = Relation();
 
 
     while (postCount != preCount) {
         long unsigned int allPass = rulesFromParser.size();
         for (long unsigned int i = 0; i < rulesFromParser.size(); i++) {
             preCount = myDatabase.database[rulesFromParser[i].getHead().id].relations.size();
-            evaluateRule(rulesFromParser[i]);
+            evaluated = evaluateRule(rulesFromParser[i]);
 //            Rule::ruleString(rulesFromParser[i]);
 //            evaluateRule(rulesFromParser[i]).toString();
             postCount = myDatabase.database[rulesFromParser[i].getHead().id].relations.size();
@@ -220,7 +223,7 @@ void Interpreter::allRules() {
 
             if (preCount != postCount) {
                 Rule::ruleString(rulesFromParser[i]);
-                evaluateRule(rulesFromParser[i]).toString();
+                evaluated.toString();
                 allPass -= 1;
             }
             else {
