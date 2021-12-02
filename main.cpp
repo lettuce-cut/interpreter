@@ -49,7 +49,6 @@ int main (int argc, char** argv) {
     std::cout << "Rule Evaluation" << std::endl;
     myInterpreter.allRules(); //evaluates rules
     myInterpreter.evaluateAll(); //evaluates queries
-    std::cout << std::endl;
 
     delete lexer;
 
