@@ -29,7 +29,7 @@ public:
 
     Relation Join(Relation joinWith);
     bool isJoinable(Tuple firstTuple, Tuple secondTuple, std::map<int, int>& indices);
-    Tuple combineTuples(Tuple firstTuple, Tuple secondTuple, std::map<int, int>& indices);
+    Tuple combineTuples(Tuple firstTuple, Tuple secondTuple, std::map<int, int>& indices, int headerCount);
     Relation Uniter(Relation toUnite);
 };
 

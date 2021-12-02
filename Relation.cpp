@@ -112,7 +112,12 @@ Relation Relation::Join(Relation joinWith) {
             canJoin = isJoinable(t, u, indices);
             if (canJoin == true) {
 //                std::cout << "is JOIN TRUE" << std::endl;
-                toAdd = combineTuples(t, u, indices);
+                toAdd = combineTuples(t, u, indices, isJoining.relationHeader.attributes.size());
+//                std::cout << "TO ADD IS" << std::endl;
+//                for (int i =0; i < toAdd.values.size(); i++) {
+//                    std::cout << toAdd.values[i] << " ";
+//                }
+//                std::cout << std::endl;
                 isJoining.addTuple(toAdd);
             }
         }
@@ -121,6 +126,7 @@ Relation Relation::Join(Relation joinWith) {
 }
 
 bool Relation::isJoinable(Tuple firstTuple, Tuple secondTuple, std::map<int, int>& indices) {
+//    std::cout << "CANJOIN" << std::endl;
     bool toReturn;
     int counter = 0;
 
@@ -130,7 +136,6 @@ bool Relation::isJoinable(Tuple firstTuple, Tuple secondTuple, std::map<int, int
 
 
     else {
-
         std::map<int, int>:: iterator it;
 
         for (it = indices.begin(); it != indices.end(); it++) {
@@ -139,31 +144,52 @@ bool Relation::isJoinable(Tuple firstTuple, Tuple secondTuple, std::map<int, int
                 counter += 1;
             }
         }
-    }
-
-    if (counter > 0) {
-        toReturn = true;
-    }
-    else {
-        toReturn = false;
+        if (counter > 0) {
+            toReturn = true;
+        }
+        else {
+            toReturn = false;
+        }
     }
     return toReturn;
 }
 
-Tuple Relation::combineTuples(Tuple firstTuple, Tuple secondTuple, std::map<int, int>& indices) {
+Tuple Relation::combineTuples(Tuple firstTuple, Tuple secondTuple, std::map<int, int>& indices, int headerCount) {
 //    std::cout << "IN COMBINE" << std::endl;
     Tuple toReturn = Tuple();
 
+
+//    std::cout << "Second" << std::endl;
+//    for (int i =0; i < secondTuple.values.size(); i++) {
+//        std::cout << secondTuple.values[i] << " ";
+//    }
+//    std::cout << std::endl;
+//    std::cout << "First" << std::endl;
+//    for (int i =0; i < firstTuple.values.size(); i++) {
+//        std::cout << firstTuple.values[i] << " ";
+//    }
+//    std::cout << std::endl;
 
     for (const auto & value : secondTuple.values) {
         toReturn.values.push_back(value);
     }
 
     for (long unsigned int i = 0; i < firstTuple.values.size(); i++) {
-        if (firstTuple.values[i] != toReturn.values[toReturn.values.size()-1]) {
+        if (headerCount == (firstTuple.values.size() + secondTuple.values.size())) {
             toReturn.values.push_back(firstTuple.values[i]);
         }
+        else {
+            if (firstTuple.values[i] != toReturn.values[toReturn.values.size()-1]) {
+                toReturn.values.push_back(firstTuple.values[i]);
+            }
+        }
     }
+
+//    std::cout <<"TEST" <<std::endl;
+//    for (int i =0; i < toReturn.values.size(); i++) {
+//        std::cout << toReturn.values[i] << " ";
+//    }
+//    std::cout << std::endl;
     return toReturn;
 }
 

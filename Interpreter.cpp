@@ -198,7 +198,6 @@ Relation Interpreter::evaluateRule(Rule r) {
 
     //Step 5
     myDatabase.database[r.getHead().id].relations = ogReturn.Uniter(myDatabase.database[r.getHead().id]).relations;
-
 //    std::cout << "FINAL" << std::endl;
     return ogReturn;
 }
@@ -208,20 +207,29 @@ void Interpreter::allRules() {
     int postCount = -1;
     int passCount = 0;
 
+
     while (postCount != preCount) {
+        int allPass = rulesFromParser.size();
         for (long unsigned int i = 0; i < rulesFromParser.size(); i++) {
             preCount = myDatabase.database[rulesFromParser[i].getHead().id].relations.size();
             evaluateRule(rulesFromParser[i]);
+//            Rule::ruleString(rulesFromParser[i]);
+//            evaluateRule(rulesFromParser[i]).toString();
             postCount = myDatabase.database[rulesFromParser[i].getHead().id].relations.size();
 //            std::cout << preCount << " + " << postCount << std::endl;
 
             if (preCount != postCount) {
                 Rule::ruleString(rulesFromParser[i]);
                 evaluateRule(rulesFromParser[i]).toString();
+                allPass -= 1;
             }
             else {
                 Rule::ruleString(rulesFromParser[i]);
             }
+            if (allPass != rulesFromParser.size()) {
+                postCount = preCount +1;
+            }
+//            std::cout << preCount << " + " << postCount << std::endl;
         }
         passCount += 1;
     }
