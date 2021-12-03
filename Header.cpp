@@ -67,6 +67,7 @@ Header Header::combineHeaders(Header headerToJoin, std::map<int, int>& indices) 
         for (long unsigned int j =0; j < this->attributes.size(); j++) {
             if (headerToJoin.attributes[i] == this->attributes[j]){
                 indices[i] = j;
+//                std::cout << i << " + " << indices[i] << std::endl;
             }
         }
     }

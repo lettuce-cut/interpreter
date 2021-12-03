@@ -102,6 +102,10 @@ Relation Interpreter::evaluateRule(Rule r) {
     //STEPS 1 AND 2
 //    std::cout << "TEST" <<std::endl;
     for (long unsigned int s =  0; s < r.getBody().size(); s++) {
+//        std::cout << "TEST + " << s << std::endl;
+//        ogReturn.toString();
+//        std::cout << std::endl;
+
         Relation toReturn = myDatabase.database[r.getBody().at(s).id];
 
 //        std::cout << "TEST" <<std::endl;
@@ -215,6 +219,7 @@ void Interpreter::allRules() {
         long unsigned int allPass = rulesFromParser.size();
         for (long unsigned int i = 0; i < rulesFromParser.size(); i++) {
             preCount = myDatabase.database[rulesFromParser[i].getHead().id].relations.size();
+//            std::cout << "RULE #" << i<< std::endl;
             evaluated = evaluateRule(rulesFromParser[i]);
 //            Rule::ruleString(rulesFromParser[i]);
 //            evaluateRule(rulesFromParser[i]).toString();

@@ -159,29 +159,33 @@ Tuple Relation::combineTuples(Tuple firstTuple, Tuple secondTuple, std::map<int,
     Tuple toReturn = Tuple();
 
 
-//    std::cout << "Second" << std::endl;
-//    for (int i =0; i < secondTuple.values.size(); i++) {
-//        std::cout << secondTuple.values[i] << " ";
-//    }
-//    std::cout << std::endl;
-//    std::cout << "First" << std::endl;
-//    for (int i =0; i < firstTuple.values.size(); i++) {
-//        std::cout << firstTuple.values[i] << " ";
-//    }
-//    std::cout << std::endl;
-
     for (const auto & value : secondTuple.values) {
         toReturn.values.push_back(value);
     }
 
     for (long unsigned int i = 0; i < firstTuple.values.size(); i++) {
+//        std::cout << "FIRST TUPLE: " << firstTuple.values[i] << std::endl;
         if (headerCount == (firstTuple.values.size() + secondTuple.values.size())) {
             toReturn.values.push_back(firstTuple.values[i]);
         }
         else {
-            if (firstTuple.values[i] != toReturn.values[toReturn.values.size()-1]) {
-                toReturn.values.push_back(firstTuple.values[i]);
+            std::map<int, int>::iterator it;
+//            std::cout << "TEST" << std::endl;
+            for (it = indices.begin(); it != indices.end(); it++)
+            {
+                if (firstTuple.values[i] == firstTuple.values[it->second]) {
+//                    std::cout << it->first << ':' << it->second << std::endl;
+                    toReturn.values.push_back(firstTuple.values[i+1]);
+                }
+                else {
+                    if (toReturn.values[toReturn.values.size()-1] != firstTuple.values[i]){
+                        toReturn.values.push_back(firstTuple.values[i]);
+                    }
+                }
             }
+//            if (firstTuple.values[i] != toReturn.values[toReturn.values.size()-1]) {
+//                toReturn.values.push_back(firstTuple.values[i]);
+//            }
         }
     }
 
