@@ -9,11 +9,11 @@ Interpreter::Interpreter(DatalogProgram fromParser) {
 }
 
 void Interpreter::makeRelation() {
-    for (long unsigned int i = 0; i < schemesFromParser.size(); i++) {
-        Relation toDatabase = Relation(schemesFromParser[i].id, Header(schemesFromParser[i].parameters));
-        for (long unsigned int j = 0; j < factsFromParser.size(); j++) {
-            if (factsFromParser[j].id == schemesFromParser[i].id) {
-                toDatabase.addTuple(factsFromParser[j].parameters);
+    for (auto & i : schemesFromParser) {
+        Relation toDatabase = Relation(i.id, Header(i.parameters));
+        for (auto & j : factsFromParser) {
+            if (j.id == i.id) {
+                toDatabase.addTuple(j.parameters);
             }
         }
         myDatabase.addRelation(toDatabase);
@@ -29,7 +29,7 @@ Relation Interpreter::evaluatePredicate(Predicate p) {
 
     for (long unsigned int i = 0; i < p.parameters.size(); i++) {
         int count = 0;
-        if (p.parameters[i]->isConstant == true) {
+        if (p.parameters[i]->isConstant) {
             toReturn = toReturn.SelectOne(i, p.parameters[i]->paramString());
         }
         else {//is a variable
@@ -55,7 +55,7 @@ Relation Interpreter::evaluatePredicate(Predicate p) {
     }
     toReturn = toReturn.Project(indices);
     for (int index : indices) {
-        if (forNames.size() == 0) {
+        if (forNames.empty()) {
             forNames.push_back(position[index]);
         }
         else {
@@ -76,18 +76,18 @@ Relation Interpreter::evaluatePredicate(Predicate p) {
 
 void Interpreter::evaluateAll() {
     std::cout << "Query Evaluation" << std::endl;
-    for (long unsigned int i = 0; i < queriesFromParser.size(); i++) {
-        Relation evaluated = evaluatePredicate(queriesFromParser[i]);
-        std::cout << queriesFromParser[i].id << "(";
-        for (long unsigned int j =0; j < queriesFromParser[i].parameters.size(); j++) {
-            if (j == queriesFromParser[i].parameters.size() -1) {
-                std::cout << queriesFromParser[i].parameters[j]->paramString() << ")?";
+    for (auto & i : queriesFromParser) {
+        Relation evaluated = evaluatePredicate(i);
+        std::cout << i.id << "(";
+        for (long unsigned int j =0; j < i.parameters.size(); j++) {
+            if (j == i.parameters.size() -1) {
+                std::cout << i.parameters[j]->paramString() << ")?";
             }
             else {
-                std::cout << queriesFromParser[i].parameters[j]->paramString() << ",";
+                std::cout << i.parameters[j]->paramString() << ",";
             }
         }
-        if (evaluated.relations.size() == 0) {
+        if (evaluated.relations.empty()) {
             std::cout << "No" << std::endl;
         }
         else {
@@ -120,7 +120,7 @@ Relation Interpreter::evaluateRule(Rule r) {
 
         for (long unsigned int i = 0; i < r.getBody().at(s).parameters.size(); i++) {
             int count = 0;
-            if (r.getBody().at(s).parameters[i]->isConstant == true) {
+            if (r.getBody().at(s).parameters[i]->isConstant) {
                 toReturn = toReturn.SelectOne(i, r.getBody().at(s).parameters[i]->paramString());
             }
             else {//is a variable
@@ -150,7 +150,7 @@ Relation Interpreter::evaluateRule(Rule r) {
 //        toReturn.toString();
 
         for (int index : indices) {
-            if (forNames.size() == 0) {
+            if (forNames.empty()) {
                 forNames.push_back(position[index]);
             }
             else {
@@ -170,7 +170,7 @@ Relation Interpreter::evaluateRule(Rule r) {
 //        toReturn.toString();
 
 
-        if (ogReturn.relations.size() == 0) {
+        if (ogReturn.relations.empty()) {
 //            std::cout << "WON'T JOIN" << std::endl;
             ogReturn = toReturn;
         }
@@ -217,22 +217,22 @@ void Interpreter::allRules() {
 
     while (postCount != preCount) {
         long unsigned int allPass = rulesFromParser.size();
-        for (long unsigned int i = 0; i < rulesFromParser.size(); i++) {
-            preCount = myDatabase.database[rulesFromParser[i].getHead().id].relations.size();
+        for (auto & i : rulesFromParser) {
+            preCount = myDatabase.database[i.getHead().id].relations.size();
 //            std::cout << "RULE #" << i<< std::endl;
-            evaluated = evaluateRule(rulesFromParser[i]);
+            evaluated = evaluateRule(i);
 //            Rule::ruleString(rulesFromParser[i]);
 //            evaluateRule(rulesFromParser[i]).toString();
-            postCount = myDatabase.database[rulesFromParser[i].getHead().id].relations.size();
+            postCount = myDatabase.database[i.getHead().id].relations.size();
 //            std::cout << preCount << " + " << postCount << std::endl;
 
             if (preCount != postCount) {
-                Rule::ruleString(rulesFromParser[i]);
+                Rule::ruleString(i);
                 evaluated.toString();
                 allPass -= 1;
             }
             else {
-                Rule::ruleString(rulesFromParser[i]);
+                Rule::ruleString(i);
             }
             if (allPass != rulesFromParser.size()) {
                 postCount = preCount +1;

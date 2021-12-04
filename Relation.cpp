@@ -91,16 +91,11 @@ Relation Relation::Join(Relation joinWith) {
 //    std::cout << std::endl;
 
     Relation isJoining = Relation();
-    bool canJoin = false;
+    bool canJoin;
     std::map<int, int> indices;
     Tuple tupleOne;
     Tuple tupleTwo;
     Tuple toAdd;
-
-//    std::cout << "INDEX CHECK::\n";
-//    for (int i =0; i < indices.size(); i++) {
-//        std::cout << "INDEX:: " << indices[i] << std::endl;
-//    }
 
     isJoining.relationHeader = this->relationHeader.combineHeaders(joinWith.relationHeader, indices);
 //    std::cout << "COMBIEND HEADER" << std::endl;
@@ -110,7 +105,7 @@ Relation Relation::Join(Relation joinWith) {
     for (Tuple t : this->relations) {
         for (Tuple u : joinWith.relations) {
             canJoin = isJoinable(t, u, indices);
-            if (canJoin == true) {
+            if (canJoin) {
 //                std::cout << "is JOIN TRUE" << std::endl;
                 toAdd = combineTuples(t, u, indices, isJoining.relationHeader.attributes.size());
 //                std::cout << "TO ADD IS" << std::endl;

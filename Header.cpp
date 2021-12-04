@@ -4,19 +4,18 @@
 
 #include "Header.h"
 #include <iostream>
-#include <set>
 
 Header::Header(std::vector<Parameter *> input) {
-    for (long unsigned int i = 0; i < input.size(); i++) {
-        attributes.push_back(input[i]->paramString());
+    for (auto & i : input) {
+        attributes.push_back(i->paramString());
     }
 }
 
 Header::Header() = default;
 
 void Header::toString() {
-    for (long unsigned int i = 0; i < attributes.size(); i++) {
-        std::cout << attributes[i] << std::endl;
+    for (auto & attribute : attributes) {
+        std::cout << attribute << std::endl;
     }
 }
 
@@ -30,35 +29,35 @@ Header Header::combineHeaders(Header headerToJoin, std::map<int, int>& indices) 
 //    headerToJoin.toString();
 //    std::cout << std::endl;
 
-    for (long unsigned int i =0; i < headerToJoin.attributes.size(); i++) {
-        if (toReturn.attributes.size() == 0) {
-            toReturn.attributes.push_back(headerToJoin.attributes[i]);
+    for (auto & attribute : headerToJoin.attributes) {
+        if (toReturn.attributes.empty()) {
+            toReturn.attributes.push_back(attribute);
         } else {
             int firstCounter = 0;
-            for (long unsigned int j = 0; j < toReturn.attributes.size(); j++) {
-                if (headerToJoin.attributes[i] == toReturn.attributes[j]) {
+            for (auto & j : toReturn.attributes) {
+                if (attribute == j) {
                     firstCounter += 1;
                 }
             }
             if (firstCounter == 0) {
-                toReturn.attributes.push_back(headerToJoin.attributes[i]);
+                toReturn.attributes.push_back(attribute);
             }
         }
     }
 
-    for (long unsigned int i =0; i < this->attributes.size(); i++) {
-        if (toReturn.attributes.size() == 0) {
-            toReturn.attributes.push_back(this->attributes[i]);
+    for (auto & attribute : this->attributes) {
+        if (toReturn.attributes.empty()) {
+            toReturn.attributes.push_back(attribute);
         }
         else {
             int firstCounter = 0;
-            for (long unsigned int j = 0; j < toReturn.attributes.size(); j++) {
-                if (this->attributes[i] == toReturn.attributes[j]) {
+            for (auto & j : toReturn.attributes) {
+                if (attribute == j) {
                     firstCounter += 1;
                 }
             }
             if (firstCounter == 0) {
-                toReturn.attributes.push_back(this->attributes[i]);
+                toReturn.attributes.push_back(attribute);
             }
         }
     }
