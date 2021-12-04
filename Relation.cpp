@@ -91,7 +91,7 @@ Relation Relation::Join(Relation joinWith) {
 //    std::cout << std::endl;
 
     Relation isJoining = Relation();
-    bool canJoin = false;
+    bool canJoin;
     std::map<int, int> indices;
     Tuple tupleOne;
     Tuple tupleTwo;
