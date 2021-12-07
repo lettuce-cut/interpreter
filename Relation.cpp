@@ -110,7 +110,6 @@ Relation Relation::Join(Relation joinWith) {
         for (Tuple t : this->relations) {
             for (Tuple u : joinWith.relations) {
                 if (u.values == t.values) {
-//                    std::cout << "SAME" << std::endl;
                     toAdd = t;
                     isJoining.addTuple(toAdd);
                 }
@@ -151,12 +150,7 @@ bool Relation::isJoinable(Tuple firstTuple, Tuple secondTuple, std::map<int, int
         }
 
         if (counter > 0) {
-            if (counter == indices.size()){
-                toReturn = false;
-            }
-            else {
-                toReturn = true;
-            }
+            toReturn = true;
         }
     }
     return toReturn;
