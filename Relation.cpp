@@ -134,7 +134,7 @@ Relation Relation::Join(Relation joinWith) {
 bool Relation::isJoinable(Tuple firstTuple, Tuple secondTuple, std::map<int, int>& indices) {
 //    std::cout << "CANJOIN" << std::endl;
     bool toReturn = false;
-    int counter = 0;
+    long unsigned int counter = 0;
 
     if (indices.size() == 0) {
         toReturn = true;
