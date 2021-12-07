@@ -30,7 +30,7 @@ Header Header::combineHeaders(Header headerToJoin, std::map<int, int>& indices) 
 //    headerToJoin.toString();
 //    std::cout << std::endl;
     if (this->attributes == headerToJoin.attributes) {
-        for (int i =0; i < this->attributes.size(); i++) {
+        for (long unsigned int i =0; i < this->attributes.size(); i++) {
             toReturn.attributes.push_back(this->attributes[i]);
             indices[i] = i;
         }
