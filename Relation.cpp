@@ -174,8 +174,9 @@ Tuple Relation::combineTuples(Tuple firstTuple, Tuple secondTuple, std::map<int,
 //            std::cout << "TEST" << std::endl;
             for (it = indices.begin(); it != indices.end(); it++) {
                 if (firstTuple.values[i] == firstTuple.values[it->second]) {
-//                    std::cout << it->first << ':' << it->second << std::endl;
-                    toReturn.values.push_back(firstTuple.values[i+1]);
+                    if (i+1 < firstTuple.values.size()) {
+                        toReturn.values.push_back(firstTuple.values[i+1]);
+                    }
                 }
                 else {
                     if (toReturn.values[toReturn.values.size()-1] != firstTuple.values[i]){
