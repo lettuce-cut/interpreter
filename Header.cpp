@@ -29,45 +29,51 @@ Header Header::combineHeaders(Header headerToJoin, std::map<int, int>& indices) 
 //    std::cout << "woeicfe," << std::endl;
 //    headerToJoin.toString();
 //    std::cout << std::endl;
-
-    for (long unsigned int i =0; i < headerToJoin.attributes.size(); i++) {
-        if (toReturn.attributes.size() == 0) {
-            toReturn.attributes.push_back(headerToJoin.attributes[i]);
-        } else {
-            int firstCounter = 0;
-            for (long unsigned int j = 0; j < toReturn.attributes.size(); j++) {
-                if (headerToJoin.attributes[i] == toReturn.attributes[j]) {
-                    firstCounter += 1;
-                }
-            }
-            if (firstCounter == 0) {
-                toReturn.attributes.push_back(headerToJoin.attributes[i]);
-            }
+    if (this->attributes == headerToJoin.attributes) {
+        for (int i =0; i < this->attributes.size(); i++) {
+            toReturn.attributes.push_back(this->attributes[i]);
+            indices[i] = i;
         }
     }
-
-    for (long unsigned int i =0; i < this->attributes.size(); i++) {
-        if (toReturn.attributes.size() == 0) {
-            toReturn.attributes.push_back(this->attributes[i]);
-        }
-        else {
-            int firstCounter = 0;
-            for (long unsigned int j = 0; j < toReturn.attributes.size(); j++) {
-                if (this->attributes[i] == toReturn.attributes[j]) {
-                    firstCounter += 1;
+    else {
+        for (long unsigned int i =0; i < headerToJoin.attributes.size(); i++) {
+            if (toReturn.attributes.size() == 0) {
+                toReturn.attributes.push_back(headerToJoin.attributes[i]);
+            } else {
+                int firstCounter = 0;
+                for (long unsigned int j = 0; j < toReturn.attributes.size(); j++) {
+                    if (headerToJoin.attributes[i] == toReturn.attributes[j]) {
+                        firstCounter += 1;
+                    }
+                }
+                if (firstCounter == 0) {
+                    toReturn.attributes.push_back(headerToJoin.attributes[i]);
                 }
             }
-            if (firstCounter == 0) {
+        }
+
+        for (long unsigned int i =0; i < this->attributes.size(); i++) {
+            if (toReturn.attributes.size() == 0) {
                 toReturn.attributes.push_back(this->attributes[i]);
             }
+            else {
+                int firstCounter = 0;
+                for (long unsigned int j = 0; j < toReturn.attributes.size(); j++) {
+                    if (this->attributes[i] == toReturn.attributes[j]) {
+                        firstCounter += 1;
+                    }
+                }
+                if (firstCounter == 0) {
+                    toReturn.attributes.push_back(this->attributes[i]);
+                }
+            }
         }
-    }
 
-    for (long unsigned int i =0; i < headerToJoin.attributes.size(); i++) {
-        for (long unsigned int j =0; j < this->attributes.size(); j++) {
-            if (headerToJoin.attributes[i] == this->attributes[j]){
-                indices[i] = j;
-//                std::cout << i << " + " << indices[i] << std::endl;
+        for (long unsigned int i =0; i < headerToJoin.attributes.size(); i++) {
+            for (long unsigned int j =0; j < this->attributes.size(); j++) {
+                if (headerToJoin.attributes[i] == this->attributes[j]){
+                    indices[i] = j;
+                }
             }
         }
     }

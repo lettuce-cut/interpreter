@@ -106,19 +106,25 @@ Relation Relation::Join(Relation joinWith) {
 //    std::cout << "COMBIEND HEADER" << std::endl;
 //    isJoining.relationHeader.toString();
 
-
-    for (Tuple t : this->relations) {
-        for (Tuple u : joinWith.relations) {
-            canJoin = isJoinable(t, u, indices);
-            if (canJoin == true) {
-//                std::cout << "is JOIN TRUE" << std::endl;
-                toAdd = combineTuples(t, u, indices, isJoining.relationHeader.attributes.size());
-//                std::cout << "TO ADD IS" << std::endl;
-//                for (int i =0; i < toAdd.values.size(); i++) {
-//                    std::cout << toAdd.values[i] << " ";
-//                }
-//                std::cout << std::endl;
-                isJoining.addTuple(toAdd);
+    if (isJoining.relationHeader.attributes == this->relationHeader.attributes) {
+        for (Tuple t : this->relations) {
+            for (Tuple u : joinWith.relations) {
+                if (u.values == t.values) {
+//                    std::cout << "SAME" << std::endl;
+                    toAdd = t;
+                    isJoining.addTuple(toAdd);
+                }
+            }
+        }
+    }
+    else {
+        for (Tuple t : this->relations) {
+            for (Tuple u : joinWith.relations) {
+                canJoin = isJoinable(t, u, indices);
+                if (canJoin == true) {
+                    toAdd = combineTuples(t, u, indices, isJoining.relationHeader.attributes.size());
+                    isJoining.addTuple(toAdd);
+                }
             }
         }
     }
@@ -127,7 +133,7 @@ Relation Relation::Join(Relation joinWith) {
 
 bool Relation::isJoinable(Tuple firstTuple, Tuple secondTuple, std::map<int, int>& indices) {
 //    std::cout << "CANJOIN" << std::endl;
-    bool toReturn;
+    bool toReturn = false;
     int counter = 0;
 
     if (indices.size() == 0) {
@@ -139,16 +145,18 @@ bool Relation::isJoinable(Tuple firstTuple, Tuple secondTuple, std::map<int, int
         std::map<int, int>:: iterator it;
 
         for (it = indices.begin(); it != indices.end(); it++) {
-
             if (firstTuple.values[it->second] == secondTuple.values[it->first]) {
                 counter += 1;
             }
         }
+
         if (counter > 0) {
-            toReturn = true;
-        }
-        else {
-            toReturn = false;
+            if (counter == indices.size()){
+                toReturn = false;
+            }
+            else {
+                toReturn = true;
+            }
         }
     }
     return toReturn;
@@ -157,7 +165,6 @@ bool Relation::isJoinable(Tuple firstTuple, Tuple secondTuple, std::map<int, int
 Tuple Relation::combineTuples(Tuple firstTuple, Tuple secondTuple, std::map<int, int>& indices, long unsigned int headerCount) {
 //    std::cout << "IN COMBINE" << std::endl;
     Tuple toReturn = Tuple();
-
 
     for (const auto & value : secondTuple.values) {
         toReturn.values.push_back(value);
@@ -171,8 +178,7 @@ Tuple Relation::combineTuples(Tuple firstTuple, Tuple secondTuple, std::map<int,
         else {
             std::map<int, int>::iterator it;
 //            std::cout << "TEST" << std::endl;
-            for (it = indices.begin(); it != indices.end(); it++)
-            {
+            for (it = indices.begin(); it != indices.end(); it++) {
                 if (firstTuple.values[i] == firstTuple.values[it->second]) {
 //                    std::cout << it->first << ':' << it->second << std::endl;
                     toReturn.values.push_back(firstTuple.values[i+1]);
@@ -183,17 +189,17 @@ Tuple Relation::combineTuples(Tuple firstTuple, Tuple secondTuple, std::map<int,
                     }
                 }
             }
-//            if (firstTuple.values[i] != toReturn.values[toReturn.values.size()-1]) {
+//           if (firstTuple.values[i] != toReturn.values[toReturn.values.size()-1]) {
 //                toReturn.values.push_back(firstTuple.values[i]);
 //            }
         }
-    }
-
 //    std::cout <<"TEST" <<std::endl;
 //    for (int i =0; i < toReturn.values.size(); i++) {
 //        std::cout << toReturn.values[i] << " ";
 //    }
 //    std::cout << std::endl;
+    }
+
     return toReturn;
 }
 
