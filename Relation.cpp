@@ -177,6 +177,9 @@ Tuple Relation::combineTuples(Tuple firstTuple, Tuple secondTuple, std::map<int,
                     if (i+1 < firstTuple.values.size()) {
                         toReturn.values.push_back(firstTuple.values[i+1]);
                     }
+                    else {
+                        toReturn.values.push_back(firstTuple.values[i]);
+                    }
                 }
                 else {
                     if (toReturn.values[toReturn.values.size()-1] != firstTuple.values[i]){
