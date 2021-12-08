@@ -114,21 +114,29 @@ Relation Relation::Join(Relation joinWith) {
     if (isJoining.relationHeader.attributes == this->relationHeader.attributes or copyHeader == joinWith.relationHeader.attributes) {
 //        std::cout << "TEST" << std::endl;
 //        isJoining.relationHeader.toString();
-
-            for (Tuple t: this->relations) {
-                std::vector<std::string> copyTuple = t.values;
-                std::reverse(copyTuple.begin(), copyTuple.end());
-                for (Tuple u: joinWith.relations) {
-                    if (u.values == t.values){
-                        if (copyTuple == u.values) {
+            if (isJoining.relationHeader.attributes == this->relationHeader.attributes) {
+                for (Tuple t: this->relations) {
+                    std::vector<std::string> copyTuple = t.values;
+                    std::reverse(copyTuple.begin(), copyTuple.end());
+                    for (Tuple u: joinWith.relations) {
+                        if (u.values == t.values) {
+//                            std::cout << "YES" << std::endl;
                             toAdd = u;
                             isJoining.addTuple(toAdd);
                         }
-                        else {
+                    }
+                }
+            }
+            else if (copyHeader == joinWith.relationHeader.attributes) {
+                for (Tuple t: this->relations) {
+                    std::vector<std::string> copyTuple = t.values;
+                    std::reverse(copyTuple.begin(), copyTuple.end());
+                    for (Tuple u: joinWith.relations) {
+                        if (u.values == t.values or copyTuple == u.values) {
+//                            std::cout << "YES" << std::endl;
                             toAdd = u;
                             isJoining.addTuple(toAdd);
                         }
-
                     }
                 }
             }
