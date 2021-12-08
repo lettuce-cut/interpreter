@@ -180,6 +180,11 @@ Relation Interpreter::evaluateRule(Rule r) {
         }
     }
 
+//    std::cout << std::endl;
+//    std::cout << "TEST" << std::endl;
+//    ogReturn.toString();
+//    std::cout << std::endl;
+
     //STEP 3
     std::vector<int> indices;
     std::vector<std::string> forNames;
@@ -192,7 +197,6 @@ Relation Interpreter::evaluateRule(Rule r) {
         }
     }
     ogReturn = ogReturn.Project(indices);
-
 
 //    STEP 4
     for (long unsigned int i =0; i < myDatabase.database[r.getHead().id].relationHeader.attributes.size(); i++) {

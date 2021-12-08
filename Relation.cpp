@@ -103,36 +103,48 @@ Relation Relation::Join(Relation joinWith) {
 //    }
 
     isJoining.relationHeader = this->relationHeader.combineHeaders(joinWith.relationHeader, indices);
+
 //    std::cout << "COMBIEND HEADER" << std::endl;
 //    isJoining.relationHeader.toString();
+    std::vector<std::string> copyHeader = this->relationHeader.attributes;
+    std::reverse(copyHeader.begin(), copyHeader.end());
 
-    if (isJoining.relationHeader.attributes == this->relationHeader.attributes) {
-        for (Tuple t : this->relations) {
-            for (Tuple u : joinWith.relations) {
-                if (u.values == t.values) {
-                    toAdd = t;
-                    isJoining.addTuple(toAdd);
+    if (isJoining.relationHeader.attributes == this->relationHeader.attributes or copyHeader == joinWith.relationHeader.attributes) {
+//        std::cout << "TEST" << std::endl;
+//        isJoining.relationHeader.toString();
+
+            for (Tuple t: this->relations) {
+                std::vector<std::string> copyTuple = t.values;
+                std::reverse(copyTuple.begin(), copyTuple.end());
+                for (Tuple u: joinWith.relations) {
+                    if (u.values == t.values or copyTuple == u.values) {
+                        toAdd = u;
+                        isJoining.addTuple(toAdd);
+                    }
                 }
             }
-        }
     }
+
     else {
         for (Tuple t : this->relations) {
             for (Tuple u : joinWith.relations) {
                 canJoin = isJoinable(t, u, indices);
                 if (canJoin == true) {
+//                    std::cout << "TEST" <<std::endl;
                     toAdd = combineTuples(t, u, indices, isJoining.relationHeader.attributes.size());
                     isJoining.addTuple(toAdd);
                 }
             }
         }
     }
+//    std::cout << "TEST" << std::endl;
+//    isJoining.toString();
     return isJoining;
 }
 
 bool Relation::isJoinable(Tuple firstTuple, Tuple secondTuple, std::map<int, int>& indices) {
 //    std::cout << "CANJOIN" << std::endl;
-    bool toReturn = false;
+    bool toReturn;
     long unsigned int counter = 0;
 
     if (indices.size() == 0) {
@@ -144,13 +156,20 @@ bool Relation::isJoinable(Tuple firstTuple, Tuple secondTuple, std::map<int, int
         std::map<int, int>:: iterator it;
 
         for (it = indices.begin(); it != indices.end(); it++) {
+//            std::cout << firstTuple.values[it->first] << " + " << secondTuple.values[it->second]<< std::endl;
+
             if (firstTuple.values[it->second] == secondTuple.values[it->first]) {
                 counter += 1;
             }
         }
 
         if (counter > 0) {
+//            std::cout << "TRUE" << std::endl;
             toReturn = true;
+        }
+        else {
+//            std::cout << "FALSE" << std::endl;
+            toReturn = false;
         }
     }
     return toReturn;
@@ -187,15 +206,7 @@ Tuple Relation::combineTuples(Tuple firstTuple, Tuple secondTuple, std::map<int,
                     }
                 }
             }
-//           if (firstTuple.values[i] != toReturn.values[toReturn.values.size()-1]) {
-//                toReturn.values.push_back(firstTuple.values[i]);
-//            }
         }
-//    std::cout <<"TEST" <<std::endl;
-//    for (int i =0; i < toReturn.values.size(); i++) {
-//        std::cout << toReturn.values[i] << " ";
-//    }
-//    std::cout << std::endl;
     }
 
     return toReturn;

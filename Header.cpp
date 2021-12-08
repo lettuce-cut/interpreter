@@ -39,7 +39,8 @@ Header Header::combineHeaders(Header headerToJoin, std::map<int, int>& indices) 
         for (long unsigned int i =0; i < headerToJoin.attributes.size(); i++) {
             if (toReturn.attributes.size() == 0) {
                 toReturn.attributes.push_back(headerToJoin.attributes[i]);
-            } else {
+            }
+            else {
                 int firstCounter = 0;
                 for (long unsigned int j = 0; j < toReturn.attributes.size(); j++) {
                     if (headerToJoin.attributes[i] == toReturn.attributes[j]) {
