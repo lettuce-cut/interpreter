@@ -1,5 +1,6 @@
 #include "Relation.h"
 #include <map>
+#include <algorithm>
 Relation::Relation(std::string name, Header header) {
     relationName = name;
     relationHeader.attributes= header.attributes;
