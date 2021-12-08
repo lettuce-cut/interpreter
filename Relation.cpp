@@ -107,7 +107,7 @@ Relation Relation::Join(Relation joinWith) {
 //    std::cout << "COMBIEND HEADER" << std::endl;
 //    isJoining.relationHeader.toString();
     std::vector<std::string> copyHeader = this->relationHeader.attributes;
-    std::reverse(copyHeader.begin(), copyHeader.end());
+    reverse(copyHeader.begin(), copyHeader.end());
 
     if (isJoining.relationHeader.attributes == this->relationHeader.attributes or copyHeader == joinWith.relationHeader.attributes) {
 //        std::cout << "TEST" << std::endl;
@@ -115,7 +115,7 @@ Relation Relation::Join(Relation joinWith) {
 
             for (Tuple t: this->relations) {
                 std::vector<std::string> copyTuple = t.values;
-                std::reverse(copyTuple.begin(), copyTuple.end());
+                reverse(copyTuple.begin(), copyTuple.end());
                 for (Tuple u: joinWith.relations) {
                     if (u.values == t.values or copyTuple == u.values) {
                         toAdd = u;
