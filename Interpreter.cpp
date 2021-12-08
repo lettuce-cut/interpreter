@@ -189,20 +189,35 @@ Relation Interpreter::evaluateRule(Rule r) {
     std::vector<int> indices;
     std::vector<std::string> forNames;
 
+    std::vector<std::string> toCompare;
     for (long unsigned int i =0; i < r.getHead().parameters.size(); i++) {
-        for(long unsigned int j=0; j< ogReturn.relationHeader.attributes.size(); j++) {
-            if (r.getHead().parameters[i]->paramString() == ogReturn.relationHeader.attributes[j]) {
-                indices.push_back(j);
+        toCompare.push_back(r.getHead().parameters[i]->paramString());
+    }
+
+    if (toCompare == ogReturn.relationHeader.attributes) {
+        for (long unsigned int i =0; i < r.getHead().parameters.size(); i++) {
+            indices.push_back(i);
+        }
+    }
+
+    else {
+        for (long unsigned int i =0; i < r.getHead().parameters.size(); i++) {
+            for(long unsigned int j=0; j< ogReturn.relationHeader.attributes.size(); j++) {
+                if (r.getHead().parameters[i]->paramString() == ogReturn.relationHeader.attributes[j]) {
+                    indices.push_back(j);
+                }
             }
         }
     }
     ogReturn = ogReturn.Project(indices);
+//    ogReturn.relationHeader.toString();
 
 //    STEP 4
     for (long unsigned int i =0; i < myDatabase.database[r.getHead().id].relationHeader.attributes.size(); i++) {
         forNames.push_back(myDatabase.database[r.getHead().id].relationHeader.attributes[i]);
     }
     ogReturn = ogReturn.Rename(forNames);
+//    ogReturn.relationHeader.toString();
 
     //Step 5
     Relation relationsAdded = Relation();

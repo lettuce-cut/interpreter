@@ -66,7 +66,6 @@ Relation Relation::Project(std::vector<int> forProject) {
         }
         toChange.addTuple(newTuple);
     }
-
     return toChange;
 }
 
@@ -80,6 +79,8 @@ Relation Relation::Rename(std::vector<std::string> forRename) const {
         toChange.relationHeader.attributes.push_back(name);
     }
 
+//    std::cout << "TEST" << std::endl;
+//    toChange.toString();
     return toChange;
 }
 
@@ -118,13 +119,23 @@ Relation Relation::Join(Relation joinWith) {
                 std::vector<std::string> copyTuple = t.values;
                 std::reverse(copyTuple.begin(), copyTuple.end());
                 for (Tuple u: joinWith.relations) {
-                    if (u.values == t.values or copyTuple == u.values) {
-                        toAdd = u;
-                        isJoining.addTuple(toAdd);
+                    if (u.values == t.values){
+                        if (copyTuple == u.values) {
+                            toAdd = u;
+                            isJoining.addTuple(toAdd);
+                        }
+                        else {
+                            toAdd = u;
+                            isJoining.addTuple(toAdd);
+                        }
+
                     }
                 }
             }
+//        std::cout << "FLIP" << std::endl;
+//        isJoining.toString();
     }
+
 
     else {
         for (Tuple t : this->relations) {
