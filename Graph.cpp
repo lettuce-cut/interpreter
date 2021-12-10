@@ -3,10 +3,10 @@
 
 void Graph::evaluateSCC() {
 //    std::cout << vectorSCC.size() << std::endl;
-    for (int i =0; i < vectorSCC.size(); i++) {
+    for (long unsigned int i =0; i < vectorSCC.size(); i++) {
         std::string SSCline = "SSC: ";
         int counter = 0;
-        for (int j : vectorSCC[i]) {
+        for (long unsigned int j : vectorSCC[i]) {
             counter += 1;
             if (counter == vectorSCC[i].size() - 1) {
                 SSCline += "R" + std::to_string(j) + ",";
@@ -18,7 +18,7 @@ void Graph::evaluateSCC() {
         std::cout << SSCline << std::endl;
 
         if ((vectorSCC[i].size() == 1) and (rulesFromParser[i].getHead().id != rulesFromParser[i].getBody()[0].id)) {
-            for (int R : vectorSCC[i]) {
+            for (long unsigned int R : vectorSCC[i]) {
                 Rule::ruleString(rulesFromParser[R]);
                 evaluateRule(rulesFromParser[R]).toString();
                 std::cout << "1 passes: R" << R << std::endl;
@@ -59,13 +59,13 @@ void Graph::evaluateSCC() {
 
 void Graph::reverseDepend() {
 
-    for (int i =0; i < rulesFromParser.size(); i++) {
+    for (long unsigned int i =0; i < rulesFromParser.size(); i++) {
         std::set<int> setAdd;
 //        std::cout << "Looking at Rule #" << i << std::endl;
 //        std::cout << "Head: " << rulesFromParser[i].getHead().id << std::endl;
-        for (int j = 0; j < rulesFromParser.size(); j++) {
+        for (long unsigned int j = 0; j < rulesFromParser.size(); j++) {
 //            std::cout << "Comparing with body of Rule#" << j << std::endl;
-            for(int k = 0; k < rulesFromParser[j].getBody().size(); k++) {
+            for(long unsigned int k = 0; k < rulesFromParser[j].getBody().size(); k++) {
 //                std::cout << "Checking against: " << rulesFromParser[j].getBody()[k].id << std::endl;
                 if (rulesFromParser[i].getHead().id == rulesFromParser[j].getBody()[k].id) {
 //                    std::cout << "MATCH" << std::endl;
@@ -81,12 +81,12 @@ void Graph::reverseDepend() {
 
 void Graph::forwardDepend() {
 
-    for (int i =0; i < rulesFromParser.size(); i++) {
+    for (long unsigned int i =0; i < rulesFromParser.size(); i++) {
         std::set<int> setAdd;
 //        std::cout << "Looking at Rule #" << i << std::endl;
-        for (int j = 0; j <rulesFromParser[i].getBody().size(); j++) {
+        for (long unsigned int j = 0; j <rulesFromParser[i].getBody().size(); j++) {
 //            std::cout << "Looking at id: " << rulesFromParser[i].getBody()[j].id << std::endl;
-            for (int k = 0; k < rulesFromParser.size(); k++) {
+            for (long unsigned int k = 0; k < rulesFromParser.size(); k++) {
 //                std::cout << "Checking against Rule #id: " << rulesFromParser[k].getHead().id << std::endl;
                 if (rulesFromParser[i].getBody()[j].id == rulesFromParser[k].getHead().id) {
 //                    std::cout << "MATCH" <<std::endl;
@@ -102,11 +102,11 @@ void Graph::forwardDepend() {
 }
 
 void Graph::printNodes() {
-    for (int i =0; i < rulesFromParser.size(); i++) {
+    for (long unsigned int i =0; i < rulesFromParser.size(); i++) {
         std::cout << "R" << i << ":";
         if (nodeListForward[i].size() != 0) {
             int counter = 0;
-            for (int adjacent : nodeListForward[i]) {
+            for (long unsigned int adjacent : nodeListForward[i]) {
                 counter += 1;
                 if (counter == nodeListForward[i].size()) {
                     std::cout << "R" << adjacent;
@@ -128,7 +128,7 @@ void Graph::dfsReverse(int currNode) {
 //    std::cout << "TREE" << std::endl;
     visited[currNode] = true;
 //    std::cout << currNode << " marked as true" << std::endl;
-    for (int adjacent: nodeListReverse[currNode]) {
+    for (long unsigned int adjacent: nodeListReverse[currNode]) {
 //        std::cout << "Checking if adjacent " << adjacent << " is false" << std::endl;
         if (visited[adjacent] == false) {
 //            std::cout << adjacent << " is false" << std::endl;
@@ -143,7 +143,7 @@ void Graph::dfsForward(int currNode) {
     //    std::cout << "TREE" << std::endl;
     visited[currNode] = true;
 //    std::cout << currNode << " marked as true" << std::endl;
-    for (int adjacent: nodeListForward[currNode]) {
+    for (long unsigned int adjacent: nodeListForward[currNode]) {
 //        std::cout << "Checking if adjacent " << adjacent << " is false" << std::endl;
         if (visited[adjacent] == false) {
 //            std::cout << adjacent << " is false" << std::endl;
@@ -175,7 +175,7 @@ void Graph::forestForward() {
     for (auto &it : visited) {
         it.second = false;
     }
-    for (int i = postOnReverse.size()-1; i >-1; i--) {
+    for (long unsigned int i = postOnReverse.size()-1; i >-1; i--) {
         std::cout << "Curr Node: " << postOnReverse[i] << std::endl;
         if (visited[postOnReverse[i]] == false) {
             dfsForward(postOnReverse[i]);
@@ -188,7 +188,7 @@ void Graph::forestForward() {
 }
 
 void Graph::printPost() {
-    for (int i =0; i < postOnReverse.size(); i++) {
+    for (long unsigned int i =0; i < postOnReverse.size(); i++) {
         std::cout << postOnReverse[i] << " + ";
     }
     std::cout << std::endl;
