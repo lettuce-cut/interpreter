@@ -7,7 +7,7 @@ void Graph::evaluateSCC() {
         std::string SSCline = "SSC: ";
         int counter = 0;
         for (long unsigned int j : vectorSCC[i]) {
-            counter += 1;
+            long unsigned int counter += 1;
             if (counter == vectorSCC[i].size() - 1) {
                 SSCline += "R" + std::to_string(j) + ",";
             }
@@ -105,7 +105,7 @@ void Graph::printNodes() {
     for (long unsigned int i =0; i < rulesFromParser.size(); i++) {
         std::cout << "R" << i << ":";
         if (nodeListForward[i].size() != 0) {
-            int counter = 0;
+            long unsigned int counter = 0;
             for (long unsigned int adjacent : nodeListForward[i]) {
                 counter += 1;
                 if (counter == nodeListForward[i].size()) {
@@ -175,7 +175,7 @@ void Graph::forestForward() {
     for (auto &it : visited) {
         it.second = false;
     }
-    for (long unsigned int i = postOnReverse.size()-1; i >-1; i--) {
+    for (long int i = postOnReverse.size()-1; i >-1; i--) {
         std::cout << "Curr Node: " << postOnReverse[i] << std::endl;
         if (visited[postOnReverse[i]] == false) {
             dfsForward(postOnReverse[i]);
