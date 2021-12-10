@@ -4,6 +4,7 @@
 void Graph::evaluateSCC() {
 //    std::cout << vectorSCC.size() << std::endl;
     for (long unsigned int i =0; i < vectorSCC.size(); i++) {
+//        std::cout << "LOOKING AT NEW SCC" << std::endl;
         std::string SSCline;
         long unsigned int counter = 0;
         for (long unsigned int j : vectorSCC[i]) {
@@ -17,7 +18,18 @@ void Graph::evaluateSCC() {
         }
         std::cout << "SCC: " << SSCline << std::endl;
 
-        if ((vectorSCC[i].size() == 1) and (rulesFromParser[i].getHead().id != rulesFromParser[i].getBody()[0].id)) {
+        long unsigned int counter2 = 0;
+        for (int m : vectorSCC[i]) {
+            for (int n = 0; n < rulesFromParser[m].getBody().size(); n++) {
+//                std::cout << rulesFromParser[m].getHead().id << " + " << rulesFromParser[m].getBody()[n].id << std::endl;
+                if (rulesFromParser[m].getHead().id == rulesFromParser[m].getBody()[n].id) {
+                    counter2 += 1;
+                }
+            }
+        }
+//        std::cout << "COUNTER = " << counter2 << std::endl;
+        if ((vectorSCC[i].size() == 1) and (counter2 == 0)) {
+//                std::cout << "TEST" << std::endl;
             for (long unsigned int R : vectorSCC[i]) {
                 Rule::ruleString(rulesFromParser[R]);
                 evaluateRule(rulesFromParser[R]).toString();
@@ -31,11 +43,13 @@ void Graph::evaluateSCC() {
             Relation evaluated = Relation();
 
             while (postCount != preCount) {
-                long unsigned int allPass = rulesFromParser.size();
-                for (long unsigned int k = i; k < rulesFromParser.size(); k++) {
+                long unsigned int allPass = vectorSCC[i].size();
+                for (int k : vectorSCC[i]) {
                     preCount = myDatabase.database[rulesFromParser[k].getHead().id].relations.size();
+                    /*std::cout << "Precount: " << preCount << std::endl;*/
                     evaluated = evaluateRule(rulesFromParser[k]);
                     postCount = myDatabase.database[rulesFromParser[k].getHead().id].relations.size();
+//                    std::cout << "Postcount: " << postCount << std::endl;
 
                     if (preCount != postCount) {
                         Rule::ruleString(rulesFromParser[k]);
@@ -45,11 +59,13 @@ void Graph::evaluateSCC() {
                     else {
                         Rule::ruleString(rulesFromParser[k]);
                     }
-                    if (allPass != rulesFromParser.size()) {
+
+                    if (allPass != vectorSCC[i].size()) {
                         postCount = preCount +1;
                     }
                 }
                 passCount += 1;
+//                std::cout << postCount << " + " << passCount << std::endl;
             }
 
             std::cout << passCount << " passes: " << SSCline << std::endl;
