@@ -8,13 +8,13 @@ void Graph::evaluateSCC() {
         std::string SSCline;
         long unsigned int counter = 0;
         for (long unsigned int j : vectorSCC[i]) {
-            counter += 1;
             if (counter == vectorSCC[i].size() - 1) {
-                SSCline += "R" + std::to_string(j) + ",";
-            }
-            else {
                 SSCline += "R" + std::to_string(j);
             }
+            else {
+                SSCline += "R" + std::to_string(j) + ",";
+            }
+            counter += 1;
         }
         std::cout << "SCC: " << SSCline << std::endl;
 
