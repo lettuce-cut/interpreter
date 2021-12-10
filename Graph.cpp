@@ -19,8 +19,8 @@ void Graph::evaluateSCC() {
         std::cout << "SCC: " << SSCline << std::endl;
 
         long unsigned int counter2 = 0;
-        for (int m : vectorSCC[i]) {
-            for (int n = 0; n < rulesFromParser[m].getBody().size(); n++) {
+        for (long unsigned int m : vectorSCC[i]) {
+            for (long unsigned int n = 0; n < rulesFromParser[m].getBody().size(); n++) {
 //                std::cout << rulesFromParser[m].getHead().id << " + " << rulesFromParser[m].getBody()[n].id << std::endl;
                 if (rulesFromParser[m].getHead().id == rulesFromParser[m].getBody()[n].id) {
                     counter2 += 1;
