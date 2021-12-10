@@ -4,7 +4,7 @@
 void Graph::evaluateSCC() {
 //    std::cout << vectorSCC.size() << std::endl;
     for (long unsigned int i =0; i < vectorSCC.size(); i++) {
-        std::string SSCline = "SSC: ";
+        std::string SSCline;
         long unsigned int counter = 0;
         for (long unsigned int j : vectorSCC[i]) {
             counter += 1;
@@ -15,7 +15,7 @@ void Graph::evaluateSCC() {
                 SSCline += "R" + std::to_string(j);
             }
         }
-        std::cout << SSCline << std::endl;
+        std::cout << "SSC: " << SSCline << std::endl;
 
         if ((vectorSCC[i].size() == 1) and (rulesFromParser[i].getHead().id != rulesFromParser[i].getBody()[0].id)) {
             for (long unsigned int R : vectorSCC[i]) {
