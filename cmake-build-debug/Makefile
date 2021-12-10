@@ -345,6 +345,30 @@ FactsAutomaton.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/FactsAutomaton.cpp.s
 .PHONY : FactsAutomaton.cpp.s
 
+Graph.o: Graph.cpp.o
+.PHONY : Graph.o
+
+# target to build an object file
+Graph.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/Graph.cpp.o
+.PHONY : Graph.cpp.o
+
+Graph.i: Graph.cpp.i
+.PHONY : Graph.i
+
+# target to preprocess a source file
+Graph.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/Graph.cpp.i
+.PHONY : Graph.cpp.i
+
+Graph.s: Graph.cpp.s
+.PHONY : Graph.s
+
+# target to generate assembly for a file
+Graph.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/Graph.cpp.s
+.PHONY : Graph.cpp.s
+
 Header.o: Header.cpp.o
 .PHONY : Header.o
 
@@ -909,6 +933,9 @@ help:
 	@echo "... FactsAutomaton.o"
 	@echo "... FactsAutomaton.i"
 	@echo "... FactsAutomaton.s"
+	@echo "... Graph.o"
+	@echo "... Graph.i"
+	@echo "... Graph.s"
 	@echo "... Header.o"
 	@echo "... Header.i"
 	@echo "... Header.s"

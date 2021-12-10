@@ -15,7 +15,7 @@ Facts:
 
 Rules: 
    DeaWoo(A,B,C,D,E):-A(A),A(B),A(C),A(D),A(E).
-   DeaWoo(A,B,C,D,E):-A(A),A(B),B(C),A(D),A(E). 
+   DeaWoo(A,B,C,D,E):-A(A),A(B),B(C),A(D),A(E).
    DeaWoo(A,B,C,D,E):-A(E),B(D),A(C),B(B),A(A).
    DeaUoo(E,D,C,B,A):-DeaWoo(A,B,C,D,E),A(B). 
    DeaVoo(E,D,C,B,A):-DeaUoo(A,B,C,D,E),B(D).

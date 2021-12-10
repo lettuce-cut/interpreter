@@ -5,7 +5,7 @@
 #include <sstream>
 #include <iostream>
 #include <string>
-
+#include "Graph.h"
 int main (int argc, char** argv) {
     std::ifstream ifs;
     std::string input;
@@ -44,11 +44,25 @@ int main (int argc, char** argv) {
         std::cout << "  " << error << std::endl;
     }
 
-    Interpreter myInterpreter(myParser);
-    myInterpreter.makeRelation(); //evaluates schemes and facts
+//    Interpreter myInterpreter(myParser);
+//    myInterpreter.makeRelation(); //evaluates schemes and facts
+
+    Graph myGraph(myParser);
+    myGraph.makeRelation();
+
+    myGraph.forwardDepend();
+    std::cout << "Dependency Graph" << std::endl;
+    myGraph.printNodes();
+    myGraph.reverseDepend();
+    myGraph.forestReverse();
+    myGraph.forestForward();
+
     std::cout << "Rule Evaluation" << std::endl;
-    myInterpreter.allRules(); //evaluates rules
-    myInterpreter.evaluateAll(); //evaluates queries
+    myGraph.evaluateSCC();
+    std::cout << std::endl;
+    myGraph.evaluateAll();
+//    myInterpreter.allRules(); //evaluates rules Lab4
+//    myInterpreter.evaluateAll(); //evaluates queries
 
     delete lexer;
 

@@ -55,6 +55,20 @@ CMakeFiles/project_2.dir/FactsAutomaton.cpp.o
  /Users/roliasong/Desktop/cs236/Interpreter/FactsAutomaton.cpp
  /Users/roliasong/Desktop/cs236/Interpreter/FactsAutomaton.h
  /Users/roliasong/Desktop/cs236/Interpreter/Token.h
+CMakeFiles/project_2.dir/Graph.cpp.o
+ /Users/roliasong/Desktop/cs236/Interpreter/Automaton.h
+ /Users/roliasong/Desktop/cs236/Interpreter/Database.h
+ /Users/roliasong/Desktop/cs236/Interpreter/DatalogProgram.h
+ /Users/roliasong/Desktop/cs236/Interpreter/Graph.cpp
+ /Users/roliasong/Desktop/cs236/Interpreter/Graph.h
+ /Users/roliasong/Desktop/cs236/Interpreter/Header.h
+ /Users/roliasong/Desktop/cs236/Interpreter/Lexer.h
+ /Users/roliasong/Desktop/cs236/Interpreter/Parameter.h
+ /Users/roliasong/Desktop/cs236/Interpreter/Predicate.h
+ /Users/roliasong/Desktop/cs236/Interpreter/Relation.h
+ /Users/roliasong/Desktop/cs236/Interpreter/Rule.h
+ /Users/roliasong/Desktop/cs236/Interpreter/Token.h
+ /Users/roliasong/Desktop/cs236/Interpreter/Tuple.h
 CMakeFiles/project_2.dir/Header.cpp.o
  /Users/roliasong/Desktop/cs236/Interpreter/Header.cpp
  /Users/roliasong/Desktop/cs236/Interpreter/Header.h
@@ -169,6 +183,7 @@ CMakeFiles/project_2.dir/main.cpp.o
  /Users/roliasong/Desktop/cs236/Interpreter/Automaton.h
  /Users/roliasong/Desktop/cs236/Interpreter/Database.h
  /Users/roliasong/Desktop/cs236/Interpreter/DatalogProgram.h
+ /Users/roliasong/Desktop/cs236/Interpreter/Graph.h
  /Users/roliasong/Desktop/cs236/Interpreter/Header.h
  /Users/roliasong/Desktop/cs236/Interpreter/Interpreter.h
  /Users/roliasong/Desktop/cs236/Interpreter/Lexer.h

@@ -55,6 +55,20 @@ CMakeFiles/project_2.dir/FactsAutomaton.cpp.o: \
  ../FactsAutomaton.cpp \
  ../FactsAutomaton.h \
  ../Token.h
+CMakeFiles/project_2.dir/Graph.cpp.o: \
+ ../Automaton.h \
+ ../Database.h \
+ ../DatalogProgram.h \
+ ../Graph.cpp \
+ ../Graph.h \
+ ../Header.h \
+ ../Lexer.h \
+ ../Parameter.h \
+ ../Predicate.h \
+ ../Relation.h \
+ ../Rule.h \
+ ../Token.h \
+ ../Tuple.h
 CMakeFiles/project_2.dir/Header.cpp.o: \
  ../Header.cpp \
  ../Header.h \
@@ -169,6 +183,7 @@ CMakeFiles/project_2.dir/main.cpp.o: \
  ../Automaton.h \
  ../Database.h \
  ../DatalogProgram.h \
+ ../Graph.h \
  ../Header.h \
  ../Interpreter.h \
  ../Lexer.h \
