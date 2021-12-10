@@ -5,9 +5,9 @@ void Graph::evaluateSCC() {
 //    std::cout << vectorSCC.size() << std::endl;
     for (long unsigned int i =0; i < vectorSCC.size(); i++) {
         std::string SSCline = "SSC: ";
-        int counter = 0;
+        long unsigned int counter = 0;
         for (long unsigned int j : vectorSCC[i]) {
-            long unsigned int counter += 1;
+            counter += 1;
             if (counter == vectorSCC[i].size() - 1) {
                 SSCline += "R" + std::to_string(j) + ",";
             }
