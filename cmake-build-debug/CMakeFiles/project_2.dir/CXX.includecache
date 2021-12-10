@@ -34,6 +34,10 @@ Rule.h
 set
 -
 
+/Users/roliasong/Desktop/cs236/Interpreter/Graph.cpp
+Graph.h
+/Users/roliasong/Desktop/cs236/Interpreter/Graph.h
+
 /Users/roliasong/Desktop/cs236/Interpreter/Graph.h
 map
 -
@@ -52,20 +56,6 @@ vector
 Parameter.h
 /Users/roliasong/Desktop/cs236/Interpreter/Parameter.h
 map
--
-
-/Users/roliasong/Desktop/cs236/Interpreter/Interpreter.h
-Lexer.h
-/Users/roliasong/Desktop/cs236/Interpreter/Lexer.h
-Relation.h
-/Users/roliasong/Desktop/cs236/Interpreter/Relation.h
-Rule.h
-/Users/roliasong/Desktop/cs236/Interpreter/Rule.h
-DatalogProgram.h
-/Users/roliasong/Desktop/cs236/Interpreter/DatalogProgram.h
-Database.h
-/Users/roliasong/Desktop/cs236/Interpreter/Database.h
-list
 -
 
 /Users/roliasong/Desktop/cs236/Interpreter/Lexer.h
@@ -123,22 +113,4 @@ vector
 -
 Parameter.h
 /Users/roliasong/Desktop/cs236/Interpreter/Parameter.h
-
-/Users/roliasong/Desktop/cs236/Interpreter/main.cpp
-Lexer.h
-/Users/roliasong/Desktop/cs236/Interpreter/Lexer.h
-DatalogProgram.h
-/Users/roliasong/Desktop/cs236/Interpreter/DatalogProgram.h
-Interpreter.h
-/Users/roliasong/Desktop/cs236/Interpreter/Interpreter.h
-fstream
--
-sstream
--
-iostream
--
-string
--
-Graph.h
-/Users/roliasong/Desktop/cs236/Interpreter/Graph.h
 

@@ -171,12 +171,12 @@ void Graph::forestReverse() {
 }
 
 void Graph::forestForward() {
-    std::cout << "FORWARD" << std::endl;
+//    std::cout << "FORWARD" << std::endl;
     for (auto &it : visited) {
         it.second = false;
     }
     for (long int i = postOnReverse.size()-1; i >-1; i--) {
-        std::cout << "Curr Node: " << postOnReverse[i] << std::endl;
+//        std::cout << "Curr Node: " << postOnReverse[i] << std::endl;
         if (visited[postOnReverse[i]] == false) {
             dfsForward(postOnReverse[i]);
 
@@ -184,7 +184,7 @@ void Graph::forestForward() {
             SCC.clear();
         }
     }
-    printPost();
+//    printPost();
 }
 
 void Graph::printPost() {
